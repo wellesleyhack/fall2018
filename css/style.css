@@ -54,7 +54,7 @@ a:visited {
   color: #FF8B89;
 }
 
-.header {
+h1 {
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -62,7 +62,7 @@ a:visited {
   text-transform: uppercase;
 }
 
-.date {
+h2 {
   font-size: 25px;
   margin-bottom: 30px;
   font-weight: 600;
@@ -130,12 +130,17 @@ img {
 }
 
 .cover {
-  margin-top: 12vh;
+  height: 100vh;
+}
+
+.background {
   height: 100vh;
 }
 
 .cover__container {
-  margin: 0 auto;
+  margin-top: 12vh;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -186,12 +191,16 @@ img {
 
 /*@media all and (max-width: 600px) {*/
 @media (max-width: 600px) {
-	.header {
+  p {
+    font-size: 16px;
+  }
+
+	h1 {
     font-size: 33px;
     line-height: 50px;
 	}
 
-  .date {
+  h2 {
     font-size: 20px;
     line-height: 30px;
   }
@@ -201,9 +210,6 @@ img {
     margin: 0 auto;
   }
 
-  p {
-    font-size: 16px;
-  }
 
   .logo {
     max-height: 150px;
