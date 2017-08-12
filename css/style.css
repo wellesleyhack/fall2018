@@ -55,50 +55,26 @@ a:visited {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   letter-spacing: 1px;
-  line-height: 108px;
+  line-height: 70px;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-h3 {
-	font-size: 32px;
-	font-weight: 600;
-  margin: 15px 0;
-	line-height: 1.5;
-}
-
-h4 {
-	font-size: 24px;
-	font-weight: 400;
-	margin-bottom: 20px;
-	line-height: 1.5;
-	padding-top: 10px;
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-size: 25px;
   margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
 }
 
 p {
-	font-size: 16px;
-	line-height: 1.5;
-	font-weight: 400;
-	margin-bottom: 20px;
-	color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: white;
+  opacity: 0.9;
 }
 
 button {
@@ -146,26 +122,27 @@ img {
   pointer-events: none; /* disable dragging images */
 }
 
-.logo__image {
-  max-height: 110px;
-  margin: 10px auto 0;
-  opacity: 0.85;
+.logo {
+  /*max-height: 110px;*/
+  max-height: 250px;
+  margin: 20px auto 0;
+  opacity: 0.95;
 }
 
 
 /* COVER */
-.cover__intro {
+/*.cover__intro {
   max-width: 500px;
   margin: 0 auto;
   font-size: 20px;
   margin-bottom: 30px;
   color: white;
   opacity: 0.9;
-}
+}*/
 
-.cover__intro h4 {
+/*.cover__intro h4 {
   opacity: 0.9;
-}
+}*/
 
 .cover {
   margin-top: 12vh;
@@ -202,13 +179,9 @@ img {
 /* RESPONSIVENESS */
 
 @media all and (max-width: 980px) {
-  .cover__intro {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
 
   .cover {
-    height: 90vh;
+    height: 95vh;
     padding: 0 30px 0 30px;
   }
 
@@ -222,29 +195,10 @@ img {
     line-height: 80px;
 	}
 
-	h2 {
-		font-size: 60px;
-		margin-bottom: 10px;
-	}
-
-	h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-	}
-
-	h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-	}
-
-	h4 {
+  p {
     font-size: 20px;
     margin-bottom: 10px;
-	}
-
-	p, li, th, td {
-    font-size: 16px;
-	}
+  }
 
 	button {
     font-size: 12px;
@@ -255,13 +209,21 @@ img {
 
 @media all and (max-width: 600px) {
 	h1 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
 	}
 
-	h2 {
-		font-size: 36px;
-	}
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .logo {
+    max-height: 150px;
+  }
 
   .title {
     font-size: 1.8em;
