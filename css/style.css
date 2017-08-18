@@ -93,13 +93,14 @@ button {
 }
 
 .content__text {
-  width: 750px;
+  width: 1100px;
   margin: auto;
   text-align: left;
 }
 
 .description {
 	font-size: 20px;
+  line-height: 1.5;
 	margin-bottom: 30px;
 	color: #E4E5EA;
 	padding-top: 0;
