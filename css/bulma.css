@@ -1276,7 +1276,7 @@ a.box:active {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 18px;
   -webkit-box-shadow: none;
           box-shadow: none;
   display: -webkit-inline-box;
@@ -1299,9 +1299,9 @@ a.box:active {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: white;
-  border-color: #dbdbdb;
-  color: #363636;
+  /*background-color: white;*/
+  border-color: white;
+  color: white;
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

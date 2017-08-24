@@ -1,13 +1,29 @@
 #section1{
-  background: linear-gradient(45deg,  #BC52C3,#F6935A)
+  background: linear-gradient(45deg,  #BC52C3,#F6935A);
+  color: white
+}
+
+#section1-title{
+    color: white
 }
 
 .purple{
   color: #982297
 }
 
+#section3-card{
+  background: linear-gradient(2deg,#E66B8B, #CA69AA);
+  color: white
+
+}
+
 #section4 {
-  background: linear-gradient(2deg,#E37E7A, #D76182)
+  background: linear-gradient(2deg,#E37E7A, #D76182);
+  color: white
+}
+
+#section4-title {
+  color: white
 }
 
 #section5 {
