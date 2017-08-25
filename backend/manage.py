@@ -2,8 +2,6 @@ import json
 import time
 from boto.dynamodb2.table import Table
 from flask import Flask
-# dynamodb is only for smaller key-value store, whereas s3 is for
-# larger file stores.
 
 conn_dynamodb = Table('WHACK_registered_userss')
 app = Flask(__name__)
@@ -17,7 +15,6 @@ def create():
     bucket = conn.get_bucket(settings.BUCKET_NAME)
     k = Key(bucket)
     k.key = file_name
-    # k.set_contents_from_file(data_file)
     k.set_contents_from_string(data_file.read())
     response = conn_dynamodb.put_item(
        Item={
@@ -36,8 +33,6 @@ def create():
             'other_notes': data_values.other_notes
         }
     )
-    # right now, we need to query from AWS and S3. Googel Sheets API.
-    # return jsonify(name=file_name)
     return jsonify(name=file_name, response=response)
 
 
