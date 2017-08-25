@@ -6,6 +6,26 @@ from flask import Flask
 conn_dynamodb = Table('WHACK_registered_userss')
 app = Flask(__name__)
 
+"""
+The schema of the follwoing endpoint is this:
+Input:
+    files = { 'resume': {resume_file} }
+    form  = {   'name': string,
+                'email':string,
+                'school':string,
+                'major': string,
+                'graduation_year': string,
+                'ethnicity' : string,
+                'gender_identity':string,
+                'sexual_orientation': string,
+                'resume': file,
+                'links':string,
+                'first_hackathon': bool,
+                'special_accomodations': string,
+                'other_notes': string
+                }
+"""
+
 @app.route('/create', methods=['POST'])
 def create():
     data_file = request.files.get('resume')
