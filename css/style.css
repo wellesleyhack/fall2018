@@ -3,8 +3,12 @@
   color: white
 }
 
-#section1-title{
+#section1-title, #section4-title{
     color: white
+}
+
+#section1-title{
+  font-size: 66px
 }
 
 .purple{
@@ -27,5 +31,13 @@
 }
 
 #section5 {
-  background: linear-gradient(2deg, #D76182,#E37E7A)
+  background: linear-gradient(2deg, #DA4479,#E37E7A)
+}
+
+#section6 {
+  background: linear-gradient(-5deg,#F5925C,#DA4479)
+}
+
+#section7-title{
+  color: #EF8261
 }
