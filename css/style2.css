@@ -7,7 +7,10 @@
 
 #section1{
   background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  color: white
+  background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);
+  background-repeat:no-repeat;
+  background-position: 80% 100%;
+  color: white;
 }
 
 #section1-title, #section4-title{
@@ -22,13 +25,22 @@
   color: #982297
 }
 
+.orange{
+  color: #EF8261;
+  font-size: 2rem
+}
+
 #section3-card{
   background: linear-gradient(2deg,#E66B8B, #CA69AA);
   color: white
-
+}
+#section3-stories{
+  background:  url('../img/jeff-2.png');
+  background-repeat:no-repeat;
+  background-position: 20% 50%;
 }
 
-#section4 {
+#section4-joinus {
   background: linear-gradient(2deg,#E37E7A, #D76182);
   color: white
 }
@@ -37,12 +49,17 @@
   color: white
 }
 
-#section5 {
+#section5-faq {
   background: linear-gradient(2deg, #DA4479,#E37E7A)
 }
 
-#section6 {
-  background: linear-gradient(-5deg,#F5925C,#DA4479)
+#section6-schedule {
+  background: linear-gradient(-5deg,#F5925C,#DA4479);
+  background:  url('../img/jeff-3.png'), linear-gradient(-5deg,#F5925C,#DA4479);
+  background-repeat:no-repeat;
+  background-position: right center;
+  color: white;
+
 }
 
 #section7-title{
@@ -60,10 +77,17 @@
   font-size: 1.125rem
 }
 
+.text-stories{
+  margin-bottom: 8rem;
+}
 
 .text-small{
   /*16px*/
   font-size: 1rem
+}
+
+.column p{
+  font-size: 14px
 }
 
 ul{
@@ -83,4 +107,17 @@ ul li:before {
     font-size: 1rem
   }
 
+}
+
+ul.text-large p{
+  display: none;
+  font-size: 1.25rem;
+  padding: 1.25rem
+}
+
+#brenna{
+  position: absolute;
+    width: 13%;
+    top: 53%;
+    left: 67%
 }
