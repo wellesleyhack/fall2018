@@ -1,0 +1,86 @@
+.nav-fixed-top{
+  position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#section1{
+  background: linear-gradient(45deg,  #BC52C3,#F6935A);
+  color: white
+}
+
+#section1-title, #section4-title{
+    color: white
+}
+
+#section1-title{
+  font-size: 80px
+}
+
+.purple{
+  color: #982297
+}
+
+#section3-card{
+  background: linear-gradient(2deg,#E66B8B, #CA69AA);
+  color: white
+
+}
+
+#section4 {
+  background: linear-gradient(2deg,#E37E7A, #D76182);
+  color: white
+}
+
+#section4-title {
+  color: white
+}
+
+#section5 {
+  background: linear-gradient(2deg, #DA4479,#E37E7A)
+}
+
+#section6 {
+  background: linear-gradient(-5deg,#F5925C,#DA4479)
+}
+
+#section7-title{
+  color: #EF8261
+}
+
+
+.text-large{
+  /*24px*/
+  font-size: 1.5rem;
+}
+
+.text-medium{
+  /*18px*/
+  font-size: 1.125rem
+}
+
+
+.text-small{
+  /*16px*/
+  font-size: 1rem
+}
+
+ul{
+  list-style: none;
+}
+
+ul li:before {
+  content: "\2023";
+  padding-right: 15px
+}
+@media (max-width:432px) {
+  #section1-title{
+    font-size: 3.125rem
+  }
+  .text-small,.text-large,.text-medium{
+    /*16px*/
+    font-size: 1rem
+  }
+
+}

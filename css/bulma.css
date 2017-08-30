@@ -1365,7 +1365,7 @@ a.box:active {
   background-color: transparent;
   border-color: transparent;
   color: #4a4a4a;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .button.is-link:hover, .button.is-link.is-hovered, .button.is-link:focus, .button.is-link.is-focused, .button.is-link:active, .button.is-link.is-active {
@@ -4032,7 +4032,7 @@ a.box:active {
 
 .notification a:not(.button) {
   color: currentColor;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .notification strong {
@@ -4535,7 +4535,7 @@ a.box:active {
 }
 
 a.tag:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .title,
@@ -5562,7 +5562,7 @@ a.dropdown-item.is-active {
 }
 
 .message-header a:not(.button) {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .message-header .delete {
@@ -5593,7 +5593,7 @@ a.dropdown-item.is-active {
 }
 
 .message-body a:not(.button) {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .message-body code,
