@@ -1,31 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <meta charset="utf-8" />
+    <title>jQuery Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css"/>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js">
+</script>
   </head>
   <body>
-
-    <div class="container">
+    <form class="container">
 
       <div class="field">
         <label class="label">First Name*</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name= "first_name" type="text">
         </div>
       </div>
 
       <div class="field">
         <label class="label">Last Name*</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name= "last_name" type="text">
         </div>
       </div>
 
       <div class="field">
         <label class="label">Email*</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
+          <input class="input is-danger" name= "email" type="text" placeholder="Email input">
           <span class="icon is-small is-left">
             <i class="fa fa-envelope"></i>
           </span>
@@ -39,7 +43,7 @@
       <div class="field">
         <label class="label">School*</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name="school" type="text">
         </div>
       </div>
 
@@ -55,14 +59,14 @@
       <div class="field">
         <label class="label">Major(s)*</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name="major" type="text">
         </div>
       </div>
 
       <div class="field">
         <label class="label">Graduation Year*</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name="graduation_year" type="text">
         </div>
       </div>
 
@@ -70,7 +74,7 @@
         <label class="label">Ethnicity*</label>
         <div class="control">
           <div class="select">
-            <select>
+            <select id="ethnicity">
               <option>Select dropdown</option>
               <option>White or Euro-American</option>
               <option>Black, Afro-Caribbean, or African-American</option>
@@ -90,7 +94,7 @@
         <label class="label">What gender do you identify with?*</label>
         <div class="control">
           <div class="select">
-            <select>
+            <select id="gender_identity">
               <option>Select dropdown</option>
               <option>Male</option>
               <option>Female</option>
@@ -101,12 +105,12 @@
           </div>
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">What is your sexual orientation?</label>
         <div class="control">
           <div class="select">
-            <select>
+            <select id="sexual_orientation">
               <option>Select dropdown</option>
               <option>Heterosexual</option>
               <option>Homosexual</option>
@@ -116,13 +120,13 @@
           </div>
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Resume*</label>
         <div class="control">
           <div class="file">
             <label class="file-label">
-              <input class="file-input" type="file" name="Resume*">
+              <input class="file-input" id="file-upload" name="file" type="file" name="Resume*">
               <span class="file-cta">
                 <span class="file-icon">
                   <i class="fa fa-upload"></i>
@@ -135,7 +139,6 @@
           </div>
         </div>
       </div>
-
       <div class="field">
         <div class="control">
           <label class="checkbox">
@@ -148,28 +151,28 @@
       <div class="field">
         <label class="label">Any useful links</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Linkedin, Github, Dribbble">
+          <input class="input" name="links" type="text" placeholder="Linkedin, Github, Dribbble">
         </div>
       </div>
 
       <div class="field">
         <label class="label">Have you attended WHACK before?*</label>
         <div class="control">
-          <label class="checkbox">
-            <input type="checkbox"> Yes, as a participant <br/> 
-            <input type="checkbox"> Yes, as a volunteer <br/> 
-            <input type="checkbox"> Yes, as a mentor or corporate representative <br/> 
+          <label  class="checkbox">
+            <input type="checkbox"> Yes, as a participant <br/>
+            <input type="checkbox"> Yes, as a volunteer <br/>
+            <input type="checkbox"> Yes, as a mentor or corporate representative <br/>
             <input type="checkbox"> No
           </label>
         </div>
       </div>
 
-      
+
       <div class="field">
         <label class="label">Will WHACK be your first hackathon?</label>
         <div class="control">
-          <label class="checkbox">
-            <input type="checkbox"> Yes <br/> 
+          <label id="first_hackathon" class="checkbox">
+            <input type="checkbox"> Yes <br/>
             <input type="checkbox"> No
           </label>
         </div>
@@ -178,21 +181,21 @@
       <div class="field">
         <label class="label">Do you have any dietary restrictions?*</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name="dietary_restrictions" type="text">
         </div>
       </div>
 
       <div class="field">
         <label class="label">Do you require any special accommodations?</label>
         <div class="control">
-          <input class="input" type="text">
+          <input class="input" name="special_accommodations" type="text">
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">WHACK aims to be an inclusive and safe space for all participants. Is there anything you’d like us to know to make your WHACK experience more comfortable?</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Text Area"></textarea>
+          <textarea class="textarea" name="other_notes" placeholder="Text Area"></textarea>
         </div>
       </div>
 
@@ -216,13 +219,66 @@
 
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-primary">Submit</button>
+          <button id="here" class="button is-primary">Submit</button>
         </div>
         <div class="control">
           <button class="button is-link">Save</button>
         </div>
       </div>
-    </div>
+    </form>
 
   </body>
+  <script type="text/javascript">
+    //$(document).ready() is cross-browser
+    $(function(){
+
+        document.getElementById('here').onclick = function() {
+            // Stop form from submitting normally
+            event.preventDefault();
+            console.log("herey");
+            // Get some values from elements on the page:
+            var $form = $( this ),
+              first_name = $form.find( "input[name='first_name']" ).val(),
+              last_name = $form.find( "input[name='last_name']" ).val(),
+              email = $form.find( "input[name='email']" ).val(),
+              school = $form.find( "input[name='school']" ).val(),
+              major = $form.find( "input[name='major']" ).val(),
+              graduation_year = $form.find( "input[name='graduation_year']" ).val(),
+              ethnicity = $form.find( "input[name='ethnicity']" ).val(),
+              gender_identity = $form.find( "input[name='gender_identity']" ).val(),
+              ethnicity = $("#ethnicity option:selected").text();
+              gender_identity = $("#gender_identity option:selected").text();
+              sexual_orientation = $("#sexual_orientation option:selected").text();
+              links = $form.find( "input[name='links']" ).val(),
+              first_hackathon = $('#first_hackathon').val();
+              special_accomodations = $form.find( "input[name='special_accomodations']" ).val(),
+              other_notes = $form.find( "input[name='other_notes']" ).val();
+              console.log("this is the form gottne");
+            console.log($form);
+            // NOT SURE IF I HANDLE THE FILE CORRECTLY
+            var resume = document.getElementById('file-upload').files[0];
+            url = "http://127.0.0.1:5000/create"
+            // Send the data using post
+            // TODO(daxisun): confirm with Yada about url.
+            var posting = $.post( url, { 'first_name': first_name,
+                                         'last_name': last_name,
+                                         'email': email,
+                                         'school': school,
+                                         'major': major,
+                                         'graduation_year':graduation_year,
+                                         'ethnicity':ethnicity,
+                                         'gender_identity':gender_identity,
+                                         'sexual_orientation':sexual_orientation,
+                                         'resume': resume,
+                                         'links':links,
+                                         'first_hackathon': first_hackathon == "Yes" ? true : false,
+                                         'special_accomodations': special_accomodations,
+                                         'other_notes': other_notes
+                                       } );
+
+        };
+
+    });
+
+  </script>
 </html>
