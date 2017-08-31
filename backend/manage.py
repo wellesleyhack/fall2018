@@ -1,11 +1,16 @@
 import json
 import time
+import boto
+import boto.dynamodb
+import boto3
 from boto.dynamodb2.table import Table
-from flask import Flask,render_template
-
-conn_dynamodb = Table('WHACK_registered_userss')
+from boto.s3.connection import S3Connection
+from boto.s3.key import Key
+from flask import Flask,render_template, request, jsonify
+import json
 app = Flask(__name__)
 
+dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
 
 @app.route('/registration', methods=["GET"])
 def static_page():
@@ -36,28 +41,33 @@ def create():
     data_file = request.files.get('resume')
     data_values = request.form
     file_name = data_file.filename
-    conn = boto.s3.connection.S3Connection(aws_access_key_id, aws_secret_access_key)
-    bucket = conn.get_bucket(settings.BUCKET_NAME)
+    conn = S3Connection("AKIAIMHRWY6EGAAS673A", "obdWExayMso4aGwTR/90fMCZYL9itlcUHsTrQu/n")
+    bucket = conn.get_bucket("whackfall2017")
     k = Key(bucket)
     k.key = file_name
     k.set_contents_from_string(data_file.read())
-    response = conn_dynamodb.put_item(
-       Item={
-            'name': data_values.name,
-            'email':data_values.email,
-            'school':data_values.school,
-            'major': data_values.major,
-            'graduation_year': data_values.email,
-            'ethnicity' : data_values.ethnicity,
-            'gender_identity': data_values.gender_identity,
-            'sexual_orientation': data_values.sexual_orientation,
-            'resume': data_values.file_name,
-            'links': data_values.links,
-            'first_hackathon': data_values.first_hackathon,
-            'special_accomodations': data_values.special_accomodations,
-            'other_notes': data_values.other_notes
-        }
+
+    table = dynamodb.Table('WHACK_registered_userss')
+    optional = ["first_hackathon", "links", "special_accomodations", "other_notes"]
+    new_items = {
+          'name': data_values["first_name"] +" " + data_values["last_name"],
+          'email':data_values["email"],
+          'school':data_values["school"],
+          'major': data_values["major"],
+          'graduation_year': data_values["graduation_year"],
+          'ethnicity' : data_values["ethnicity"],
+          'gender_identity': data_values["gender_identity"],
+          'sexual_orientation': data_values["sexual_orientation"],
+          'resume': data_values["file_name"],
+      }
+    for i in optional:
+        if len(data_values[i]) > 0:
+            new_items[i] = data_values[i]
+
+    response = table.put_item(
+      Item=new_items
     )
+
     return jsonify(name=file_name, response=response)
 
 
