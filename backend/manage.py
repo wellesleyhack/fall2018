@@ -1,10 +1,15 @@
 import json
 import time
 from boto.dynamodb2.table import Table
-from flask import Flask
+from flask import Flask,render_template
 
 conn_dynamodb = Table('WHACK_registered_userss')
 app = Flask(__name__)
+
+
+@app.route('/registration', methods=["GET"])
+def static_page():
+    return render_template('registration.html')
 
 """
 The schema of the follwoing endpoint is this:
