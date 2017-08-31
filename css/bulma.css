@@ -1365,7 +1365,7 @@ a.box:active {
   background-color: transparent;
   border-color: transparent;
   color: #4a4a4a;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .button.is-link:hover, .button.is-link.is-hovered, .button.is-link:focus, .button.is-link.is-focused, .button.is-link:active, .button.is-link.is-active {
@@ -4032,7 +4032,7 @@ a.box:active {
 
 .notification a:not(.button) {
   color: currentColor;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .notification strong {
@@ -4535,7 +4535,7 @@ a.box:active {
 }
 
 a.tag:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .title,
@@ -4562,7 +4562,8 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
+  font-size: 2.875rem;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -4611,7 +4612,8 @@ a.tag:hover {
 .subtitle {
   /*color: #4a4a4a;*/
   color: white;
-  font-size: 1.25rem;
+  /*font-size: 1.25rem;*/
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.25;
 }
@@ -5560,7 +5562,7 @@ a.dropdown-item.is-active {
 }
 
 .message-header a:not(.button) {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .message-header .delete {
@@ -5591,7 +5593,7 @@ a.dropdown-item.is-active {
 }
 
 .message-body a:not(.button) {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .message-body code,
@@ -5917,7 +5919,7 @@ a.dropdown-item.is-active {
 }
 
 .nav-item img {
-  max-height: 1.75rem;
+  max-height: 2.5rem;
 }
 
 .nav-item .tag:first-child:not(:last-child) {
@@ -9501,5 +9503,12 @@ label.panel-block:hover {
 .footer {
   background-color: #DD4D76;
   padding: 1.5rem 1.5rem;
+}
+
+a {
+   color: white
+}
+a:hover{
+  text-decoration: none
 }
 /*# sourceMappingURL=bulma.css.map */
