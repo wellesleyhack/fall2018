@@ -41,12 +41,11 @@ def create():
     data_file = request.files.get('resume')
     data_values = request.form
     file_name = data_file.filename
-    conn = S3Connection("AKIAIMHRWY6EGAAS673A", "obdWExayMso4aGwTR/90fMCZYL9itlcUHsTrQu/n")
+    conn = S3Connection((os.environ["AWS_ACCESS_KEY_ID"], os.environ["AWS_SECRET_ACCESS_KEY"])
     bucket = conn.get_bucket("whackfall2017")
     k = Key(bucket)
     k.key = file_name
     k.set_contents_from_string(data_file.read())
-
     table = dynamodb.Table('WHACK_registered_userss')
     optional = ["first_hackathon", "links", "special_accomodations", "other_notes"]
     new_items = {
@@ -67,7 +66,6 @@ def create():
     response = table.put_item(
       Item=new_items
     )
-
     return jsonify(name=file_name, response=response)
 
 
