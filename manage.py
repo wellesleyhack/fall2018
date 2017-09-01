@@ -41,7 +41,7 @@ def create():
     data_file = request.files.get('resume')
     data_values = request.form
     file_name = data_file.filename
-    conn = S3Connection((os.environ["AWS_ACCESS_KEY_ID"], os.environ["AWS_SECRET_ACCESS_KEY"])
+    conn = S3Connection((os.environ["AWS_ACCESS_KEY_ID"], os.environ["AWS_SECRET_ACCESS_KEY"]))
     bucket = conn.get_bucket("whackfall2017")
     k = Key(bucket)
     k.key = file_name
