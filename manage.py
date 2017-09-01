@@ -8,6 +8,7 @@ from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 from flask import Flask,render_template, request, jsonify
 import json
+import os
 app = Flask(__name__)
 
 dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
