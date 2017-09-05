@@ -121,3 +121,10 @@ ul.text-large p{
     top: 53%;
     left: 67%
 }
+
+#registration{
+  background-image: url('../img/left_bar.png');
+  background-size: 15% 100%;
+  background-repeat: no-repeat;
+
+}
