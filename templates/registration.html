@@ -6,8 +6,11 @@
     <title>jQuery Example</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css"/>
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
     <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js">
 </script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+
   </head>
   <body>
     <form id="data" class="container" method="post" enctype="multipart/form-data">
@@ -232,6 +235,22 @@
 
     $(function(){
 
+      $.ajax({
+          url: "schools.txt",
+          dataType: "text",
+          success: function(data) {
+              var autoCompleteData = data.split('\n');
+              $("#school").autocomplete({
+                  source: function(request, response) {
+                      var results = $.ui.autocomplete.filter(autoCompleteData, request.term);
+                      response(results.slice(0, 10)); // Display the first 10 results
+                  }
+              });
+          }
+      });
+
+
+
         document.getElementById('here').onclick = function() {
             // Stop form from submitting normally
             event.preventDefault();
@@ -284,6 +303,8 @@
                  processData: false,
                } );
         };
+
+
     });
 
   </script>
