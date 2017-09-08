@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>jQuery Example</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css"/>
+  <title>WHACK 2017 Fall Registration</title>
+  <link rel="stylesheet" type="text/css" href="../../css/bulma.css">
   <link rel="stylesheet" href="../../css/style2.css">
   <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
@@ -13,13 +12,11 @@
   <section class="section" id="registration">
     <div class="container">
       <div class="columns">
-        <div class="column is-2">
-        </div>
         <div class="column">
 
+          <h1 id="registration-title">WHACK 2017 Fall Registration
+          </h1><br>
           <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
-
-
             <div class="field">
               <label class="label">First Name*</label>
               <div class="control" id='firstname'>
@@ -88,7 +85,6 @@
                     <option>Middle Eastern or North African</option>
                     <option>Native American or Alaskan Native</option>
                     <option>Hawaiian or Pacific Islander</option>
-                    <option>Not Listed</option>
                   </select>
                 </div>
               </div>
@@ -119,6 +115,7 @@
                     <option>Heterosexual</option>
                     <option>Homosexual</option>
                     <option>Bi-Sexual</option>
+                    <option>Choose Not to Identify</option>
                     <option>Other</option>
                   </select>
                 </div>
@@ -216,7 +213,7 @@
               <div class="control">
                 <label class="checkbox">
                   <input type="checkbox">
-                  I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.
+                  I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions" id="a-purple">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy" id="a2-purple">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.
                 </label>
               </div>
             </div>
@@ -224,14 +221,17 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button id="here" class="button is-primary">Submit</button>
+                <button id="button-purple" class="button is-primary">Submit</button>
               </div>
-              <div class="control">
-                <button class="button is-link">Save</button>
-              </div>
+
             </div>
           </form>
+
         </div>
+
+
+
+
       </div>
     </div>
   </section>
@@ -242,7 +242,7 @@
 
 $(function(){
 
-  document.getElementById('here').onclick = function() {
+  document.getElementById('button-purple').onclick = function() {
     // Stop form from submitting normally
     event.preventDefault();
 
@@ -267,7 +267,7 @@ $(function(){
     console.log("this is the form gottne");
     url = "http://127.0.0.1:5000/create"
     var data = { 'first_name': first_name,
-    'last_name': last_name
+    'last_name': last_name,
     'email': email,
     'school': school,
     'major': major,

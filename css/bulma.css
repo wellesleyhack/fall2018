@@ -1773,13 +1773,13 @@ a.box:active {
 }
 
 .button.is-primary {
-  background-color: #00d1b2;
+  background-color: #982297;
   border-color: transparent;
   color: #fff;
 }
 
 .button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: #00c4a7;
+  background-color: #982297;
   border-color: transparent;
   color: #fff;
 }
@@ -2738,6 +2738,7 @@ a.box:active {
   display: inline-block;
   line-height: 1.25;
   position: relative;
+  color: white
 }
 
 .checkbox input,
@@ -3473,7 +3474,7 @@ a.box:active {
 }
 
 .label {
-  color: #363636;
+  color: white;
   display: block;
   font-size: 1rem;
   font-weight: 700;
@@ -3539,6 +3540,7 @@ a.box:active {
 
 .field:not(:last-child) {
   margin-bottom: 0.75rem;
+  max-width: 550px;
 }
 
 .field.has-addons {
@@ -3766,6 +3768,8 @@ a.box:active {
   }
   .field-body > .field:not(:last-child) {
     margin-right: 0.75rem;
+    max-width: 600px;
+
   }
 }
 
@@ -3773,6 +3777,7 @@ a.box:active {
   font-size: 1rem;
   position: relative;
   text-align: left;
+  color: white
 }
 
 .control.has-icon .icon {

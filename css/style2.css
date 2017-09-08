@@ -123,8 +123,26 @@ ul.text-large p{
 }
 
 #registration{
-  background-image: url('../img/left_bar.png');
-  background-size: 15% 100%;
-  background-repeat: no-repeat;
 
+  background: linear-gradient(45deg,  #BC52C3,#F6935A);
+  background:  url('../img/jeff-3.png'), linear-gradient(45deg,  #BC52C3,#F6935A);
+  background-repeat: no-repeat;
+  background-position: right 7%
+}
+
+#button-purple{
+  background-color: #982297
+}
+
+#a-purple{
+  font-weight: bold
+}
+
+#a2-purple{
+  font-weight: bold
+}
+
+#registration-title{
+  font-size: 48px;
+  color: white
 }
