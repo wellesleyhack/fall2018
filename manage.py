@@ -6,11 +6,16 @@ import boto3
 from boto.dynamodb2.table import Table
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
-from flask import Flask,render_template, request, jsonify
+from flask import Flask,render_template, request, jsonify,  send_from_directory
 import json
+import os
 app = Flask(__name__)
 
 dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
+
+@app.route('/schools.txt')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 @app.route('/registration', methods=["GET"])
 def static_page():
@@ -41,7 +46,7 @@ def create():
     data_file = request.files.get('resume')
     data_values = request.form
     file_name = data_file.filename
-    conn = S3Connection((os.environ["AWS_ACCESS_KEY_ID"], os.environ["AWS_SECRET_ACCESS_KEY"])
+    conn = S3Connection(os.environ["AWS_ACCESS_KEY_ID"], os.environ["AWS_SECRET_ACCESS_KEY"])
     bucket = conn.get_bucket("whackfall2017")
     k = Key(bucket)
     k.key = file_name
