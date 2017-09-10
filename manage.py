@@ -6,13 +6,25 @@ import boto3
 from boto.dynamodb2.table import Table
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
-from flask import Flask,render_template, request, jsonify,  send_from_directory
+from flask import Flask,render_template, request, jsonify, app, safe_join, send_from_directory
 import json
 import os
 app = Flask(__name__)
 
 dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
 
+@app.route('/<any(css, img, js, sound):folder>/<path:filename>')
+def toplevel_static(folder, filename):
+    filename = safe_join(folder, filename)
+    cache_timeout = app.get_send_file_max_age(filename)
+    return send_from_directory(app.static_folder, filename,
+                               cache_timeout=cache_timeout)
+
+# @app.route('/js/<path:filename>')
+# def serve_static(filename):
+#     root_dir = os.path.dirname(os.getcwd())
+#     return send_from_directory(os.path.join(root_dir, 'static', 'js'), filename)
+@app.route('/css')
 @app.route('/schools.txt')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])

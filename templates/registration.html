@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <title>WHACK 2017 Fall Registration</title>
-  <link rel="stylesheet" type="text/css" href="../../css/bulma.css">
-  <link rel="stylesheet" href="../../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/bulma.css">
+  <link rel="stylesheet" href="../css/style2.css">
+  <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
   <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
 </head>
 <body>
   <section class="section" id="registration">
@@ -241,6 +242,20 @@
 //$(document).ready() is cross-browser
 
 $(function(){
+
+  $.ajax({
+    url: "schools.txt",
+    dataType: "text",
+    success: function(data) {
+        var autoCompleteData = data.split('\n');
+        $("#school").autocomplete({
+            source: function(request, response) {
+                var results = $.ui.autocomplete.filter(autoCompleteData, request.term);
+                response(results.slice(0, 10)); // Display the first 10 results
+            }
+        });
+    }
+});
 
   document.getElementById('button-purple').onclick = function() {
     // Stop form from submitting normally
