@@ -2748,7 +2748,7 @@ a.box:active {
 
 .checkbox:hover,
 .radio:hover {
-  color: #363636;
+  color: white;
 }
 
 .checkbox[disabled],
@@ -3539,7 +3539,7 @@ a.box:active {
 }
 
 .field:not(:last-child) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.75rem;
   max-width: 550px;
 }
 

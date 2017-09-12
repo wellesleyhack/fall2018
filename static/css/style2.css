@@ -137,12 +137,18 @@ ul.text-large p{
 #a-purple{
   font-weight: bold
 }
-
+#a-purple:hover{
+color: lightgrey}
 #a2-purple{
   font-weight: bold
 }
-
+#a2-purple:hover{
+color:lightgrey}
 #registration-title{
   font-size: 48px;
   color: white
+}
+
+#i-agree:hover{
+  color:white
 }
