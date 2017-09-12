@@ -7,7 +7,7 @@
 
 #section1{
   background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);
+  /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
   background-repeat:no-repeat;
   background-position: 80% 100%;
   color: white;
@@ -35,7 +35,7 @@
   color: white
 }
 #section3-stories{
-  background:  url('../img/jeff-2.png');
+  /*background:  url('../img/jeff-2.png');*/
   background-repeat:no-repeat;
   background-position: 20% 50%;
 }
@@ -55,7 +55,7 @@
 
 #section6-schedule {
   background: linear-gradient(-5deg,#F5925C,#DA4479);
-  background:  url('../img/jeff-3.png'), linear-gradient(-5deg,#F5925C,#DA4479);
+  /*background:  url('../img/jeff-3.png'), linear-gradient(-5deg,#F5925C,#DA4479);*/
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
@@ -125,7 +125,7 @@ ul.text-large p{
 #registration{
 
   background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  background:  url('../img/jeff-3.png'), linear-gradient(45deg,  #BC52C3,#F6935A);
+  /*background:  url('../img/jeff-3.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
   background-repeat: no-repeat;
   background-position: right 7%
 }
