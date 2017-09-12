@@ -15,7 +15,7 @@
       <div class="columns">
         <div class="column">
 
-          <h1 id="registration-title">WHACK 2017 Fall Registration
+          <h1 id="registration-title">WHACK Fall 2017 Registration
           </h1><br>
           <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
             <div class="field">
@@ -34,11 +34,8 @@
 
             <div class="field">
               <label class="label">Email*</label>
-              <div class="control has-icons-left has-icons-right">
+              <div class="control ">
                 <input class="input required_input" id= "email" name="email" type="email" placeholder="name@college.edu" required>
-                <span class="icon is-small is-left">
-                  <i class="fa fa-envelope"></i>
-                </span>
               </div>
             </div>
 
@@ -46,15 +43,6 @@
               <label class="label">School*</label>
               <div class="control">
                 <input class="input required_input" id="school" name="school" type="text" required>
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  I agree to share my name, email, and school information with MLH</a>
-                </label>
               </div>
             </div>
 
@@ -68,7 +56,16 @@
             <div class="field">
               <label class="label">Graduation Year*</label>
               <div class="control">
-                <input class="input required_input" id="graduation_year" type="text" required>
+                <!-- <input class="input required_input" id="graduation_year" type="text" required> -->
+                <div class="select required_input" required>
+                  <select id="graduation_year" >
+                    <option>Select dropdown</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                  </select>
+                </div>
               </div>
             </div>
 
@@ -130,9 +127,6 @@
                   <label class="file-label">
                     <input class="file-input " id="file-upload"  type="file" required>
                     <span class="file-cta">
-                      <span class="file-icon">
-                        <i class="fa fa-upload"></i>
-                      </span>
                       <span class="file-label">
                         Choose a file…
                       </span>
@@ -163,7 +157,6 @@
                 <label  class="required_input" class="checkbox">
                   <input  type="checkbox"> Yes, as a participant <br/>
                   <input type="checkbox"> Yes, as a volunteer <br/>
-                  <input type="checkbox"> Yes, as a mentor or corporate representative <br/>
                   <input type="checkbox"> No
                 </label>
               </div>
@@ -197,7 +190,7 @@
             <div class="field">
               <label class="label">WHACK aims to be an inclusive and safe space for all participants. Is there anything you’d like us to know to make your WHACK experience more comfortable?</label>
               <div class="control">
-                <textarea class="textarea" id="other_notes" placeholder="Text Area"></textarea>
+                <textarea class="textarea" id="other_notes"></textarea>
               </div>
             </div>
 
@@ -222,10 +215,7 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button id="here" class="button is-primary">Submit</button>
-              </div>
-              <div class="control">
-                <button class="button is-link">Save</button>
+                <input type="submit" id="button-purple" class="button is-primary" value="Submit"/>
               </div>
             </div>
           </form>
@@ -261,7 +251,7 @@ $(function(){
 });
 
 
-        document.getElementById('here').onclick = function() {
+        document.getElementById('data').onsubmit = function(event) {
             // Stop form from submitting normally
             event.preventDefault();
             // Get some values from elements on the page:
