@@ -222,11 +222,14 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <input type="submit" id="button-purple" class="button is-primary" value="Submit"/>
+                <button id="here" class="button is-primary">Submit</button>
               </div>
-
+              <div class="control">
+                <button class="button is-link">Save</button>
+              </div>
             </div>
           </form>
+
 
         </div>
 
@@ -257,60 +260,60 @@ $(function(){
     }
 });
 
-  document.getElementById('button-purple').onSubmit = function() {
-    // Stop form from submitting normally
-    event.preventDefault();
 
-    // Get some values from elements on the page:
-    var $form = $( this ),
-    first_name = document.getElementById('first_name').value,
-    last_name =  document.getElementById('last_name').value,
-    email = document.getElementById('email').value,
-    school = document.getElementById('school').value,
-    major =  document.getElementById('major').value,
-    graduation_year = document.getElementById('graduation_year').value,
-    ethnicity =  document.getElementById('ethnicity').value,
-    gender_identity =  document.getElementById('gender_identity').value,
-    ethnicity =  document.getElementById('ethnicity').value,
-    gender_identity =  document.getElementById('gender_identity').value,
-    sexual_orientation = document.getElementById('sexual_orientation').value,
-    links =  document.getElementById('links').value,
-    first_hackathon =  document.getElementById('first_hackathon').value,
-    special_accomodations = document.getElementById('special_accomodations').value,
-    other_notes =  document.getElementById('other_notes').value,
-    resume = document.getElementById('file-upload').files[0];
-    console.log("this is the form gottne");
-    url = "http://127.0.0.1:5000/create"
-    var data = { 'first_name': first_name,
-    'last_name': last_name,
-    'email': email,
-    'school': school,
-    'major': major,
-    'graduation_year':graduation_year,
-    'ethnicity':ethnicity,
-    'gender_identity':gender_identity,
-    'sexual_orientation':sexual_orientation,
-    'links':links,
-    "file_name": resume["name"],
-    'first_hackathon': first_hackathon == "Yes" ? true : false,
-    'special_accomodations': special_accomodations,
-    'other_notes': other_notes
-  };
-  var newData = new FormData();
-  // newData.append('resume',resume);
-  for (var key in data) {
-    if (data.hasOwnProperty(key)) {
-      newData.append(key, data[key]);
-    }
-  }
-  $.ajax( {
-    url: url,
-    type: 'POST',
-    data: newData,
-    contentType: false,
-    processData: false,
-  } );
-};
+        document.getElementById('here').onclick = function() {
+            // Stop form from submitting normally
+            event.preventDefault();
+            // Get some values from elements on the page:
+              var $form = $( this ),
+              first_name = document.getElementById('first_name').value,
+              last_name =  document.getElementById('last_name').value,
+              email = document.getElementById('email').value,
+              school = document.getElementById('school').value,
+              major =  document.getElementById('major').value,
+              graduation_year = document.getElementById('graduation_year').value,
+              ethnicity =  document.getElementById('ethnicity').value,
+              gender_identity =  document.getElementById('gender_identity').value,
+              ethnicity =  document.getElementById('ethnicity').value,
+              gender_identity =  document.getElementById('gender_identity').value,
+              sexual_orientation = document.getElementById('sexual_orientation').value,
+              links =  document.getElementById('links').value,
+              first_hackathon =  document.getElementById('first_hackathon').value,
+              special_accomodations = document.getElementById('special_accomodations').value,
+              other_notes =  document.getElementById('other_notes').value,
+              resume = document.getElementById('file-upload').files[0];
+            url = "http://127.0.0.1:5000/create"
+            var data = { 'first_name': first_name,
+                                         'last_name': last_name,
+                                         'email': email,
+                                         'school': school,
+                                         'major': major,
+                                         'graduation_year':graduation_year,
+                                         'ethnicity':ethnicity,
+                                         'gender_identity':gender_identity,
+                                         'sexual_orientation':sexual_orientation,
+                                         'links':links,
+                                         "file_name": resume["name"],
+                                         'first_hackathon': first_hackathon == "Yes" ? true : false,
+                                         'special_accomodations': special_accomodations,
+                                         'other_notes': other_notes
+                                       };
+              var newData = new FormData();
+              newData.append('resume',resume);
+              for (var key in data) {
+                if (data.hasOwnProperty(key)) {
+                    newData.append(key, data[key]);
+                }
+              }
+              $.ajax( {
+                 url: url,
+                 type: 'POST',
+                 data: newData,
+                 contentType: false,
+                 processData: false,
+               } );
+        };
+
 });
 
 </script>
