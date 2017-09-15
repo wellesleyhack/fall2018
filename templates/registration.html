@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>WHACK 2017 Fall Registration</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title> Application </title>
+  <link rel="icon" type="static/image/png" href="static/img/fav.png">
+
   <link rel="stylesheet" type="text/css" href="../css/bulma.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style2.css">
+
   <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
   <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
@@ -14,63 +21,136 @@
     <div class="container">
       <div class="columns">
         <div class="column">
+          <a class="nav-item" id="nav_class" href="#"><img src="static/img/logo.png" alt="Logo"></a>
 
-          <h1 id="registration-title">WHACK 2017 Fall Registration
+
+
+          <h1 id="registration-title">Application
           </h1><br>
           <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
-            <div class="field">
+
+
+            <div class="columns">
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">First Name*</label>
+                  <div class="control" id='firstname'>
+                    <input class="input required_input" name='first_name' id= "first_name" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Last Name*</label>
+                  <div class="control">
+                    <input class="input required_input"  name='last_name' id= "last_name" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+              </div>
+              <div class="column">
+              </div>
+            </div>
+
+
+            <div class="columns">
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Email*</label>
+                  <div class="control">
+                    <input class="input required_input" id= "email" name="email" type="email" placeholder="name@college.edu" required>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">School*</label>
+                  <div class="control">
+                    <input class="input required_input" id="school" name="school" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+              </div>
+              <div class="column">
+              </div>
+            </div>
+
+
+            <div class="columns">
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Major (or intended major)*</label>
+                  <div class="control">
+                    <input class="input required_input" id="major" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Graduation Year*</label>
+                  <div class="control">
+                    <input class="input required_input" id="graduation_year" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+              </div>
+              <div class="column">
+              </div>
+            </div>
+
+            <!-- <div class="field">
               <label class="label">First Name*</label>
               <div class="control" id='firstname'>
                 <input class="input required_input" name='first_name' id= "first_name" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">Last Name*</label>
               <div class="control">
                 <input class="input required_input"  name='last_name' id= "last_name" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">Email*</label>
-              <div class="control has-icons-left has-icons-right">
+              <div class="control">
                 <input class="input required_input" id= "email" name="email" type="email" placeholder="name@college.edu" required>
-                <span class="icon is-small is-left">
-                  <i class="fa fa-envelope"></i>
-                </span>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">School*</label>
               <div class="control">
                 <input class="input required_input" id="school" name="school" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  I agree to share my name, email, and school information with MLH</a>
-                </label>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Major(s)*</label>
+            <!-- <div class="field">
+              <label class="label">Major (or intended major)*</label>
               <div class="control">
                 <input class="input required_input" id="major" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">Graduation Year*</label>
               <div class="control">
                 <input class="input required_input" id="graduation_year" type="text" required>
               </div>
-            </div>
+            </div> -->
 
             <div class="field">
               <label class="label">Ethnicity*</label>
@@ -128,19 +208,20 @@
               <div class="control required_input">
                 <div class="file">
                   <label class="file-label">
-                    <input class="file-input " id="file-upload"  type="file" required>
+                    <input class="file-input " id="file-upload" onchange="upload()" type="file" required>
                     <span class="file-cta">
-                      <span class="file-icon">
-                        <i class="fa fa-upload"></i>
-                      </span>
                       <span class="file-label">
                         Choose a file…
                       </span>
+                    </span>
+                    <span class="file-name" id="innerHTML" >
+                      No uploaded file
                     </span>
                   </label>
                 </div>
               </div>
             </div>
+
             <div class="field">
               <div class="control">
                 <label class="checkbox">
@@ -163,7 +244,6 @@
                 <label  class="required_input" class="checkbox">
                   <input  type="checkbox"> Yes, as a participant <br/>
                   <input type="checkbox"> Yes, as a volunteer <br/>
-                  <input type="checkbox"> Yes, as a mentor or corporate representative <br/>
                   <input type="checkbox"> No
                 </label>
               </div>
@@ -197,12 +277,12 @@
             <div class="field">
               <label class="label">WHACK aims to be an inclusive and safe space for all participants. Is there anything you’d like us to know to make your WHACK experience more comfortable?</label>
               <div class="control">
-                <textarea class="textarea" id="other_notes" placeholder="Text Area"></textarea>
+                <textarea class="textarea" id="other_notes"></textarea>
               </div>
             </div>
 
             <div class="field">
-              <label class="label">WHACK will be following the MLH Code of Conduct. Do you agree to abide by the MLH Code of Conduct?*</label>
+              <label class="label">WHACK will be following <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" id="a-purple"> the MLH Code of Conduct</a>. Do you agree to abide by the MLH Code of Conduct?*</label>
               <div class="control" required>
                 <label class="checkbox">
                   <input type="checkbox"> Yes
@@ -243,6 +323,24 @@
 <script type="text/javascript">
 //$(document).ready() is cross-browser
 
+function upload(){
+    var x = document.getElementById("file-upload");
+    var txt = "";
+    if ('files' in x) {
+        if (x.files.length == 0) {
+            txt = "Select one or more files.";
+        } else {
+            for (var i = 0; i < x.files.length; i++) {
+                var file = x.files[i];
+                if ('name' in file) {
+                    txt += file.name ;
+                }
+            }
+        }
+    }
+    document.getElementById("innerHTML").innerHTML = txt;
+}
+
 $(function(){
 
   $.ajax({
@@ -266,8 +364,8 @@ $(function(){
 
     // Get some values from elements on the page:
     var $form = $( this ),
-    first_name = document.getElementById('firstname').value,
-    last_name =  document.getElementById('lastname').value,
+    first_name = document.getElementById('first_name').value,
+    last_name =  document.getElementById('last_name').value,
     email = document.getElementById('email').value,
     school = document.getElementById('school').value,
     major =  document.getElementById('major').value,

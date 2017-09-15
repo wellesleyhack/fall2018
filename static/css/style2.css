@@ -5,6 +5,12 @@
     z-index: 1030;
 }
 
+#nav_class{
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
+
 #section1{
   background: linear-gradient(45deg,  #BC52C3,#F6935A);
   /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
@@ -145,7 +151,7 @@ color: lightgrey}
 #a2-purple:hover{
 color:lightgrey}
 #registration-title{
-  font-size: 48px;
+  font-size: 30px;
   color: white
 }
 
