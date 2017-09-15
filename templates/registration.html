@@ -222,7 +222,9 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button id="button-purple" class="button is-primary">Submit</button>
+                <input type="submit" id="here" class="button is-primary" value="Submit"/>
+
+                <!-- <button id="button-purple" class="button is-primary">Submit</button> -->
               </div>
 
             </div>
@@ -257,6 +259,7 @@ $(function(){
     }
 });
 
+// can you show me the onsubmit part
   document.getElementById('button-purple').onclick = function() {
     // Stop form from submitting normally
     event.preventDefault();
