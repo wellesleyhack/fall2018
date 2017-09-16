@@ -9,6 +9,7 @@ from boto.s3.key import Key
 from flask import Flask,render_template, request, jsonify, app, safe_join, send_from_directory
 import json
 import os
+import random
 app = Flask(__name__)
 
 dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
@@ -32,6 +33,11 @@ def static_from_root():
 @app.route('/registration', methods=["GET"])
 def static_page():
     return render_template('registration.html')
+
+
+@app.route('/submit_page', methods=["GET"])
+def submit_page():
+    return render_template('submit_page.html')
 
 """
 The schema of the follwoing endpoint is this:
@@ -61,20 +67,24 @@ def create():
     conn = S3Connection(os.environ["AWS_ACCESS_KEY_ID"], os.environ["AWS_SECRET_ACCESS_KEY"])
     bucket = conn.get_bucket("whackfall2017")
     k = Key(bucket)
-    k.key = file_name
+    new_hash = random.getrandbits(64)
+    key = data_values["file_name"][:-4]
+    print(key)
+    key += str(new_hash) +".pdf"
+    k.key = key
     k.set_contents_from_string(data_file.read())
     table = dynamodb.Table('WHACK_registered_userss')
     optional = ["first_hackathon", "links", "special_accomodations", "other_notes"]
     new_items = {
           'name': data_values["first_name"] +" " + data_values["last_name"],
-          'email':data_values["email"],
-          'school':data_values["school"],
+          'email': data_values["email"],
+          'school': data_values["school"],
           'major': data_values["major"],
           'graduation_year': data_values["graduation_year"],
-          'ethnicity' : data_values["ethnicity"],
+          'ethnicity': data_values["ethnicity"],
           'gender_identity': data_values["gender_identity"],
           'sexual_orientation': data_values["sexual_orientation"],
-          'resume': data_values["file_name"],
+          'resume_id': key,
       }
     for i in optional:
         if len(data_values[i]) > 0:

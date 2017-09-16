@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>WHACK 2017 Fall Registration</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title> Application </title>
+  <link rel="icon" type="static/image/png" href="static/img/fav.png">
+
   <link rel="stylesheet" type="text/css" href="../css/bulma.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style2.css">
   <link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
   <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js"></script>
@@ -14,60 +20,136 @@
     <div class="container">
       <div class="columns">
         <div class="column">
+          <a class="nav-item" id="nav_class" href="#"><img src="static/img/logo.png" alt="Logo"></a>
 
-          <h1 id="registration-title">WHACK Fall 2017 Registration
+
+
+          <h1 id="registration-title">Application
           </h1><br>
           <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
-            <div class="field">
-              <label class="label">First Name*</label>
-              <div class="control">
-                <input class="input required_input" name='first_name' id= "first_name" type="text" required>
+
+
+            <div class="columns">
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">First Name*</label>
+                  <div class="control" id='firstname'>
+                    <input class="input required_input" name='first_name' id= "first_name" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Last Name*</label>
+                  <div class="control">
+                    <input class="input required_input"  name='last_name' id= "last_name" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+              </div>
+              <div class="column">
               </div>
             </div>
 
-            <div class="field">
+
+            <div class="columns">
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Email*</label>
+                  <div class="control">
+                    <input class="input required_input" id= "email" name="email" type="email" placeholder="name@college.edu" required>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">School*</label>
+                  <div class="control">
+                    <input class="input required_input" id="school" name="school" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+              </div>
+              <div class="column">
+              </div>
+            </div>
+
+
+            <div class="columns">
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Major (or intended major)*</label>
+                  <div class="control">
+                    <input class="input required_input" id="major" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="column" style="padding: 0.75rem 0.5rem">
+                <div class="field">
+                  <label class="label">Graduation Year*</label>
+                  <div class="control">
+                    <input class="input required_input" id="graduation_year" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+              </div>
+              <div class="column">
+              </div>
+            </div>
+
+            <!-- <div class="field">
+              <label class="label">First Name*</label>
+              <div class="control" id='firstname'>
+                <input class="input required_input" name='first_name' id= "first_name" type="text" required>
+              </div>
+            </div> -->
+
+            <!-- <div class="field">
               <label class="label">Last Name*</label>
               <div class="control">
                 <input class="input required_input"  name='last_name' id= "last_name" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">Email*</label>
-              <div class="control ">
+              <div class="control">
                 <input class="input required_input" id= "email" name="email" type="email" placeholder="name@college.edu" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">School*</label>
               <div class="control">
                 <input class="input required_input" id="school" name="school" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
-              <label class="label">Major(s)*</label>
+            <!-- <div class="field">
+              <label class="label">Major (or intended major)*</label>
               <div class="control">
                 <input class="input required_input" id="major" type="text" required>
               </div>
-            </div>
+            </div> -->
 
-            <div class="field">
+            <!-- <div class="field">
               <label class="label">Graduation Year*</label>
               <div class="control">
-                <!-- <input class="input required_input" id="graduation_year" type="text" required> -->
-                <div class="select required_input" required>
-                  <select id="graduation_year" >
-                    <option>Select dropdown</option>
-                    <option>2021</option>
-                    <option>2020</option>
-                    <option>2019</option>
-                    <option>2018</option>
-                  </select>
-                </div>
+                <input class="input required_input" id="graduation_year" type="text" required>
               </div>
-            </div>
+            </div> -->
 
             <div class="field">
               <label class="label">Ethnicity*</label>
@@ -125,16 +207,20 @@
               <div class="control required_input">
                 <div class="file">
                   <label class="file-label">
-                    <input class="file-input " id="file-upload"  type="file" required>
+                    <input class="file-input " id="file-upload" onchange="upload()" type="file" required>
                     <span class="file-cta">
                       <span class="file-label">
                         Choose a file…
                       </span>
                     </span>
+                    <span class="file-name" id="innerHTML" >
+                      No uploaded file
+                    </span>
                   </label>
                 </div>
               </div>
             </div>
+
             <div class="field">
               <div class="control">
                 <label class="checkbox">
@@ -206,8 +292,8 @@
             <div class="field">
               <div class="control">
                 <label class="checkbox">
-                  <input type="checkbox" id = "i-agree" required>
-                  I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions" id="a-purple">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy" id="a2-purple">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.*
+                  <input type="checkbox">
+                  I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions" id="a-purple">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy" id="a2-purple">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.
                 </label>
               </div>
             </div>
@@ -215,7 +301,9 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <input type="submit" id="button-purple" class="button is-primary" value="Submit"/>
+                <input type="submit" id="here" class="button is-primary" value="Submit"/>
+
+                <!-- <button id="button-purple" class="button is-primary">Submit</button> -->
               </div>
 
             </div>
@@ -233,7 +321,27 @@
 </body>
 <script type="text/javascript">
 //$(document).ready() is cross-browser
+
+function upload(){
+    var x = document.getElementById("file-upload");
+    var txt = "";
+    if ('files' in x) {
+        if (x.files.length == 0) {
+            txt = "Select one or more files.";
+        } else {
+            for (var i = 0; i < x.files.length; i++) {
+                var file = x.files[i];
+                if ('name' in file) {
+                    txt += file.name ;
+                }
+            }
+        }
+    }
+    document.getElementById("innerHTML").innerHTML = txt;
+}
+
 $(function(){
+
   $.ajax({
     url: "schools.txt",
     dataType: "text",
@@ -299,14 +407,15 @@ $(function(){
                  processData: false,
                  success:function(data){
                         // data.redirect contains the string URL to redirect to
-                        window.location.href = 'submit_page.html';
+                        window.location.href = 'https://whackfall2017.herokuapp.com/submit_page';
                     }
-                 }
-               } );
+                 })
 
-        };
+               }
+             } );
 
-});
+
+
 </script>
 <script src="js/collapsible.js"> </script>
 <!-- <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.7.2.min.js"></script> -->
