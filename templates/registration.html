@@ -22,12 +22,9 @@
         <div class="column">
           <a class="nav-item" id="nav_class" href="#"><img src="static/img/logo.png" alt="Logo"></a>
 
-
-
           <h1 id="registration-title">Application
           </h1><br>
           <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
-
 
             <div class="columns">
               <div class="column" style="padding: 0.75rem 0.5rem">
@@ -38,7 +35,6 @@
                   </div>
                 </div>
               </div>
-
 
               <div class="column" style="padding: 0.75rem 0.5rem">
                 <div class="field">
@@ -55,7 +51,6 @@
               </div>
             </div>
 
-
             <div class="columns">
               <div class="column" style="padding: 0.75rem 0.5rem">
                 <div class="field">
@@ -65,7 +60,6 @@
                   </div>
                 </div>
               </div>
-
 
               <div class="column" style="padding: 0.75rem 0.5rem">
                 <div class="field">
@@ -82,7 +76,6 @@
               </div>
             </div>
 
-
             <div class="columns">
               <div class="column" style="padding: 0.75rem 0.5rem">
                 <div class="field">
@@ -93,12 +86,20 @@
                 </div>
               </div>
 
-
               <div class="column" style="padding: 0.75rem 0.5rem">
                 <div class="field">
                   <label class="label">Graduation Year*</label>
                   <div class="control">
-                    <input class="input required_input" id="graduation_year" type="text" required>
+                    <div class="select required_input" required>
+                      <select id="graduation_year" >
+                        <option>Select dropdown</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -250,9 +251,9 @@
 
 
             <div class="field">
-              <label class="label">Will WHACK be your first hackathon?</label>
+              <label class="label">Will WHACK be your first hackathon?*</label>
               <div class="control">
-                <label id="first_hackathon" class="checkbox">
+                <label id="first_hackathon" class="required_input checkbox">
                   <input type="checkbox"> Yes <br/>
                   <input type="checkbox"> No
                 </label>
@@ -310,9 +311,6 @@
           </form>
 
         </div>
-
-
-
 
       </div>
     </div>
