@@ -158,3 +158,16 @@ color:lightgrey}
 #i-agree:hover{
   color:white
 }
+
+/*sponsors*/
+.silver__sponsors {
+  max-width: 220px;
+  max-height: 100px;
+  padding: 18px;
+}
+
+.bronze__sponsors {
+  max-width: 200px;
+  max-height: 70px;
+  padding: 15px;
+}
