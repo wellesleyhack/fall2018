@@ -19,7 +19,8 @@ a.nav-item:not(.button):hover {
   border-width: 1.5px;
 }
 
-.apply-now:hover {
+.apply-now:hover,
+.apply-now:visited {
   color: #F3F3F3;
   border-color: #F3F3F3;
 }
