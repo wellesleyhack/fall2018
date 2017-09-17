@@ -203,19 +203,25 @@ ul.text-large p{
 
 /* sponsors */
 .sponsor-logos {
-  padding-top: 50px;
+  padding: 60px 0;
 }
 
 .silver__sponsors {
-  max-width: 280px;
-  max-height: 130px;
-  padding: 20px 30px;
+  max-width: 310px;
+  max-height: 160px;
+  padding: 20px 35px;
 }
 
 .bronze__sponsors {
   max-width: 220px;
   max-height: 90px;
-  padding: 20px 30px;
+  padding: 20px 35px;
+}
+
+.partner {
+  max-width: 220px;
+  max-height: 90px;
+  padding: 10px 20px;
 }
 
 /* footer */
