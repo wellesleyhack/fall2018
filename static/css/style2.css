@@ -11,24 +11,37 @@
   top: 5%;
 }
 
-#section1{
+a.nav-item:not(.button):hover {
+  color: #F3F3F3;
+}
+
+.apply-now {
+  border-width: 1.5px;
+}
+
+.apply-now:hover {
+  color: #F3F3F3;
+  border-color: #F3F3F3;
+}
+
+#section1 {
   background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
+  /*background: linear-gradient(45deg,#B614C0,#DC6D1B);*/ /* darker gradient */
   background-repeat:no-repeat;
   background-position: 80% 100%;
   color: white;
 }
 
 #section1-title, #section4-title{
-    color: white
+  color: white;
 }
 
 #section1-title{
-  font-size: 80px
+  font-size: 80px;
 }
 
 .purple{
-  color: #982297
+  color: #982297;
 }
 
 .orange{
@@ -36,10 +49,11 @@
   font-size: 2rem
 }
 
-#section3-card{
+#section3-card {
   background: linear-gradient(2deg,#E66B8B, #CA69AA);
-  color: white
+  color: white;
 }
+
 #section3-stories{
   /*background:  url('../img/jeff-2.png');*/
   background-repeat:no-repeat;
@@ -48,15 +62,19 @@
 
 #section4-joinus {
   background: linear-gradient(2deg,#E37E7A, #D76182);
-  color: white
+  color: white;
 }
 
 #section4-title {
-  color: white
+  color: white;
 }
 
 #section5-faq {
   background: linear-gradient(2deg, #DA4479,#E37E7A)
+}
+
+#section5-faq p {
+  color: white;
 }
 
 #section6-schedule {
@@ -68,35 +86,34 @@
 
 }
 
-#section7-title{
-  color: #EF8261
+#section7-title {
+  color: #EF8261;
 }
 
-
-.text-large{
+.text-large {
   /*24px*/
   font-size: 1.5rem;
 }
 
-.text-medium{
+.text-medium {
   /*18px*/
   font-size: 1.125rem
 }
 
-.text-stories{
+.text-stories {
   margin-bottom: 8rem;
 }
 
-.text-small{
+.text-small {
   /*16px*/
   font-size: 1rem
 }
 
-.column p{
+.column p {
   font-size: 14px
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -104,6 +121,7 @@ ul li:before {
   content: "\2023";
   padding-right: 15px
 }
+
 @media (max-width:432px) {
   #section1-title{
     font-size: 3.125rem
@@ -140,34 +158,69 @@ ul.text-large p{
   background-color: #982297
 }
 
-#a-purple{
-  font-weight: bold
+#a-purple {
+  font-weight: bold;
 }
-#a-purple:hover{
-color: lightgrey}
-#a2-purple{
-  font-weight: bold
+
+#a-purple:hover {
+  color: lightgrey;
 }
-#a2-purple:hover{
-color:lightgrey}
-#registration-title{
+
+#a2-purple {
+  font-weight:bold;
+}
+
+#a2-purple:hover {
+  color:lightgrey;
+}
+
+#registration-title {
   font-size: 30px;
-  color: white
+  color: white;
 }
 
 #i-agree:hover{
-  color:white
+  color:white;
 }
 
-/*sponsors*/
+.button {
+  padding: 18px 25px;
+  border-radius: 50px;
+}
+
+
+/* faq */
+.faq-questions {
+  margin-left: 100px;
+}
+
+@media (max-width: 600px) {
+  .faq-questions {
+    margin-left: 0;
+  }
+}
+
+
+/* sponsors */
+.sponsor-logos {
+  padding-top: 50px;
+}
+
 .silver__sponsors {
-  max-width: 220px;
-  max-height: 100px;
-  padding: 18px;
+  max-width: 280px;
+  max-height: 130px;
+  padding: 20px 30px;
 }
 
 .bronze__sponsors {
-  max-width: 200px;
-  max-height: 70px;
-  padding: 15px;
+  max-width: 220px;
+  max-height: 90px;
+  padding: 20px 30px;
+}
+
+/* footer */
+.made-by {
+  font-size:12px;
+  font-weight:600;
+  color:white;
 }

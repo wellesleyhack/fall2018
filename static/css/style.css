@@ -22,7 +22,6 @@ html {
 }
 
 body {
-  background: #343653;
 	position: relative;
 	font-family: "Circular", "helvetica", sans-serif;
 	font-style: normal;
@@ -37,12 +36,11 @@ body {
 }
 
 a {
-  color: white;
+  color: inherit;
   font-weight: 600;
 }
 
 a:hover {
-  color: white;
   text-decoration: none;
 }
 
@@ -63,18 +61,18 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  margin-bottom: 30px;
-  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 p {
-  max-width: 500px;
   margin: 0 auto;
   font-size: 20px;
-  margin-bottom: 30px;
-  color: white;
   opacity: 0.9;
+
+  color: rgba(0,0,0,0.8);
 }
 
 
@@ -108,7 +106,6 @@ button {
 .title {
   font-size: 2.3em;
   line-height: 1.2;
-  padding-bottom: 15px;
 }
 
 
@@ -155,12 +152,13 @@ img {
 
 /* SOCIAL ICONS */
 .icon__container {
-  margin-top: 20px;
+  margin-top: 18px;
   opacity: 0.65;
 }
 
 .social__icon {
   height: 35px;
+  padding: 0 15px;
   width: auto;
 }
 
