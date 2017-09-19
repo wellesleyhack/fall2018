@@ -17,6 +17,7 @@ a.nav-item:not(.button):hover {
 
 .apply-now {
   border-width: 1.5px;
+  box-shadow: 0 0 10px #ffffff;
 }
 
 .apply-now:hover,
@@ -26,8 +27,7 @@ a.nav-item:not(.button):hover {
 }
 
 #section1 {
-  background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  /*background: linear-gradient(45deg,#B614C0,#DC6D1B);*/ /* darker gradient */
+  background: linear-gradient(45deg,#B614C0,#EB8951); /* darker gradient */
   background-repeat:no-repeat;
   background-position: 80% 100%;
   color: white;
@@ -56,7 +56,6 @@ a.nav-item:not(.button):hover {
 }
 
 #section3-stories{
-  /*background:  url('../img/jeff-2.png');*/
   background-repeat:no-repeat;
   background-position: 20% 50%;
 }
@@ -71,7 +70,7 @@ a.nav-item:not(.button):hover {
 }
 
 #section5-faq {
-  background: linear-gradient(2deg, #DA4479,#E37E7A)
+  background: linear-gradient(45deg,#B614C0,#EB8951);
 }
 
 #section5-faq p {
@@ -80,7 +79,6 @@ a.nav-item:not(.button):hover {
 
 #section6-schedule {
   background: linear-gradient(-5deg,#F5925C,#DA4479);
-  /*background:  url('../img/jeff-3.png'), linear-gradient(-5deg,#F5925C,#DA4479);*/
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
@@ -92,12 +90,10 @@ a.nav-item:not(.button):hover {
 }
 
 .text-large {
-  /*24px*/
   font-size: 1.5rem;
 }
 
 .text-medium {
-  /*18px*/
   font-size: 1.125rem
 }
 
@@ -106,7 +102,6 @@ a.nav-item:not(.button):hover {
 }
 
 .text-small {
-  /*16px*/
   font-size: 1rem
 }
 
@@ -128,7 +123,6 @@ ul li:before {
     font-size: 3.125rem
   }
   .text-small,.text-large,.text-medium{
-    /*16px*/
     font-size: 1rem
   }
 
@@ -148,9 +142,7 @@ ul.text-large p{
 }
 
 #registration{
-
-  background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  /*background:  url('../img/jeff-3.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
+  background: linear-gradient(45deg,#B614C0,#EB8951);
   background-repeat: no-repeat;
   background-position: right 7%
 }
@@ -185,8 +177,50 @@ ul.text-large p{
 }
 
 .button {
-  padding: 18px 25px;
+  padding: 20px 28px;
   border-radius: 50px;
+}
+
+
+/* splash */
+
+h2 {
+  font-size: 20px;
+}
+
+#section1 {
+  position: relative;
+}
+
+.splash-title {
+  max-width: 430px;
+  padding-bottom: 20px;
+  transform: translateX(-15px);
+}
+
+.splash-desk {
+  max-width: 819px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    visibility: hidden;
+  }
+
+  #section1 .hero-body {
+    transform: translateY(-70px);
+  }
+
+  .splash-title {
+    max-width: 300px;
+  }
+
+  .splash-desk  {
+    max-width: 450px;
+  }
 }
 
 
