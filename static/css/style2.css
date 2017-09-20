@@ -211,7 +211,7 @@ h2 {
   }
 
   #section1 .hero-body {
-    transform: translateY(-70px);
+    transform: translateY(-100px);
   }
 
   .splash-title {
@@ -241,28 +241,42 @@ h2 {
   padding: 60px 0;
 }
 
-.gold__sponsors {
-  max-width: 500px;
-  max-height: 200px;
-  padding: 20px 35px;
-}
-
-.silver__sponsors {
-  max-width: 310px;
-  max-height: 160px;
-  padding: 20px 35px;
-}
-
-.bronze__sponsors {
-  max-width: 220px;
-  max-height: 90px;
-  padding: 20px 35px;
-}
-
+.gold__sponsor,
+.silver__sponsor,
+.bronze__sponsor,
 .partner {
-  max-width: 220px;
-  max-height: 90px;
-  padding: 10px 20px;
+  padding: 20px 35px;
+}
+
+@media (min-width: 600px) {
+  .gold__sponsor {
+    max-width: 450px;
+    max-height: 200px;
+  }
+
+  .silver__sponsor {
+    max-width: 310px;
+    max-height: 160px;
+  }
+
+  .bronze__sponsor {
+    max-width: 220px;
+    max-height: 90px;
+  }
+
+  .partner {
+    max-width: 250px;
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gold__sponsor,
+  .silver__sponsor,
+  .bronze__sponsor,
+  .partner {
+    max-height: 140px;
+  }
 }
 
 
