@@ -10,17 +10,23 @@ from flask import Flask,render_template, request, jsonify, app, safe_join, send_
 import json
 import os
 import random
+from flask_mail import Mail, Message
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.application import MIMEApplication
-from flask.ext.emails import Message
 from emails.template import JinjaTemplate as T
 
 
 
 app = Flask(__name__)
-app.config.update(dict({'EMAIL_HOST': 'localhost', 'EMAIL_PORT': 25, 'EMAIL_TIMEOUT': 10}))
+app.config.update(dict({
+"MAIL_SERVER" : 'smtp.gmail.com',
+"MAIL_USERNAME" : 'hello@wellesleyhacks.org',
+"MAIL_PASSWORD" :'whackthrowshackathons2017',
+"MAIL_USE_TLS": False,
+"MAIL_USE_SSL" : True,
+"MAIL_PORT": 465}))
 
 
 dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
@@ -74,7 +80,17 @@ Input:
 
 @app.route("/hey", methods=["GET"])
 def hey():
-    # Create message container.
+    #print(os.environ.get('MAIL_USERNAME_WHACK'))
+    #print(os.environ.get('MAIL_PASSWORD_WHACK_FINAL'))
+    mail = Mail(app)
+    msg = Message("Thank you for applying to WHACK",
+                  sender="hello@wellesleyhacks.org",
+                  recipients=["ypruksac@wellesley.edu"])
+    msg.html = "<img src='cid:confirmation_email_header.png'/></html> <div> Hey Yada,</div <div> Thank you for applying to WHACK Fall 2017! We are so excited that youre interested in joining us for WHACK, and we cant wait to read your application. You'll hear back from us with decisions in October. </div> <div> Until then, please feel free to contact us at hello@wellesleyhacks.org if you have any comments or questions! </div> <div>Cheers, </div> <div> The WHACK Team </div> wellesleyhacks.org"
+    with app.open_resource("confirmation_email_header.png") as fp:
+        msg.attach("confirmation_email_header.png", "image/png", fp.read())
+    mail.send(msg)
+    """# Create message container.
     m = Message(html=T("<html><p>Build passed: {{ project_name }} <img src=˓→'confirmation_email_header.png'> ..."),
     subject=T("Passed: {{ project_name }}#{{ build_id }}"),
     mail_from=("CI", "yadacmis@gmail.com"))
@@ -84,17 +100,6 @@ def hey():
                       smtp={'host':'localhost', 'port': 465, 'ssl': True, 'user': 'yadacmis@gmail.com', 'password': 'th1nk428H'})
     print(response)
 
-    """
-    print(os.environ.get('MAIL_USERNAME_WHACK'))
-    print(os.environ.get('MAIL_PASSWORD_WHACK_FINAL'))
-    mail = Mail(app)
-    msg = Message("Thank you for applying to WHACK!",
-                  sender="hello@wellesleyhacks.org",
-                  recipients=["ypruksac@wellesley.edu"])
-    msg.html = "<img src='cid:confirmation_email_header.png'/></html> <div> Hey Yada,</div <div> Thank you for applying to WHACK Fall 2017! We are so excited that youre interested in joining us for WHACK, and we cant wait to read your application. You'll hear back from us with decisions in October. </div> <div> Until then, please feel free to contact us at hello@wellesleyhacks.org if you have any comments or questions! </div> <div>Cheers, </div> <div> The WHACK Team </div> wellesleyhacks.org"
-    with app.open_resource("confirmation_email_header.png") as fp:
-        msg.attach("confirmation_email_header.png", "image/png", fp.read())
-    mail.send(msg)
     """
 
 @app.route('/create', methods=['POST'])

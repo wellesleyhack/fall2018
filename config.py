@@ -1,12 +1,12 @@
 #for gmail or google apps
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'yadacmis@gmail.com'
-EMAIL_HOST_PASSWORD = 'th1nk428H'
-EMAIL_PORT = 1025
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_USERNAME = 'hello@wellesleyhacks.org'
+MAIL_PASSWORD = 'whackthrowshackathons'
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_PORT = 465
 # administrator list
-ADMINS = ['yadacmis@gmail.com']
+ADMINS = ['hello@wellesleyhacks.org']
 
 """"
 Try this method for authenticating emails:
