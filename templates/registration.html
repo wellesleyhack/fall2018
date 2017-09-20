@@ -316,7 +316,7 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button type="submit" id="here" class="is-primary" style="border-radius:100px; height: 50px; width: 200px;"/>Submit</button>
+                <button type="submit" id="data" class="is-primary" style="border-radius:100px; height: 50px; width: 200px;"/>Submit</button>
              </div>
 
             </div>
@@ -388,7 +388,7 @@ $(function(){
               goals = document.getElementById('goals').value,
               teammates = document.getElementById('teammates').value,
               resume = document.getElementById('file-upload').files[0];
-              url = "https://whackfall2017.herokuapp.com/create"
+              url = "http://127.0.0.1:5000/create"
               var data = { 'first_name': first_name,
                                            'last_name': last_name,
                                            'email': email,
