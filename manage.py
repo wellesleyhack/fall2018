@@ -67,6 +67,8 @@ Input:
                 'first_hackathon': bool,
                 'special_accomodations': string,
                 'other_notes': string
+                'goals': string,
+                'preferred_teammates': string
                 }
 """
 
@@ -109,7 +111,7 @@ def create():
     k.key = key
     k.set_contents_from_string(data_file.read())
     table = dynamodb.Table('WHACK_registered_userss')
-    optional = ["first_hackathon", "links", "special_accomodations", "other_notes"]
+    optional = ["first_hackathon", "links", "special_accomodations", "other_notes", "goals", "teammates"]
     new_items = {
           'name': data_values["first_name"] +" " + data_values["last_name"],
           'email': data_values["email"],
