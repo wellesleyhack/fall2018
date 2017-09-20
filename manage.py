@@ -11,13 +11,6 @@ import json
 import os
 import random
 from flask_mail import Mail, Message
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
-from email.mime.application import MIMEApplication
-from emails.template import JinjaTemplate as T
-
-
 
 app = Flask(__name__)
 app.config.update(dict({
