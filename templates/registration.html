@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
   <title> Application </title>
   <link rel="icon" type="static/image/png" href="static/img/fav.png">
+
   <link rel="stylesheet" type="text/css" href="../css/bulma.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style2.css">
@@ -20,9 +22,10 @@
         <div class="column">
           <a class="nav-item" id="nav_class" href="#"><img src="static/img/logo.png" alt="Logo"></a>
 
-          <h1 id="registration-title">Application</h1>
-          <br>
+          <h1 id="registration-title">Application
+          </h1><br>
           <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
+
             <div class="columns">
               <div class="column" style="padding: 0.75rem 0.5rem">
                 <div class="field">
@@ -106,6 +109,48 @@
               <div class="column">
               </div>
             </div>
+
+            <!-- <div class="field">
+              <label class="label">First Name*</label>
+              <div class="control" id='firstname'>
+                <input class="input required_input" name='first_name' id= "first_name" type="text" required>
+              </div>
+            </div> -->
+
+            <!-- <div class="field">
+              <label class="label">Last Name*</label>
+              <div class="control">
+                <input class="input required_input"  name='last_name' id= "last_name" type="text" required>
+              </div>
+            </div> -->
+
+            <!-- <div class="field">
+              <label class="label">Email*</label>
+              <div class="control">
+                <input class="input required_input" id= "email" name="email" type="email" placeholder="name@college.edu" required>
+              </div>
+            </div> -->
+
+            <!-- <div class="field">
+              <label class="label">School*</label>
+              <div class="control">
+                <input class="input required_input" id="school" name="school" type="text" required>
+              </div>
+            </div> -->
+
+            <!-- <div class="field">
+              <label class="label">Major (or intended major)*</label>
+              <div class="control">
+                <input class="input required_input" id="major" type="text" required>
+              </div>
+            </div> -->
+
+            <!-- <div class="field">
+              <label class="label">Graduation Year*</label>
+              <div class="control">
+                <input class="input required_input" id="graduation_year" type="text" required>
+              </div>
+            </div> -->
 
             <div class="field">
               <label class="label">Ethnicity*</label>
@@ -204,7 +249,6 @@
               </div>
             </div>
 
-
             <div class="field">
               <label class="label">Will WHACK be your first hackathon?*</label>
               <div class="control">
@@ -214,6 +258,21 @@
                 </label>
               </div>
             </div>
+
+          <div class="field">
+            <label class="label"> What do you hope to build or learn at WHACK?</label>
+            <div class="control">
+              <textarea class="textarea" id="goals"></textarea>
+            </div>
+          </div>
+
+
+          <div class="field">
+            <label class="label">Please list the teammates you’d like to work with (if applicable)</label>
+            <div class="control">
+              <input class="input required_input" id="teammates" type="text" >
+            </div>
+          </div>
 
             <div class="field">
               <label class="label">Do you have any dietary restrictions?*</label>
@@ -258,7 +317,6 @@
             <div class="field is-grouped">
               <div class="control">
                 <input type="submit" id="here" class="button is-primary" value="Submit"/>
-
                 <!-- <button id="button-purple" class="button is-primary">Submit</button> -->
               </div>
 
@@ -328,44 +386,49 @@ $(function(){
               first_hackathon =  document.getElementById('first_hackathon').value,
               special_accomodations = document.getElementById('special_accomodations').value,
               other_notes =  document.getElementById('other_notes').value,
+              goals = document.getElementById('goals').value,
+              teammates = document.getElementById('teammates').value,
               resume = document.getElementById('file-upload').files[0];
-            url = "https://whackfall2017.herokuapp.com/create"
-            var data = { 'first_name': first_name,
-                                         'last_name': last_name,
-                                         'email': email,
-                                         'school': school,
-                                         'major': major,
-                                         'graduation_year':graduation_year,
-                                         'ethnicity':ethnicity,
-                                         'gender_identity':gender_identity,
-                                         'sexual_orientation':sexual_orientation,
-                                         'links':links,
-                                         "file_name": resume["name"],
-                                         'first_hackathon': first_hackathon == "Yes" ? true : false,
-                                         'special_accomodations': special_accomodations,
-                                         'other_notes': other_notes
-                                       };
-              var newData = new FormData();
-              newData.append('resume',resume);
-              for (var key in data) {
-                if (data.hasOwnProperty(key)) {
-                    newData.append(key, data[key]);
+              console.log("teammates" +teammates)
+              url = "http://127.0.0.1:5000/create"
+              var data = { 'first_name': first_name,
+                                           'last_name': last_name,
+                                           'email': email,
+                                           'school': school,
+                                           'major': major,
+                                           'graduation_year':graduation_year,
+                                           'ethnicity':ethnicity,
+                                           'gender_identity':gender_identity,
+                                           'sexual_orientation':sexual_orientation,
+                                           'links':links,
+                                           "file_name": resume["name"],
+                                           'first_hackathon': first_hackathon == "Yes" ? true : false,
+                                           'special_accomodations': special_accomodations,
+                                           'goals': goals,
+                                           'teammates': teammates,
+                                           'other_notes': other_notes
+                                         };
+                var newData = new FormData();
+                newData.append('resume',resume);
+                for (var key in data) {
+                  if (data.hasOwnProperty(key)) {
+                      newData.append(key, data[key]);
+                  }
                 }
-              }
-              $.ajax( {
-                 url: url,
-                 type: 'POST',
-                 data: newData,
-                 contentType: false,
-                 processData: false,
-                 success:function(data){
-                        // data.redirect contains the string URL to redirect to
-                        window.location.href = 'https://whackfall2017.herokuapp.com/submit_page';
-                    }
-                 })
+                $.ajax( {
+                   url: url,
+                   type: 'POST',
+                   data: newData,
+                   contentType: false,
+                   processData: false,
+                   success:function(data){
+                          // data.redirect contains the string URL to redirect to
+                          window.location.href = 'https://whackfall2017.herokuapp.com/submit_page';
+                      }
+                   })
 
-               }
-             } );
+                 }
+               } );
 
 
 
