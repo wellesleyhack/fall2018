@@ -241,6 +241,12 @@ h2 {
   padding: 60px 0;
 }
 
+.gold__sponsors {
+  max-width: 500px;
+  max-height: 200px;
+  padding: 20px 35px;
+}
+
 .silver__sponsors {
   max-width: 310px;
   max-height: 160px;
