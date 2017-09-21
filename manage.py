@@ -119,7 +119,7 @@ def create():
     response = table.put_item(
       Item=new_items
     )
-    send_email(data_values["first_name"], data_values["email"])
+    #send_email(data_values["first_name"], data_values["email"])
     return jsonify(name=file_name, response=response)
 
 
