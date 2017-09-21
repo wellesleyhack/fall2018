@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.config.update(dict({
 "MAIL_SERVER" : 'smtp.gmail.com',
 "MAIL_USERNAME" : 'hello@wellesleyhacks.org',
-"MAIL_PASSWORD" :'kvqkrmhrgqpelilc',
+"MAIL_PASSWORD" :  os.environ.get('MAIL_PASSWORD_WHACK_CHANGED'),
 "MAIL_USE_TLS": False,
 "MAIL_USE_SSL" : True,
 "MAIL_PORT": 465}))
@@ -29,7 +29,7 @@ def send_email(name, email):
     msg = Message("Thank you for applying to WHACK!",
                   sender="hello@wellesleyhacks.org",
                   recipients=[email])
-    msg.html = "<img src='cid:confirmation_email_header.png'/></html> <div> Hey "+ name +",</div <div> Thank you for applying to WHACK Fall 2017! We are so excited that you're interested in joining us for WHACK, and we can't wait to read your application. You'll hear back from us with decisions in October. </div> <div> Until then, please feel free to contact us at hello@wellesleyhacks.org if you have any comments or questions! </div> <div>Cheers, </div> <div> The WHACK Team </div> wellesleyhacks.org"
+    msg.html = "<img src='cid:confirmation_email_header.png'/></html> <div> Hey "+ name +", </div><br></br> <div> Thank you for applying to WHACK Fall 2017! We are so excited that you're interested in joining us for WHACK, and we can't wait to read your application. You'll hear back from us with decisions in October. </div> <br></brs><div> Until then, please feel free to contact us at hello@wellesleyhacks.org if you have any comments or questions! </div><br></br> <div>Cheers, </div> <div> The WHACK Team </div> wellesleyhacks.org"
     with app.open_resource("confirmation_email_header.png") as fp:
         msg.attach("confirmation_email_header.png", "image/png", fp.read())
     mail.send(msg)
@@ -83,6 +83,9 @@ Input:
     This uploads to S3 and sends a confirmation email
 """
 
+@app.route('/hey', methods=['get'])
+def hey():
+    send_email("Yada", "ypruksac@wellesley.edu")
 @app.route('/create', methods=['POST'])
 def create():
     data_file = request.files.get('resume')
