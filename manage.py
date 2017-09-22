@@ -11,12 +11,13 @@ import json
 import os
 import random
 from flask_mail import Mail, Message
+import time
 
 app = Flask(__name__)
 app.config.update(dict({
 "MAIL_SERVER" : 'smtp.gmail.com',
 "MAIL_USERNAME" : 'hello@wellesleyhacks.org',
-"MAIL_PASSWORD" :  os.environ.get('MAIL_PASSWORD_WHACK_CHANGED'),
+"MAIL_PASSWORD" : "psprxsgjzobnnwbm",
 "MAIL_USE_TLS": False,
 "MAIL_USE_SSL" : True,
 "MAIL_PORT": 465}))
@@ -88,6 +89,7 @@ def hey():
     send_email("Yada", "ypruksac@wellesley.edu")
 @app.route('/create', methods=['POST'])
 def create():
+    start = time.time()
     data_file = request.files.get('resume')
     data_values = request.form
     file_name = data_file.filename
@@ -99,6 +101,7 @@ def create():
     key += str(new_hash) +".pdf"
     k.key = key
     k.set_contents_from_string(data_file.read())
+    end_1 = time.time()
     table = dynamodb.Table('WHACK_registered_userss')
     optional = ["first_hackathon", "links", "special_accomodations", "other_notes", "goals", "teammates"]
     new_items = {
@@ -119,7 +122,15 @@ def create():
     response = table.put_item(
       Item=new_items
     )
-    #send_email(data_values["first_name"], data_values["email"])
+    end_2 = time.time()
+    send_email(data_values["first_name"], data_values["email"])
+    end_3 = time.time()
+    print("sending email took ")
+    print(end_3 - end_2)
+    print("putitng into AWS S3")
+    print(end_2 - end_1)
+    print("putting into DynamoDB")
+    print(start - end_1)
     return jsonify(name=file_name, response=response)
 
 

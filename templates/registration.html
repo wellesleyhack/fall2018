@@ -24,7 +24,7 @@
 
           <h1 id="registration-title">Application
           </h1><br>
-          <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
+          <form id="registration_form" class="container" method="post" name='registration' enctype="multipart/form-data">
 
             <div class="columns">
               <div class="column" style="padding: 0.75rem 0.5rem">
@@ -316,7 +316,7 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button type="submit" id="data" class="apply-now is-primary" style="border-radius:100px; background-color:Transparent; height: 50px; width: 200px;"/>Submit</button>
+                <button type="submit" id="submitButton" name="submitButton" class="apply-now is-primary" style="border-radius:100px; background-color:Transparent; height: 50px; width: 200px;"/>Submit</button>
              </div>
 
             </div>
@@ -365,10 +365,16 @@ $(function(){
         });
     }
 });
-        document.getElementById('data').onsubmit = function(event) {
+
+
+
+        document.getElementById('registration_form').onsubmit = function(event) {
             // Stop form from submitting normally
+            registration_form.submitButton.disabled = true;
+
             event.preventDefault();
             // Get some values from elements on the page:
+
               var $form = $( this ),
               first_name = document.getElementById('first_name').value,
               last_name =  document.getElementById('last_name').value,
@@ -388,7 +394,7 @@ $(function(){
               goals = document.getElementById('goals').value,
               teammates = document.getElementById('teammates').value,
               resume = document.getElementById('file-upload').files[0];
-              url = "https://whackfall2017.herokuapp.com/create"
+              url = "http://127.0.0.1:5000/create"
               var data = { 'first_name': first_name,
                                            'last_name': last_name,
                                            'email': email,
