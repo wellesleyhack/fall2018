@@ -20,11 +20,11 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <a class="nav-item" id="nav_class" href="#"><img src="static/img/logo.png" alt="Logo"></a>
+          <a class="nav-item" id="nav_class" href="http://www.wellesleyhacks.org" target="_blank"> <img src="static/img/logo.png" alt="Logo"></a>
 
           <h1 id="registration-title">Application
           </h1><br>
-          <form id="data" class="container" method="post" name='registration' enctype="multipart/form-data">
+          <form id="registration_form" class="container" method="post" name='registration' enctype="multipart/form-data">
 
             <div class="columns">
               <div class="column" style="padding: 0.75rem 0.5rem">
@@ -92,7 +92,7 @@
                   <div class="control">
                     <div class="select required_input" required>
                       <select id="graduation_year" >
-                        <option>Select dropdown</option>
+                        <option disabled selected>Select dropdown</option>
                         <option>2018</option>
                         <option>2019</option>
                         <option>2020</option>
@@ -157,10 +157,11 @@
               <div class="control">
                 <div class="select required_input" required>
                   <select id="ethnicity" >
-                    <option>Select dropdown</option>
+                    <option disabled selected> Select dropdown</option>
                     <option>White or Euro-American</option>
                     <option>Black, Afro-Caribbean, or African-American</option>
                     <option>LatinX or Hispanic-American</option>
+                    <option>Southeast Asian</option>
                     <option>East Asian or Asian-American</option>
                     <option>South Asian or South Asian-American</option>
                     <option>Middle Eastern or North African</option>
@@ -176,7 +177,7 @@
               <div class="control">
                 <div class="select required_input" required>
                   <select id="gender_identity">
-                    <option>Select dropdown</option>
+                    <option disabled selected>Select dropdown</option>
                     <option>Male</option>
                     <option>Female</option>
                     <option>Non Binary</option>
@@ -192,7 +193,7 @@
               <div class="control">
                 <div class="select">
                   <select id="sexual_orientation">
-                    <option>Select dropdown</option>
+                    <option disabled selected>Select dropdown</option>
                     <option>Heterosexual</option>
                     <option>Homosexual</option>
                     <option>Bi-Sexual</option>
@@ -242,9 +243,9 @@
               <label class="label">Have you attended WHACK before?*</label>
               <div class="control" required>
                 <label  class="required_input" class="checkbox">
-                  <input  type="checkbox"> Yes, as a participant <br/>
-                  <input type="checkbox"> Yes, as a volunteer <br/>
-                  <input type="checkbox"> No
+                  <input type="radio" name="attendance"> Yes, as a participant <br/>
+                  <input type="radio" name="attendance"> Yes, as a volunteer <br/>
+                <input type="radio" name="attendance"> No
                 </label>
               </div>
             </div>
@@ -253,8 +254,8 @@
               <label class="label">Will WHACK be your first hackathon?*</label>
               <div class="control">
                 <label id="first_hackathon" class="required_input checkbox">
-                  <input type="checkbox"> Yes <br/>
-                  <input type="checkbox"> No
+                  <input type="radio" name="first_hack"> Yes <br/>
+                  <input type="radio" name="first_hack"> No
                 </label>
               </div>
             </div>
@@ -296,7 +297,7 @@
             </div>
 
             <div class="field">
-              <label class="label">WHACK will be following <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" id="a-purple"> the MLH Code of Conduct</a>. Do you agree to abide by the MLH Code of Conduct?*</label>
+              <label class="label">WHACK will be following <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" id="a-purple"> the MLH Code of Conduct</a>. Do you agree to abide by the MLH Code of Conduct?*</label>
               <div class="control" required>
                 <label class="checkbox">
                   <input type="checkbox"> Yes
@@ -308,7 +309,7 @@
               <div class="control">
                 <label class="checkbox">
                   <input type="checkbox">
-                  I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions" id="a-purple">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy" id="a2-purple">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.
+                  I agree to the terms of both the <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions" target="_blank" id="a-purple">MLH Contest Terms and Conditions</a> and the <a href="https://mlh.io/privacy" target="_blank" id="a2-purple">MLH Privacy Policy</a>. Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.
                 </label>
               </div>
             </div>
@@ -316,7 +317,7 @@
 
             <div class="field is-grouped">
               <div class="control">
-                <button type="submit" id="here" class="is-primary" style="border-radius:100px; height: 50px; width: 200px;"/>Submit</button>
+                <button type="submit" id="submitButton" name="submitButton" class="apply-now is-primary" style="border-radius:100px; background-color:Transparent; height: 50px; width: 200px;"/>Submit</button>
              </div>
 
             </div>
@@ -365,10 +366,16 @@ $(function(){
         });
     }
 });
-        document.getElementById('data').onsubmit = function(event) {
+
+
+
+        document.getElementById('registration_form').onsubmit = function(event) {
             // Stop form from submitting normally
+            registration_form.submitButton.disabled = true;
+
             event.preventDefault();
             // Get some values from elements on the page:
+
               var $form = $( this ),
               first_name = document.getElementById('first_name').value,
               last_name =  document.getElementById('last_name').value,
@@ -388,8 +395,7 @@ $(function(){
               goals = document.getElementById('goals').value,
               teammates = document.getElementById('teammates').value,
               resume = document.getElementById('file-upload').files[0];
-              console.log("teammates" +teammates)
-              url = "http://127.0.0.1:5000/create"
+              url = "https://registerforwhack2017.herokuapp.com/create"
               var data = { 'first_name': first_name,
                                            'last_name': last_name,
                                            'email': email,
@@ -422,7 +428,7 @@ $(function(){
                    processData: false,
                    success:function(data){
                           // data.redirect contains the string URL to redirect to
-                          window.location.href = 'https://whackfall2017.herokuapp.com/submit_page';
+                          window.location.href = 'https://registerforwhack2017.herokuapp.com/submit_page';
                       }
                    })
 

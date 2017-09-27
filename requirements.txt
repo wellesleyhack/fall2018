@@ -7,3 +7,4 @@ s3transfer==0.1.10
 six==1.10.0
 Werkzeug==0.12.2
 gunicorn==19.7.1
+Flask-Mail==0.9.1

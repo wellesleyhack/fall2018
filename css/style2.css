@@ -122,17 +122,24 @@ ul.text-large p{
     left: 67%
 }
 
+/* registration form */
 #registration{
-
   background: linear-gradient(45deg,  #BC52C3,#F6935A);
   background:  url('../img/jeff-3.png'), linear-gradient(45deg,  #BC52C3,#F6935A);
   background-repeat: no-repeat;
   background-position: right 7%
 }
 
-#here{
-  background-color: #982297
+#submitButton {
+  border-radius:100px;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
 }
+
+/*#here{
+  background-color: #982297
+}*/
 
 #a-purple{
   font-weight: bold
