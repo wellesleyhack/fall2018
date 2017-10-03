@@ -89,7 +89,7 @@
 					<div class="tile is-ancestor">
 						<div class="tile is-parent is-4 is-vertical">
 							<article class="tile is-child box purple">
-								<p class="title purple">WHACK is a celebration of diverse identities in tech.</p>
+								<p class="title purple" id="dynamic"></p>
 							</article>
 						</div>
 						<div class="tile is-parent">
@@ -122,11 +122,11 @@
 						<img src="static/img/brenna.png">
 					</div>
 					<div class="column is-6">
-						<p class="text-stories-title">Brenna Manning<br>
-							Olin College, ‘18
+						<p class="text-stories-title">Shan Lu<br>
+							Wellesley College, ‘20
 						</p>
 						<p class="text-stories">
-							"WHACK was the first hackathon I ever attended, and I couldn't have asked for a better first experience. The mentors were supportive and encouraging. People were working on fun projects, and everyone I spoke to seemed so happy to be there. I met awesome people and had a great time learning and creating."</p>
+							"WHACK gave me my first opportunity to build something real. In just 2 days I went beyond CS fundamentals and command line projects we typically do in classroom. I played around with APIs, databases and front end design, and got a sense of the tech industry from profound speakers and accessible mentors, all for the first time. There was a constant energy flowing in the room to learn more about the most powerful tool of the 21st century. From there I stepped into tech."</p>
 					</div>
 				</div>
 
@@ -135,11 +135,11 @@
 						<img src="static/img/brenna.png">
 					</div>
 					<div class="column is-6">
-						<p class="text-stories-title">Sam Chin<br>
-							Wellesley College, ‘17
+						<p class="text-stories-title">Meha Ahluwalia<br>
+							Wellesley College, ‘20
 						</p>
 						<p class="text-stories ">
-							"I think hackathons have been a major way that I have developed my rapid prototyping skills as well as my resume. I've definitely had recruiters ask about some hackathon projects. WHACK is an awesome starting point to try a hackathon, there are awesome mentorship and resources for you to experiment and hack."
+							"WHACK was an awesome introduction to the hackathon world! I loved collaborating with other beginners and more seasoned programmers outside the classroom. I learned a ton and met some amazing people at the same time."
 					</div>
 				</div>
 
@@ -148,11 +148,11 @@
 						<img src="static/img/brenna.png">
 					</div>
 					<div class="column is-6">
-						<p class="text-stories-title">Mathangi Ganesh<br>
-							Wellesley College, ‘19
+						<p class="text-stories-title">Zoe Wiles<br>
+							Wellesley College, ‘20
 						</p>
 						<p class="text-stories ">
-							"I loved WHACK because I had the chance to work with students who had strengths in different aspects of programming. One of our teammates had experience with building databases, another teammate wanted to work on the front-end, and I enjoyed working with APIs. We were able to split up the work based on strengths, and we learned a lot from each other when we came together at the end to combine our different parts."
+							"Whack was a fun experience to be surrounded by like minded women. The ability to get to work on projects with CS outside of classes in a fun environment is get opportunity and I can not wait to participate in more Hackathons."
 					</div>
 				</div>
 
@@ -436,6 +436,15 @@
 		<!-- scripts -->
 		<script src="static/js/jquery.js"> </script>
 		<script src="static/js/collapsible.js"> </script>
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+		<script>
+			$("#dynamic").typeIt({
+				strings:'WHACK is a celebration of diverse identities in tech.',
+				speed:50,
+				autoStart:true
+			})
+		</script>
 
 	</body>
 </html>
