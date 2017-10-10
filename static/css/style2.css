@@ -1,9 +1,3 @@
-.nav-fixed-top{
-  position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
 
 #nav_class{
   position: fixed;
@@ -53,11 +47,7 @@ a.nav-item:not(.button):hover {
 #section3-card {
   background: linear-gradient(2deg,#E66B8B, #CA69AA);
   color: white;
-}
-
-#section3-stories{
-  background-repeat:no-repeat;
-  background-position: 20% 50%;
+  position: relative;
 }
 
 #section4-joinus {
@@ -97,16 +87,8 @@ a.nav-item:not(.button):hover {
   font-size: 1.125rem
 }
 
-.text-stories {
-  margin-bottom: 8rem;
-}
-
 .text-small {
   font-size: 1rem
-}
-
-.column p {
-  font-size: 14px
 }
 
 ul {
@@ -134,12 +116,6 @@ ul.text-large p{
   padding: 1.25rem
 }
 
-#brenna{
-  position: absolute;
-    width: 13%;
-    top: 53%;
-    left: 67%
-}
 
 #registration{
   background: linear-gradient(45deg,#B614C0,#EB8951);
@@ -207,7 +183,7 @@ h2 {
 
 @media (max-width: 600px) {
   .nav {
-    visibility: hidden;
+    display: none;
   }
 
   #section1 .hero-body {
@@ -224,6 +200,22 @@ h2 {
 }
 
 
+/*stories*/
+.text-stories {
+  font-size: 1rem
+}
+
+.text-stories-title{
+  color: black;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem
+}
+
+.columns:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+
 /* faq */
 .faq-questions {
   margin-left: 100px;
@@ -232,6 +224,12 @@ h2 {
 @media (max-width: 600px) {
   .faq-questions {
     margin-left: 0;
+  }
+  .text-large{
+    font-size: 1.25rem
+  }
+  ul.text-large p{
+    font-size: 1rem
   }
 }
 
@@ -285,4 +283,20 @@ h2 {
   font-size:12px;
   font-weight:600;
   color:white;
+}
+
+.profile-pic {
+    height: 350px;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-pic {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .profile-pic {
+    height: 200px;
+  }
 }
