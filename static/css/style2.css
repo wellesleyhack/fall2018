@@ -194,9 +194,9 @@ h2 {
 }
 
 .text-stories-title{
-  color: black;
-  font-size: 1.25rem;
-  margin-bottom: 0.2rem
+  color: #982297;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .columns:not(:last-child) {
