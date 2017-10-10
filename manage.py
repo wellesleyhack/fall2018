@@ -10,9 +10,30 @@ from flask import Flask,render_template, request, jsonify, app, safe_join, send_
 import json
 import os
 import random
+from flask_mail import Mail, Message
+import time
+
 app = Flask(__name__)
+app.config.update(dict({
+"MAIL_SERVER" : 'smtp.gmail.com',
+"MAIL_USERNAME" : 'hello@wellesleyhacks.org',
+"MAIL_PASSWORD" : os.environ["WHACK_FINAL_PASSWORD"],
+"MAIL_USE_TLS": False,
+"MAIL_USE_SSL" : True,
+"MAIL_PORT": 465}))
+
 
 dynamodb = boto3.resource('dynamodb',region_name='us-west-2')
+
+def send_email(name, email):
+    mail = Mail(app)
+    msg = Message("Thank you for applying to WHACK!",
+                  sender="hello@wellesleyhacks.org",
+                  recipients=[email])
+    msg.html = "<img src='cid:confirmation_email_header.png'/></html> <div> Hey "+ name +", </div><br></br> <div> Thank you for applying to WHACK Fall 2017! We are so excited that you're interested in joining us for WHACK, and we can't wait to read your application. You'll hear back from us with decisions in October. </div> <br></brs><div> Until then, please feel free to contact us at hello@wellesleyhacks.org if you have any comments or questions! </div><br></br> <div>Cheers, </div> <div> The WHACK Team </div> wellesleyhacks.org"
+    with app.open_resource("confirmation_email_header.png") as fp:
+        msg.attach("confirmation_email_header.png", "image/png", fp.read())
+    mail.send(msg)
 
 @app.route('/<any(css, img, js, sound):folder>/<path:filename>')
 def toplevel_static(folder, filename):
@@ -59,10 +80,16 @@ Input:
                 'goals': string,
                 'preferred_teammates': string
                 }
+
+    This uploads to S3 and sends a confirmation email
 """
 
+@app.route('/hey', methods=['get'])
+def hey():
+    send_email("Yada", "ypruksac@wellesley.edu")
 @app.route('/create', methods=['POST'])
 def create():
+    start = time.time()
     data_file = request.files.get('resume')
     data_values = request.form
     file_name = data_file.filename
@@ -71,10 +98,10 @@ def create():
     k = Key(bucket)
     new_hash = random.getrandbits(64)
     key = data_values["file_name"][:-4]
-    print(key)
     key += str(new_hash) +".pdf"
     k.key = key
     k.set_contents_from_string(data_file.read())
+    end_1 = time.time()
     table = dynamodb.Table('WHACK_registered_userss')
     optional = ["first_hackathon", "links", "special_accomodations", "other_notes", "goals", "teammates"]
     new_items = {
@@ -95,6 +122,15 @@ def create():
     response = table.put_item(
       Item=new_items
     )
+    end_2 = time.time()
+    send_email(data_values["first_name"], data_values["email"])
+    end_3 = time.time()
+    print("sending email took ")
+    print(end_3 - end_2)
+    print("putitng into AWS S3")
+    print(end_2 - end_1)
+    print("putting into DynamoDB")
+    print(start - end_1)
     return jsonify(name=file_name, response=response)
 
 
