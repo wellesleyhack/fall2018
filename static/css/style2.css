@@ -207,6 +207,17 @@ h2 {
   max-width: 150px;
 }
 
+.stories-photo-container {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .stories-photo-container {
+    text-align: center;
+  }
+}
+
+
 /* faq */
 .faq-questions {
   margin-left: 100px;
