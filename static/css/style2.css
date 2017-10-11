@@ -129,6 +129,11 @@ ul.text-large p{
   border-radius: 50px;
 }
 
+.extra-padding {
+  /*padding-bottom:4rem;
+  padding-top:4rem;*/
+  padding: 50px 0;
+}
 
 
 /* gradient backgrounds */
