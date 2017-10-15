@@ -276,4 +276,7 @@ img.photo {
     padding-left: 20px;
     line-height: 50px !important;
   }
+  #social-media{
+    display: none
+  }
 }
