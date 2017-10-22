@@ -39,13 +39,13 @@ a.nav-item:not(.button):hover {
   color: white;
 }
 
-#section-schedule {
+/*#section-schedule {
   background: linear-gradient(-5deg,#F5925C,#DA4479);
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
 
-}
+}*/
 
 #section7-title {
   color: #EF8261;
@@ -197,8 +197,8 @@ h2 {
   margin-bottom: 0.2rem;
 }
 
-.columns:not(:last-child) {
-  margin-bottom: 4rem;
+.story-item {
+  margin-bottom: 30px;
 }
 
 .stories-photo {
@@ -231,6 +231,85 @@ h2 {
   ul.text-large p{
     font-size: 1rem
   }
+}
+
+
+/* schedule */
+
+#toggles {
+  margin-top: 40px;
+}
+
+.day-toggle {
+  height: 56px;
+  background-color: #B13586;
+  margin-right: 20px;
+  padding: 18px 54px;
+}
+
+#friday-toggle {
+  background-color: #9A2A73;
+}
+
+.day-toggle:hover {
+  background-color: #9A2A73;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .day-toggle {
+    width: 100%;
+  }
+}
+
+hr {
+  border-top: 0;
+  border-bottom: 2px solid #F0F0F0;
+  height: 0;
+  margin: 30px 0 35px;
+  opacity: 0.3;
+}
+
+.schedule-item {
+  margin-bottom: 30px;
+}
+
+#friday,
+#saturday,
+#sunday {
+  margin-bottom: 40px;
+}
+
+#friday {
+  display: block;
+}
+
+#saturday {
+  display: none;
+}
+
+#sunday {
+  display: none;
+}
+
+.schedule-item {
+  margin-bottom: 10px;
+}
+
+.schedule-day {
+  padding-bottom: 30px;
+}
+
+.schedule-time {
+  padding: 0 15px;
+}
+
+.schedule-description {
+  padding: 0 15px;
+}
+
+.schedule-subtext {
+  font-size: 1rem;
 }
 
 
@@ -276,7 +355,6 @@ h2 {
     max-height: 140px;
   }
 }
-
 
 /* footer */
 .made-by {
