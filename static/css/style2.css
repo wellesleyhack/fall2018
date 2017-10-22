@@ -129,8 +129,6 @@ ul.text-large p{
   border-radius: 50px;
 }
 
-
-
 /* gradient backgrounds */
 
 .title-white, .title-white p {
@@ -250,7 +248,7 @@ h2 {
 
 @media (min-width: 600px) {
   .gold__sponsor {
-    max-width: 450px;
+    max-width: 430px;
     max-height: 200px;
   }
 
