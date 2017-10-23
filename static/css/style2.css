@@ -1,3 +1,6 @@
+button:focus {
+  outline: 0;
+}
 
 #nav_class{
   position: fixed;
@@ -38,14 +41,6 @@ a.nav-item:not(.button):hover {
 #section-faq p {
   color: white;
 }
-
-/*#section-schedule {
-  background: linear-gradient(-5deg,#F5925C,#DA4479);
-  background-repeat:no-repeat;
-  background-position: right center;
-  color: white;
-
-}*/
 
 #section7-title {
   color: #EF8261;
@@ -88,7 +83,6 @@ ul.text-large p{
   padding: 1.25rem
 }
 
-
 #registration{
   background: linear-gradient(45deg,#B614C0,#EB8951);
   background-repeat: no-repeat;
@@ -130,7 +124,6 @@ ul.text-large p{
 }
 
 /* gradient backgrounds */
-
 .title-white, .title-white p {
   color: white;
 }
@@ -145,7 +138,6 @@ ul.text-large p{
 
 
 /* splash */
-
 h2 {
   font-size: 20px;
 }
@@ -235,7 +227,6 @@ h2 {
 
 
 /* schedule */
-
 #toggles {
   margin-top: 40px;
 }
@@ -248,12 +239,13 @@ h2 {
 }
 
 #friday-toggle {
-  background-color: #9A2A73;
+  background-color: #8F2A6B;
 }
 
 .day-toggle:hover {
-  background-color: #9A2A73;
+  background-color: #8F2A6B;
   transition: 0.5s;
+  box-shadow: 0 0 10px rgba(154, 42, 115, 0.8);
 }
 
 @media (max-width: 600px) {
