@@ -62,6 +62,7 @@
 							<a class="nav-item" href="#section-join">Join Us</a>
 							<a class="nav-item" href="#section-stories">Stories</a>
 							<a class="nav-item" href="#section-faq">FAQ</a>
+							<a class="nav-item" href="#section-schedule">Schedule</a>
 							<a class="nav-item" href="#section-sponsors">Sponsors</a>
 						</div>
 						<span class="nav-toggle">
@@ -78,7 +79,6 @@
 					<img src="static/img/splash/title.png" alt="WHACK" class="splash-title">
 					<h2>November 10-12, 2017 @ Wellesley College</h2>
 					<br>
-					<!-- href="https://registerforwhack2017.herokuapp.com/registration" -->
 					<a target="_blank" class="button is-outlined apply-now">Registration Closed</a>
 				</div>
 			</div>
@@ -159,7 +159,7 @@
 					  <div class="column is-4 stories-photo-container">
 							<img class="stories-photo" src="static/img/stories/shan.png">
 						</div>
-						<div class="column is-6">
+						<div class="column is-6 story-item">
 							<p class="text-stories-title">Shan Lu</p>
 							<p class="text-stories">
 								"WHACK gave me my first opportunity to build something real. In just 2 days I went beyond CS fundamentals and command line projects we typically do in classroom. I played around with APIs, databases and front end design, and got a sense of the tech industry from profound speakers and accessible mentors, all for the first time. There was constant energy flowing in the room!"</p>
@@ -169,7 +169,7 @@
 					  <div class="column is-4 stories-photo-container">
 							<img class="stories-photo" src="static/img/stories/brenna.png">
 						</div>
-						<div class="column is-6">
+						<div class="column is-6 story-item">
 							<p class="text-stories-title">Brenna Manning</p>
 							<p class="text-stories">
 								"WHACK was the first hackathon I ever attended, and I couldn't have asked for a better first experience. The mentors were supportive and encouraging. People were working on fun projects, and everyone I spoke to seemed so happy to be there. I met awesome people and had a great time learning and creating."
@@ -179,7 +179,7 @@
 						<div class="column is-4 stories-photo-container">
 							<img class="stories-photo" src="static/img/stories/trisha.png">
 						</div>
-						<div class="column is-6">
+						<div class="column is-6 story-item">
 							<p class="text-stories-title">Trisha Atluri</p>
 							<p class="text-stories">
 								"WHACK was an amazing opportunity to learn more about tech and experience first-hand the stages of a project be completed from start to finish. Being surrounded by other women who share the same passion about tech was incredibly inspiring, and I learned so much about how to work productively with others collectively towards a goal. Having extremely active, accessible, and supportive mentors also made my experience that much more rewarding."</p>
@@ -212,7 +212,14 @@
                 	<p>We welcome any undergraduate college student 18+ to participate in WHACK. It’s important to keep in mind that we are looking to create a welcoming and empowering space for women and other underrepresented identities in tech. If you have any questions about this, please contact us!</p>
 								</li>
 								<li>Will travel costs be reimbursed?
-                  <p>Buses to and from Bryn Mawr College, Smith College, Mount Holyoke College, and Barnard College will be provided. If your school is located near one of these schools, you’re welcome to join to join the bus rides. We will also be providing transportation for students who attend schools in the greater Boston area.<br><br>Unfortunately, at this time, we are unable to reimburse for flights. Once you’ve accepted your spot at WHACK, we’ll provide more details about transportation.</p>
+                  <p>We will be organizing Lyft rides for students who attend schools in the greater Boston area.
+
+										We will be also sending three buses to schools throughout the Northeast. (If your school is located near one of these schools, you’re welcome to join to join the bus rides!)
+										<br><br>Bus 1 (Pennsylvania): Bryn Mawr College, University of Pennsylania.
+										<br>Bus 2 (New York): NYU, Barnard College/Columbia University, Fordham Univeristy.
+										<br>Bus 3 (Massachusetts): UMass Amherst, Smith College, Mount Holyoke College.
+
+										<br><br>Unfortunately, at this time, we are unable to reimburse for flights. Once you’ve accepted your spot at WHACK, we’ll provide more details about transportation.</p>
 								</li>
 								<li>How will mentorship work?
                 	<p>We believe that mentorship is essential to an effective learning experience. You will have access to wonderful mentors throughout the entire event who will help guide you and help you troubleshoot, including industry professionals, Wellesley College alums, faculty, and experienced hackers.</p>
@@ -230,6 +237,9 @@
 								<li>Where will I sleep?
                 	<p>We will provide quiet sleeping areas at night, equipped with blankets and pillows. Bringing your own sleeping bag and eye mask is encouraged!</p>
 								</li>
+								<li>Will there be showers?
+                	<p>Yes!! Showers will be available throughout the event, courtesy of the Wellesley Keohane Sports Center. However, hackers are required to bring their own towels.</p>
+								</li>
 								<li>What should I bring to the hackathon?
 									<p>Please bring your student ID (and government ID highly encouraged), laptop, and chargers. We also recommend that you bring some warm clothing, a blanket, towel, toiletries, and anything else you might need in order to spend the night. </p>
 								</li>
@@ -244,104 +254,167 @@
 					</div>
 				</div>
 			</div>
-		</section>
 
-		<!-- schedule -->
-		<!-- <section class="hero is-fullheight" id='section-schedule'>
-					<div class="hero-body">
-						<div class="container">
-
-							<div class="tile is-ancestor">
-								<div class="tile is-parent">
-									<article class="tile is-child box">
-										<p class="title title-white">Schedule</p>
-									</article>
-								</div>
+			<!-- schedule -->
+			<div class="hero-body" id="section-schedule">
+				<div class="container">
+					<div class="schedule-day">
+						<article class="tile is-child box">
+							<p class="title title-white">Schedule</p>
+							<p>WHACK will be held at <a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?mid=1Q0dxkGv6afITEVa6sO0wFIkZErw&hl=en_US&ll=42.29467200000001%2C-71.31012900000002&z=17">Diana Chapman Walsh Alumnae Hall</a>.</p>
+							<div id="toggles">
+								<button type="button" class="day-toggle" id="friday-toggle">Friday</button>
+								<button type="button" class="day-toggle" id="saturday-toggle">Saturday</button>
+								<button type="button" class="day-toggle" id="sunday-toggle">Sunday</button>
 							</div>
-
-		          <div class="tile is-ancestor">
-		            <div class="tile is-parent  is-2 ">
-		            </div>
-		            <div class="tile is-parent is-8">
-		              <article class="tile is-child box">
-		                <p class="subtitle">Saturday, Nov 4
-		                  <div class="columns">
-		                    <div class="column is-3">9-10AM</div>
-		                    <div class="column">Registration
-		                      <p>check in @ Tishman Commons
-		                        <div>Breakfast</div>
-		                          <p>sponsored by APT
-		                    </div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">10AM</div>
-		                    <div class="column">Opening Ceremony
-		                    <p>kicking things off</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">11AM</div>
-		                    <div class="column">Hacking Begins<p>
-		                    ready, set, hack!</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">12-1PM</div>
-		                    <div class="column">Gotta Code ‘Em All
-		                    <p>beginner coding workshop led by Make School</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">1-2PM</div>
-		                    <div class="column">Lunch
-		                    <p>check in @ Tishman Commons
-		                    <div>Women in Tech Industry Panel</div>
-		                      <p>sponsored by APT</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">2-3PM</div>
-		                    <div class="column">Build Your First Mobile App
-		                    <p>kicking things off</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">3:30PM</div>
-		                    <div class="column">User Experience Workshop
-		                    <p>ready, set, hack!</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">6-7PM</div>
-		                    <div class="column">Dinner
-		                    <p>beginner coding workshop led by Make School</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">7-8PM</div>
-		                    <div class="column">Databases 101 Workshop
-		                    <p>workshop led by Samantha Voigt '17</div>
-		                  </div>
-
-		                  <div class="columns">
-		                    <div class="column is-3">9-10PM</div>
-		                    <div class="column">Games
-		                    <p>take a break from hacking!</div>
-		                  </div>
-
-		              </article>
-		            </div>
-		          </div>
-
-		          <div class="tile is-ancestor">
-		            <div class="tile is-parent  is-6 ">
-		            </div>
-		          </div>
-
+						</article>
+					</div>
+	        <div class="schedule-day">
+						<div id="friday">
+	            <article class="tile is-child box">
+	                <div class="columns">
+	                  <div class="column is-4 schedule-time">5:00 - 7:00 PM</div>
+	                  <div class="column schedule-description">Registration
+	                    <p class="schedule-subtext">check in @ Alumnae Hall</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">6:00 - 7:00 PM</div>
+	                  <div class="column schedule-description">Dinner
+	                    <p class="schedule-subtext">mingle and eat</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">7:00 PM - 8:15 PM</div>
+	                  <div class="column schedule-description">Opening Ceremony
+											<p class="schedule-subtext">keynotes from Joy Buolamwini & Dr. Robbin Chapman</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">8:30 PM</div>
+										<div class="column schedule-description">Hacking Begins
+											<p class="schedule-subtext">ready, set, hack!</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">8:30 - 9:30 PM</div>
+	                  <div class="column schedule-description">Team Formation Activities
+	                    <p class="schedule-subtext">bring ideas & find team members!</p>
+	                  </div>
+	                </div>
+	            </article>
+	          </div>
+						<div id="saturday">
+	            <article class="tile is-child box">
+	                <div class="columns">
+	                  <div class="column is-4 schedule-time">8:30 - 10:00 AM</div>
+	                  <div class="column schedule-description">Breakfast
+	                    <p class="schedule-subtext">mingle and eat</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">9:00 - 10:00 AM</div>
+	                  <div class="column schedule-description">Morning Lake Walk
+	                    <p class="schedule-subtext">get some fresh air!</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">10:00 AM - 6:00 PM</div>
+	                  <div class="column schedule-description">Various Workshops
+	                    <p class="schedule-subtext">learn something new</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">11:30 AM - 12:30 PM</div>
+	                  <div class="column schedule-description">Lunch
+	                    <p class="schedule-subtext">mingle and eat</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">2:00 - 8:00 PM</div>
+	                  <div class="column schedule-description">Various Fireside Chats
+	                    <p class="schedule-subtext">learn from inspiring community leaders</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">2:30 - 4:30 PM</div>
+	                  <div class="column schedule-description">Bubble Soccer Tournament
+	                    <p class="schedule-subtext">5 vs 5, team with the last person standing wins!</p>
+	                  </div>
+	                </div>
+									<hr>
+									<div class="columns">
+	                  <div class="column is-4 schedule-time">6:00 - 7:00 PM</div>
+	                  <div class="column schedule-description">Dinner
+	                    <p class="schedule-subtext">mingle and eat</p>
+	                  </div>
+	                </div>
+	            </article>
+	          </div>
+						<div id="sunday">
+							<article class="tile is-child box">
+									<div class="columns">
+										<div class="column is-4 schedule-time">8:30-10:00 AM</div>
+										<div class="column schedule-description">Breakfast
+											<p class="schedule-subtext">mingle and eat</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">10:00 AM</div>
+										<div class="column schedule-description">Hacking Ends
+											<p class="schedule-subtext">submit to Devpost!</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">11:00 - 11:45 AM</div>
+										<div class="column schedule-description">Project Expo Part 1
+											<p class="schedule-subtext">science fair style</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">11:30 AM - 12:30 PM</div>
+										<div class="column schedule-description">Lunch
+											<p class="schedule-subtext">mingle and eat</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">12:00 - 12:45 PM</div>
+										<div class="column schedule-description">Project Expo Part 2
+											<p class="schedule-subtext">science fair style</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">2:00 - 3:00 PM</div>
+										<div class="column schedule-description">Closing Ceremony
+											<p class="schedule-subtext">prizes & awards</p>
+										</div>
+									</div>
+									<hr>
+									<div class="columns">
+										<div class="column is-4 schedule-time">3:00 PM</div>
+										<div class="column schedule-description">End of WHACK
+											<p class="schedule-subtext">goodbye!</p>
+										</div>
+									</div>
+							</article>
 						</div>
 					</div>
-				</section>-->
+			</div> <!-- end of schedule -->
+		</section>
 
 		<!-- sponsors and partners -->
 		<section class="hero is-fullheight" id="section-sponsors">
@@ -351,20 +424,20 @@
 					<p class="title" id='section7-title'>Sponsors</p>
 					<p class="text-medium">Want to sponsor? Contact us at <a href="mailto:sponsors@wellesleyhacks.org">sponsors@wellesleyhacks.org</a> to learn more.</p>
 					<div class="sponsor-logos">
-						<a target="_blank" href="http://www.masscec.com/"><img src="static/img/sponsor-logos/masscec.png" alt="Massachusetts Clean Energy Center" class="gold__sponsor"></a>
-						<a target="_blank" href="http://www.viacom.com/"><img src="static/img/sponsor-logos/viacom.png" alt="Viacom" class="gold__sponsor"></a>
+						<a target="_blank" href="http://www.masscec.com"><img src="static/img/sponsor-logos/masscec.png" alt="Massachusetts Clean Energy Center" class="gold__sponsor"></a>
+						<a target="_blank" href="http://www.viacom.com"><img src="static/img/sponsor-logos/viacom.png" alt="Viacom" class="gold__sponsor"></a>
 						<a target="_blank" href="http://www.google.com"><img src="static/img/sponsor-logos/google.png" alt="Google" class="gold__sponsor"></a>
-						<!-- <br><br> -->
-						<a target="_blank" href="http://aws.amazon.com/"><img src="static/img/sponsor-logos/aws.png" alt="AWS" class="silver__sponsor"></a>
-						<a target="_blank" href="http://www.wellington.com/"><img src="static/img/sponsor-logos/wellington.png" alt="Wellington Management" class="silver__sponsor"></a>
-						<a target="_blank" href="http://www.twilio.com/"><img src="static/img/sponsor-logos/twilio.png" alt="Twilio" class="silver__sponsor"></a>
-						<a target="_blank" href="http://www.audible.com/"><img src="static/img/sponsor-logos/audible.png" alt="Audible" class="silver__sponsor"></a>
-						<a target="_blank" href="http://www.constantcontact.com/"><img src="static/img/sponsor-logos/constant_contact.png" alt="Constant Contact" class="silver__sponsor"></a>
+						<a target="_blank" href="http://aws.amazon.com"><img src="static/img/sponsor-logos/aws.png" alt="AWS" class="silver__sponsor"></a>
+						<a target="_blank" href="http://www.wellington.com"><img src="static/img/sponsor-logos/wellington.png" alt="Wellington Management" class="silver__sponsor"></a>
+						<a target="_blank" href="http://www.twilio.com"><img src="static/img/sponsor-logos/twilio.png" alt="Twilio" class="silver__sponsor"></a>
+						<a target="_blank" href="http://www.audible.com"><img src="static/img/sponsor-logos/audible.png" alt="Audible" class="silver__sponsor"></a>
+						<a target="_blank" href="http://www.constantcontact.com"><img src="static/img/sponsor-logos/constant_contact.png" alt="Constant Contact" class="silver__sponsor"></a>
 						<a target="_blank" href="http://www.apt.com"><img src="static/img/sponsor-logos/apt.png" alt="Applied Predictive Technologies" class="silver__sponsor"></a>
 						<a target="_blank" href="http://www.quora.com"><img src="static/img/sponsor-logos/quora.png" alt="Quora" class="silver__sponsor"></a>
-						<a target="_blank" href="http://www.palantir.com/"><img src="static/img/sponsor-logos/palantir.png" alt="Palantir" class="bronze__sponsor"></a>
+						<a target="_blank" href="http://www.palantir.com"><img src="static/img/sponsor-logos/palantir.png" alt="Palantir" class="bronze__sponsor"></a>
 						<a target="_blank" href="http://www.putnam.com"><img src="static/img/sponsor-logos/putnaminvestments.png" alt="Putnam Investments" class="bronze__sponsor"></a>
-						<a target="_blank" href="http://www.dropbox.com/"><img src="static/img/sponsor-logos/dropbox.png" alt="Dropbox" class="bronze__sponsor"></a>
+						<a target="_blank" href="http://www.dropbox.com"><img src="static/img/sponsor-logos/dropbox.png" alt="Dropbox" class="bronze__sponsor"></a>
+						<a target="_blank" href="https://www.bbh.com/en-us"><img src="static/img/sponsor-logos/bbh.png" alt="Brown Brothers Harriman" class="bronze__sponsor"></a>
 					</div>
 					<br><br>
 					<p class="title" id='section7-title'>Partners</p>
@@ -398,8 +471,9 @@
 		<!-- scripts -->
 		<script src="static/js/jquery.js"> </script>
 		<script src="static/js/collapsible.js"> </script>
-		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
 		<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+		<script src="static/js/index.js"> </script>
 		<script>
 			$("#dynamic").typeIt({
 				strings:'WHACK is a celebration of diverse identities in tech.',
