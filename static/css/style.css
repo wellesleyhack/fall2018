@@ -161,6 +161,30 @@ img {
   width: auto;
 }
 
+.text-stories-title{
+  color: #982297;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.speaker-title{
+  font-size: 1.0rem;
+  font-weight: 600 ;
+  margin-bottom: 0.4rem;
+}
+
+.stories-photo {
+  margin-top: 40px;
+}
+
+.speaker-subtitle {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.story-item {
+  margin-bottom: 50px;
+}
 
 /* RESPONSIVENESS */
 @media (max-width: 980px) {
