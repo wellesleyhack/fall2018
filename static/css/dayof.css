@@ -259,30 +259,6 @@ img.photo {
 }
 
 /* Responsiveness */
-@media all and (max-width: 641px) {
-  #menu-content{
-  display: none
-  }
-  .date {
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-
-  .events {
-    border:none;
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .events-detail {
-    padding: 0;
-  }
-
-  li.date p {
-    margin:0;
-  }
-}
 
 @media (min-width: 767px) {
 
