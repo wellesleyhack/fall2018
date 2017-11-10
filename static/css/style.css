@@ -174,7 +174,7 @@ img {
 }
 
 .stories-photo {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .speaker-subtitle {
@@ -185,6 +185,10 @@ img {
 .story-item {
   margin-bottom: 50px;
 }
+
+/*.stories-photo-container {
+  padding: 30px 30px 30px 30px;
+}*/
 
 /* RESPONSIVENESS */
 @media (max-width: 980px) {
