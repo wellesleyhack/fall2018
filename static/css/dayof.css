@@ -257,8 +257,15 @@ img.photo {
 .speaker h3{
   font-size: 1.4em;
 }
+
+#menu-content2{
+display: none
+}
 /* Responsiveness */
 @media all and (max-width: 641px) {
+  #menu-content{
+  display: none
+  }
   .date {
     width: 100%;
     border-bottom: 1px solid #ccc;
@@ -281,10 +288,6 @@ img.photo {
 }
 
 @media (min-width: 767px) {
-  .nav-side-menu .menu-list .menu-content {
-    display: block;
-
-  }
 
   #main {
   	width:calc(100% - 300px);
@@ -302,6 +305,9 @@ img.photo {
 }
 
 @media (max-width: 767px) {
+  #menu-content1{
+  display: none
+  }
   #logo {
     width: 15%;
     margin-top: 10px;
