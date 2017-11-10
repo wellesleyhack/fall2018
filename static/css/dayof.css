@@ -365,4 +365,7 @@ img.photo {
   .text-group2{
     text-align: center;
   }
+  #main{
+    padding-top: 50px
+  }
 }
