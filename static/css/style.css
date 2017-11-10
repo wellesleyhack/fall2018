@@ -161,6 +161,24 @@ img {
   width: auto;
 }
 
+.text-stories-title{
+  color: #982297;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+
+.stories-photo {
+  margin-top: 20px;
+}
+
+.story-item {
+  margin-bottom: 50px;
+}
+
+/*.stories-photo-container {
+  padding: 30px 30px 30px 30px;
+}*/
 
 /* RESPONSIVENESS */
 @media (max-width: 980px) {
