@@ -197,7 +197,8 @@ img.photo {
 }
 
 .team_member p {
-  text-align: center;
+  /*text-align: center;*/
+  text-align: left;
 }
 
 .teammember_photo {
@@ -206,7 +207,56 @@ img.photo {
   padding-bottom: 30px;
 }
 
+/*speaker*/
 
+.speaker-container{
+  display:flex;
+  flex-direction:row;
+  margin:1.5em 0
+}
+
+.speaker-category-title{
+  margin:1em 0
+}
+
+.speaker-photo-container1{
+  /*flex:1*/
+  flex:0.5
+}
+
+.speaker-photo-container2{
+  /*text-align: center;*/
+  text-align: left;
+}
+
+.speaker-photo{
+  /*width: 50%*/
+  width: 80%
+}
+
+.speaker-text-container{
+  flex:2;
+  padding-left: 1em;
+  padding-right: 2em
+
+}
+
+.speaker-title{
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600
+}
+
+
+.speaker-subtitle{
+  font-size: 1.0rem;
+  font-weight: 600 ;
+  margin-bottom: 10px;
+}
+
+.speaker h3{
+  font-size: 1.4em;
+}
 /* Responsiveness */
 @media all and (max-width: 641px) {
   .date {
@@ -233,6 +283,7 @@ img.photo {
 @media (min-width: 767px) {
   .nav-side-menu .menu-list .menu-content {
     display: block;
+
   }
 
   #main {
@@ -265,6 +316,7 @@ img.photo {
   }
   #section-stories{
     text-align: center;
+    padding-left: 15px
   }
   .stories-photo{
     width: 40%;
@@ -283,8 +335,8 @@ img.photo {
     top: 15px;
     z-index: 10 !important;
     padding: 3px;
-    background-color: #343653;
-    color: #E0E0E0;
+    background-color: none;
+    color: white;
     text-align: center;
   }
 
@@ -296,5 +348,21 @@ img.photo {
   }
   #social-media{
     display: none
+  }
+  .speaker-container{
+    flex-direction: column;
+  }
+  .speaker-photo{
+    width: 50%
+  }
+  .speaker-photo-container2{
+    text-align: center;
+    margin: 2em 0
+  }
+  .speaker-title, .speaker-subtitle, .text-stories{
+    text-align: center;
+  }
+  .text-group2{
+    text-align: center;
   }
 }
