@@ -258,9 +258,6 @@ img.photo {
   font-size: 1.4em;
 }
 
-#menu-content2{
-display: none
-}
 /* Responsiveness */
 @media all and (max-width: 641px) {
   #menu-content{
@@ -305,7 +302,7 @@ display: none
 }
 
 @media (max-width: 767px) {
-  #menu-content1{
+  #menu-content{
   display: none
   }
   #logo {
