@@ -219,3 +219,20 @@ img {
   }
 
 /*tessting*/
+#section-about{
+  background-color: #FFFFFF;
+  background-image: url("../static/img/whack-logos/logo gray.png");
+}
+#section-about h1{
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #F97352;
+  font-size: 30px;
+}
+#section-about p{
+  font-family: 'Open Sans Semi Bold', sans-serif;
+  color: #2E2E38;
+  font-size: 19px;
+}
+#section-about #middle-section{
+  color: #F97352;
+}
