@@ -22,13 +22,13 @@ html {
 }
 
 body {
-  background: #343653;
-	position: relative;
-	font-family: "Circular", "helvetica", sans-serif;
+  background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%);
+	font-family: 'Open Sans Bold', sans-serif;
 	font-style: normal;
-	line-height: 1.5;
-	font-size: 20px;
-	color: #FFFFFF;
+	line-height: 3;
+	font-size: 18px;
+	color: #f0c020;
+  word-spacing: 5px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -37,9 +37,10 @@ body {
 }
 
 a {
-  color: white;
+  color: #f0c020;
   font-weight: 600;
-}
+  text-decoration: none;
+  }
 
 a:hover {
   color: white;
@@ -51,7 +52,7 @@ a:visited {
 }
 
 .content__section4 a {
-  color: #FF8B89;
+  color: #f0c020;
 }
 
 h1 {
@@ -64,8 +65,8 @@ h1 {
 
 h2 {
   font-size: 25px;
-  margin-bottom: 30px;
   font-weight: 600;
+
 }
 
 p {
@@ -79,19 +80,21 @@ p {
 
 
 button {
-  display: inline-block;
-  border: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
+  border-radius: 15px;
+  font-size: 24px;
   font-weight: 700;
-  padding: 11px 30px;
-  color: #FFFFFF;
-  background-color: #FB627A;
-  border-radius: 2px;
-  margin: 10px 0;
+  letter-spacing: .8px;
+  color: #f0c020;
+  border-color: #f0c020;
+  margin-left: 445px;
+  margin-top: -15px;
+  background-color: inherit;
+
 }
 
+.button {
+  padding: 2px 55px;
+}
 .content__text {
   width: 750px;
   margin: auto;
@@ -124,9 +127,12 @@ img {
 }
 
 .logo {
-  max-height: 250px;
-  margin: 20px auto 0;
-  opacity: 0.95;
+    display: inline-block;
+    vertical-align: top;
+    width:60px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
 .cover {
@@ -182,10 +188,6 @@ img {
     margin-bottom: 10px;
   }
 
-	button {
-    font-size: 12px;
-    padding: 7px 25px;
-	}
 }
 
 
@@ -201,8 +203,9 @@ img {
 	}
 
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
+
   }
 
   #date-container {
@@ -211,12 +214,8 @@ img {
   }
 
 
-  .logo {
-    max-height: 150px;
-  }
-
   .title {
     font-size: 1.8em;
   }
-}
+
 /*tessting*/
