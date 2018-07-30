@@ -223,16 +223,41 @@ img {
   background-color: #FFFFFF;
   background-image: url("../static/img/whack-logos/logo gray.png");
 }
-#section-about h1{
+.h1#section-about{
   font-family: 'Open Sans Bold', sans-serif;
   color: #F97352;
   font-size: 30px;
 }
-#section-about p{
+.p#section-about{
   font-family: 'Open Sans Semi Bold', sans-serif;
   color: #2E2E38;
   font-size: 19px;
 }
 #section-about #middle-section{
   color: #F97352;
+}
+
+
+#section-schedule{
+  background-color: #2E2E38;
+}
+.h1#section-schedule{
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size:40px;
+  color:#16E7EA;
+}
+.button#section-schedule{
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 28px;
+  color:#16E7EA;
+  background-color: #F97352;
+}
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
 }
