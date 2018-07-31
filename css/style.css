@@ -223,17 +223,17 @@ img {
   background-color: #FFFFFF;
   background-image: url("../static/img/whack-logos/logo gray.png");
 }
-.h1#section-about{
+h1#section-about{
   font-family: 'Open Sans Bold', sans-serif;
   color: #F97352;
   font-size: 30px;
 }
-.p#section-about{
+p#section-about{
   font-family: 'Open Sans Semi Bold', sans-serif;
   color: #2E2E38;
   font-size: 19px;
 }
-#section-about #middle-section{
+#section-about-middle-section{
   color: #F97352;
 }
 
@@ -241,23 +241,44 @@ img {
 #section-schedule{
   background-color: #2E2E38;
 }
-.h1#section-schedule{
+h1#section-schedule{
   font-family: 'Open Sans Bold', sans-serif;
   font-size:40px;
   color:#16E7EA;
 }
-.button#section-schedule{
+button#section-schedule{
   font-family: 'Open Sans Bold', sans-serif;
   font-size: 28px;
   color:#16E7EA;
   background-color: #F97352;
 }
+
+h1#section-team-bios{
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 42px;
+  color: #EFC247;
+}
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-
-  .card {
-    display: inline-block;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
+.card {//in the example this was nested within the .scrolling-wrapper section?
+  background-color: #DEE7EA;
+  display: inline-block;
+  }
+  h2.card{
+    color: #EFC247;
+  }
+  h3.card{
+    color: #EFC247;
+  }
+  p.card{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 16px;
+    color: #6D6D74;
+  }
