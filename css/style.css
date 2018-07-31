@@ -252,6 +252,11 @@ button#section-schedule{
   color:#16E7EA;
   background-color: #F97352;
 }
+.schedule-subheader{
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 18px;
+  color: #16E7EA ;/////////////////////////////
+}
 
 h1#section-team-bios{
   font-family: 'Open Sans Bold', sans-serif;
