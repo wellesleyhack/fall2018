@@ -31,7 +31,13 @@
 	<!-- stylesheets -->
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bulma.css">
+ <link rel="stylesheet" type="text/css" href="css/style2.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<!-- Google Analytics -->
 	<script>
@@ -84,39 +90,39 @@
 		<!-- about -->
 	<section class="hero is-fullheight" id="section-about">
 			<div class="hero-body">
-				<!--<div class="container">
+				<div class="container">
 					<div class="tile is-ancestor">
-						<div class="tile is-parent is-4 is-vertical">
+						<!--<div class="tile is-parent is-4 is-vertical">
 							<article class="tile is-child box purple">
 								<p class="title purple" id="dynamic"></p>
 							</article>
-						</div>
+						</div>-->
 						<div class="tile is-parent">
-							<article class="tile is-child box purple">-->
-								<h1 id="section-about">At WHACK, you can have fun, be creative, build, break, learn, and ask questions in a space that celebrates diversity.</h1>
-								<p id="section-about" class="text-medium">At the fifth iteration of WHACK, the Wellesley College hackathon, over 300 students from colleges throughout the U.S. Northeast will come together for 36 hours to turn their ideas into reality.</p>
-								<br>
-								<p id="section-about-middle-section" class="text-medium">Whether you’re a seasoned developer or designer, or just starting out as a beginner, there’s something at WHACK for you.</p>
-								<br>
-								<p id="section-about" class="text-medium">You’ll enjoy a weekend of awesome tech, food, swag, workshops, and mini-events while learning from distinguished speakers, inspiring mentors, and peers. We consider WHACK a success if you make new connections and gain skills that will stay with you long after WHACK is over.</p>
-								<br>
+							<article class="tile is-child box">
+								<h1 id="section-about" class="orange">At WHACK, you can have fun, be creative, build, break, learn, and ask questions in a space that celebrates diversity.</h1>
+								<p id="section-about" class="text-medium gunmetal">At the fifth iteration of WHACK, the Wellesley College hackathon, over 300 students from colleges throughout the U.S. Northeast will come together for 36 hours to turn their ideas into reality.</p>
+								<!--<br>-->
+								<p id="section-about-middle-section" class="orange text-medium">Whether you’re a seasoned developer or designer, or just starting out as a beginner, there’s something at WHACK for you.</p>
+								<!--<br>-->
+								<p id="section-about" class="text-medium gunmetal">You’ll enjoy a weekend of awesome tech, food, swag, workshops, and mini-events while learning from distinguished speakers, inspiring mentors, and peers. We consider WHACK a success if you make new connections and gain skills that will stay with you long after WHACK is over.</p>
+								<!--<br>-->
 
-							<!--</article>
+						 </article>
 						</div>
 					</div>
 
-				</div>-->
+				</div>
 			</div>
 		</section>
 
 		<!-- join us -->
-	<!-- <section class="hero is-fullheight gradient-background" id="section-join">
+	 <section class="hero is-fullheight gradient-background" id="section-join">
 			<div class="hero-body">
 				<div class="container">
 					<div class="tile is-ancestor">
 						<div class="tile is-parent">
 							<article class="tile is-child box">
-								<p class="title title-white">Join us!</p>
+								<p class="title orange">Join us!</p>
 							</article>
 						</div>
 					</div>
@@ -151,8 +157,8 @@
 				<div class="container">
 					<div class="schedule-day">
 						<article class="tile is-child box">
-							<h1 class="title title-white">Schedule</h1>
-							<p class="schedule-subheader">WHACK will be held at <a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?mid=1Q0dxkGv6afITEVa6sO0wFIkZErw&hl=en_US&ll=42.29467200000001%2C-71.31012900000002&z=17">Diana Chapman Walsh Alumnae Hall</a>.</p>
+							<h1 class="title white">Schedule</h1>
+							<p class="schedule-subheader">WHACK will be held at <a class="alumnae" target="_blank" href="https://www.google.com/maps/d/u/0/viewer?mid=1Q0dxkGv6afITEVa6sO0wFIkZErw&hl=en_US&ll=42.29467200000001%2C-71.31012900000002&z=17">Diana Chapman Walsh Alumnae Hall</a>.</p>
 							<div id="toggles">
 								<button type="button" class="day-toggle" id="friday-toggle">Friday</button>
 								<button type="button" class="day-toggle" id="saturday-toggle">Saturday</button>
@@ -422,7 +428,7 @@
 			<h1>Meet the Team!</h1>
 			<div class="scrolling-wrapper">
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/emily.png" alt="Emily Mattlin">
+		<img class="img-circle bios-photos" src="/static/img/profiles/emily.png" alt="Emily Mattlin">
 		<br>
 		<h2>Emily Mattlin</h2>
 		<br>
@@ -432,7 +438,7 @@
 		<br>
 	</div>
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/jackeline.png" alt="Jackeline Lopez Ruiz">
+		<img class="img-circle bios-photos" src="/static/img/profiles/jackeline.png" alt="Jackeline Lopez Ruiz">
 		<br>
 		<h2>Jackeline Lopez Ruiz</h2>
 		<br>
@@ -442,7 +448,7 @@
 		<br>
 	</div>
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/alicia.jpg" alt="Alicia Lee">
+		<img class="img-circle bios-photos" src="/static/img/profiles/alicia.jpg" alt="Alicia Lee">
 		<br>
 		<h2>Alicia Lee</h2>
 		<br>
@@ -452,7 +458,7 @@
 		<br>
 	</div>
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/allison.png" alt="Allison Turner">
+		<img class="img-circle bios-photos" src="/static/img/profiles/allison.png" alt="Allison Turner">
 		<br>
 		<h2>Allison Turner</h2>
 		<br>
@@ -462,7 +468,7 @@
 		<br>
 	</div>
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/ariele.png" alt="Ariele Xiao">
+		<img class="img-circle bios-photos" src="/static/img/profiles/ariele.png" alt="Ariele Xiao">
 		<br>
 		<h2>Ariele Chuyue Xiao</h2>
 		<br>
@@ -472,7 +478,7 @@
 		<br>
 	</div>
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/artemisia.jpg" alt="Artemisia Luk">
+		<img class="img-circle bios-photos" src="/static/img/profiles/artemisia.jpg" alt="Artemisia Luk">
 		<br>
 		<h2>Artemisia Luk</h2>
 		<br>
@@ -482,7 +488,7 @@
 		<br>
 	</div>
   <div class="card">
-		<img class="bios-photos" src="/static/img/profiles/celine.jpg" alt="Celine Christory">
+		<img class="img-circle bios-photos" src="/static/img/profiles/celine.jpg" alt="Celine Christory">
 		<br>
 		<h2>Celine Christory</h2>
 		<br>
@@ -492,7 +498,7 @@
 		<br>
 	</div>
 	<div class="card">
-		<img class="bios-photos" src="/static/img/profiles/kealani.png" alt="Kealani Finegan">
+		<img class="img-circle bios-photos" src="/static/img/profiles/kealani.png" alt="Kealani Finegan">
 		<br>
 		<h2>Kealani Finegan</h2>
 		<br>
@@ -502,7 +508,7 @@
 		<br>
 	</div>
 	<div class="card">
-		<img class="bios-photos" src="/static/img/profiles/margaret.png" alt="Margaret Sun">
+		<img class="img-circle bios-photos" src="/static/img/profiles/margaret.png" alt="Margaret Sun">
 		<br>
 		<h2>Margaret Sun</h2>
 		<br>
@@ -512,7 +518,7 @@
 		<br>
 	</div>
 	<div class="card">
-		<img class="bios-photos" src="/static/img/profiles/rachel.png" alt="Rachel Zhang">
+		<img class="img-circle bios-photos" src="/static/img/profiles/rachel.png" alt="Rachel Zhang">
 		<br>
 		<h2>Rachel Zhang</h2>
 		<br>
@@ -522,7 +528,7 @@
 		<br>
 	</div>
 	<div class="card">
-		<img class="bios-photos" src="/static/img/profiles/remi.jpg" alt="Remi Kobayashi">
+		<img class="img-circle bios-photos" src="/static/img/profiles/remi.jpg" alt="Remi Kobayashi">
 		<br>
 		<h2>Remi Kobayashi</h2>
 		<br>
@@ -532,7 +538,7 @@
 		<br>
 	</div>
 	<div class="card">
-		<img class="bios-photos" src="/static/img/profiles/valeria.png" alt="Valeria Yang">
+		<img class="img-circle bios-photos" src="/static/img/profiles/valeria.png" alt="Valeria Yang">
 		<br>
 		<h2>Valeria Yang</h2>
 		<br>

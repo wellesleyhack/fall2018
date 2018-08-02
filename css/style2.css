@@ -6,11 +6,19 @@
 }
 
 #section1{
-  background: linear-gradient(45deg,  #BC52C3,#F6935A);
-  background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);
+  /*background: linear-gradient(45deg,  #BC52C3,#F6935A);*/
+  /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
+  background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%);
   background-repeat:no-repeat;
   background-position: 80% 100%;
-  color: white;
+  color: #f0c020;
+}
+
+#section-about{
+  background-color: white;
+  background-image: url(static/img/whack-logos/logo gray.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 #section1-title, #section4-title{
@@ -20,14 +28,30 @@
 #section1-title{
   font-size: 80px
 }
-
+.graph{
+  width = 100%
+  z-index: 0;
+  background-size: 100% 100%;
+}
 .purple{
-  color: #982297
+  color: #982297;
 }
 
 .orange{
-  color: #EF8261;
-  font-size: 2rem
+  color: #F97352;
+  /*font-size: 2rem*/
+}
+
+.gunmetal{
+  color:#2E2E38;
+}
+
+.white{
+  color: #DEE7EA;
+}
+
+.alumnae{
+  text-decoration: none;
 }
 
 #section3-card{

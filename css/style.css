@@ -25,7 +25,7 @@ body {
   background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%);
 	font-family: 'Open Sans Bold', sans-serif;
 	font-style: normal;
-	line-height: 3;
+	line-height: 1.5;
 	font-size: 18px;
 	color: #f0c020;
   word-spacing: 5px;
@@ -40,6 +40,11 @@ a {
   color: #f0c020;
   font-weight: 600;
   text-decoration: none;
+  }
+
+  a:hover, a:visited, a:link, a:active
+  {
+      text-decoration: none;
   }
 
 a:hover {
@@ -66,7 +71,7 @@ h1 {
 h2 {
   font-size: 25px;
   font-weight: 600;
-
+  margin-bottom: 30px;
 }
 
 p {
@@ -80,20 +85,25 @@ p {
 
 
 button {
-  border-radius: 15px;
-  font-size: 24px;
+  border-radius: 2px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: .8px;
   color: #f0c020;
   border-color: #f0c020;
   margin-left: 445px;
   margin-top: -15px;
-  background-color: inherit;
+  background-color: #f0c020;
 
+}
+
+button:active {
+  background: linear-gradient(to right, #f0c020 , #ff87b1);
 }
 
 .button {
   padding: 2px 55px;
+  background-color: #f0c020;
 }
 .content__text {
   width: 750px;
@@ -220,8 +230,8 @@ img {
 
 /*tessting*/
 #section-about{
-  background-color: #FFFFFF;
-  background-image: url("../static/img/whack-logos/logo gray.png");
+  background-color: #DEE7EA;
+  background-image: url("static/img/whack-logos/logo gray.png");
 }
 h1#section-about{
   font-family: 'Open Sans Bold', sans-serif;
