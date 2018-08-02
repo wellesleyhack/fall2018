@@ -16,7 +16,7 @@
 
 #section-about{
   background-color: white;
-  background-image: url(static/img/whack-logos/logo gray.png);
+  background-image: url(...static/img/whack-logos/logo gray.png);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -54,6 +54,14 @@
   text-decoration: none;
 }
 
+.orange-background{
+  background-color: #F97352;
+}
+
+.yellow {
+  color: #EFC247;
+}
+
 #section3-card{
   background: linear-gradient(2deg,#E66B8B, #CA69AA);
   color: white
@@ -64,9 +72,11 @@
   background-position: 20% 50%;
 }
 
-#section4-joinus {
-  background: linear-gradient(2deg,#E37E7A, #D76182);
-  color: white
+#section-joinus {
+  /*background: linear-gradient(2deg,#E37E7A, #D76182);*/
+  background: linear-gradient(#15CBCE, #2E2E38);
+  font-size: 20px;
+
 }
 
 #section4-title {
@@ -77,9 +87,8 @@
   background: linear-gradient(2deg, #DA4479,#E37E7A)
 }
 
-#section6-schedule {
-  background: linear-gradient(-5deg,#F5925C,#DA4479);
-  background:  url('../img/jeff-3.png'), linear-gradient(-5deg,#F5925C,#DA4479);
+#section-schedule {
+  background: :#2E2E38;
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
