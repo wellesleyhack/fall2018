@@ -93,7 +93,7 @@ button {
   border-color: #f0c020;
   margin-left: 445px;
   margin-top: -15px;
-  background-color: #f0c020;
+  background-color: transparent;
 
 }
 
@@ -112,7 +112,7 @@ button {
 
 .button {
   padding: 2px 55px;
-  background-color: #f0c020;
+  background-color: transparent;
 }
 .content__text {
   width: 750px;

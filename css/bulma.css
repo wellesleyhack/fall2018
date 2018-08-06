@@ -1300,8 +1300,8 @@ a.box:active {
   -ms-user-select: none;
   user-select: none;
   /*background-color: white;*/
-  border-color: white;
-  color: white;
+  border-color: #f0c020;
+  color: #f0c020;
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1345,8 +1345,8 @@ a.box:active {
 }
 
 .button:hover, .button.is-hovered {
-  border-color: #b5b5b5;
-  color: #363636;
+  border-color: white;
+  color: white;
 }
 
 .button:focus, .button.is-focused {
@@ -5946,7 +5946,7 @@ a.dropdown-item.is-active {
 .nav-item a:not(.button),
 a.nav-item:not(.button) {
   /*color: #7a7a7a;*/
-  color: white
+  color: #f0c020
 }
 
 .nav-item a:not(.button):hover,
