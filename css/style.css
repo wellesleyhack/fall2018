@@ -360,7 +360,7 @@ h1#section-team-bios{
     display: none;
   }
 }
-.card {//in the example this was nested within the .scrolling-wrapper section?
+.card {
   background-color: #DEE7EA;
   display: inline-block;
   }
