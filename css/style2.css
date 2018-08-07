@@ -16,9 +16,26 @@
 
 #section-about{
   background-color: white;
-  background-image: url(...static/img/whack-logos/logo gray.png);
+  background-image: url("../static/img/whack-logos/logo gray.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: -200px 150px;
+  background-size: 800px;
+}
+
+#section-team-bios{
+  background-color: white;
+}
+
+#section-sponsors{
+  background-color: white;
+}
+
+#saturday{
+  display: none;
+}
+
+#sunday{
+  display: none;
 }
 
 #section1-title, #section4-title{
@@ -48,7 +65,11 @@
 }
 
 .gunmetal{
-  color:#2E2E38;
+  color:#6c757d;
+  padding-left: 90px;
+  width: 670px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .white{
