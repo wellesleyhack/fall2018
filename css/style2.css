@@ -59,8 +59,8 @@
   color: #982297;
 }
 
-.orange{
-  color: #F97352;
+.gold{
+  color: #f0c020;
   /*font-size: 2rem*/
 }
 
@@ -80,8 +80,8 @@
   text-decoration: none;
 }
 
-.orange-background{
-  background-color: #F97352;
+.gold-background{
+  background-color: #f0c020;
 }
 
 .yellow {
@@ -130,7 +130,7 @@
 }
 
 #section7-title{
-  color: #EF8261
+  color: #f0c020
 }
 
 #section-sponsors{

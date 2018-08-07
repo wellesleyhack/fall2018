@@ -1300,8 +1300,8 @@ a.box:active {
   -ms-user-select: none;
   user-select: none;
   /*background-color: white;*/
-  border-color: #f0c020;
-  color: #f0c020;
+  border-color: #fff;
+  color: #fff;
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
