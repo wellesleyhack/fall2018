@@ -90,6 +90,10 @@
 
 #section-faq {
   background: linear-gradient(#2E2E38, #15CBCE);
+  /*background-image: url(".../static/img/graph.png");*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: bottom;*/
 }
 
 #section-schedule {
