@@ -150,7 +150,7 @@ footer{
 .title {
   font-size: 2.3em;
   line-height: 1.2;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .apply-now{
@@ -164,6 +164,14 @@ footer{
   word-spacing: 1px;
 }
 
+.faq-questions{
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  word-spacing: -1px;
+}
 
 hr {
   border-top: 1px solid #B2B2B2;
