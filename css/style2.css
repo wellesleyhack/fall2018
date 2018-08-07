@@ -28,6 +28,11 @@
 #section1-title{
   font-size: 80px
 }
+
+#section-schedule{
+  background-color: #2E2E38;
+}
+
 .graph{
   width = 100%
   z-index: 0;
@@ -38,7 +43,7 @@
 }
 
 .orange{
-  color: #f0c020;
+  color: #F97352;
   /*font-size: 2rem*/
 }
 
@@ -83,8 +88,8 @@
   color: white
 }
 
-#section5-faq {
-  background: linear-gradient(2deg, #DA4479,#E37E7A)
+#section-faq {
+  background: linear-gradient(#2E2E38, #15CBCE);
 }
 
 #section-schedule {
