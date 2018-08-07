@@ -97,7 +97,15 @@ button {
 
 }
 
-.day-toggle {
+footer{
+  background-color: #EFC247;
+}
+
+.footer{
+  background-color: #EFC247;
+}
+
+.day-toggle: {
   background: linear-gradient(to right, #f0c020 , #ff87b1);
 }
 
