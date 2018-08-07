@@ -75,7 +75,7 @@ h2 {
 }
 
 p {
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: 0 auto;
   font-size: 20px;
   margin-bottom: 30px;
