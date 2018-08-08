@@ -1351,7 +1351,7 @@ a.box:active {
 
 .button:focus, .button.is-focused {
   border-color: white;
-  color: #363636;
+  color: white;
 }
 
 .button:active, .button.is-active {
