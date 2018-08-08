@@ -18,7 +18,7 @@
   background-color: white;
   background-image: url("../static/img/whack-logos/logo gray.png");
   background-repeat: no-repeat;
-  background-position: -200px 150px;
+  background-position: -200px 200px;
   background-size: 800px;
 }
 
@@ -65,9 +65,12 @@
   /*font-size: 2rem*/
 }
 
+.black{
+  color: black;
+}
+
 .gunmetal{
   color:#6c757d;
-  padding-left: 90px;
   width: 670px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -134,7 +137,7 @@
 }
 
 #section7-title{
-  color: #f0c020
+  /* color: #f0c020 */
 }
 
 .text-large{

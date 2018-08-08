@@ -119,15 +119,15 @@ footer{
 #saturday-toggle{
   margin-left: 30px;
   margin-right: 30px;
-  background-color: #2f9989;
+  background-color: #F97352;
 }
 
 #sunday-toggle{
-  background-color: #2f9989;
+  background-color: #F97352;
 }
 
 #friday-toggle{
-  background-color: #15CBCE;
+  background-color: #e77c91;
 }
 
 .upside-down {
@@ -165,6 +165,7 @@ footer{
 .apply-now{
   width: -webkit-fill-available;
   font-size: inherit;
+  background-color: #F97352;
 }
 
 .join-info{
@@ -378,8 +379,15 @@ h1#section-team-bios{
   }
 
 .profile-img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.inline-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
