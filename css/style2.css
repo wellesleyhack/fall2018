@@ -89,6 +89,13 @@
   color: #EFC247;
 }
 
+.orange{
+  color: #F97352;
+}
+.orange-background{
+  background-color: color: #F97352;
+}
+
 #section3-card{
   background: linear-gradient(2deg,#E66B8B, #CA69AA);
   color: white
