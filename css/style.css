@@ -351,6 +351,7 @@ h1#section-team-bios{
   font-size: 42px;
   color: #EFC247;
 }
+
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -374,4 +375,11 @@ h1#section-team-bios{
     font-family: 'Open Sans Bold', sans-serif;
     font-size: 16px;
     color: #6D6D74;
+  }
+
+.profile-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
   }
