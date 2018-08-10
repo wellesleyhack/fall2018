@@ -1,27 +1,24 @@
 $(document).ready(function() {
 
-  if (window.innerWidth <= 1225 && window.innerWidth > 990 || window.innerWidth <= 770) {
+  if (window.innerWidth <= 1225 && window.innerWidth > 990 || window.innerWidth < 760) {
     $(".apply-now").css("width", "200px");
     $(".join-info").css("width", "200px");
     $(".join-us").css("margin-left", "auto");
+    $(".join-title").css("margin-left", "auto");
   }
 
-  if (window.innerWidth <= 990 && window.innerWidth > 770) {
+  if (window.innerWidth <= 990 && window.innerWidth >= 760) {
     $(".apply-now").css("width", "200px");
     $(".join-info").css("width", "200px");
-    $(".join-us").css("margin-left", "0px");
-  }
-
-  if (window.innerWidth <= 860 && window.innerWidth > 770) {
-    $(".apply-now").css("width", "200px");
-    $(".join-info").css("width", "200px");
-    $(".join-us").css("margin-left", "-50px");
+    $(".join-us").css("margin-left", "-80px");
+    $(".join-title").css("margin-left", "80px");
   }
 
   if (window.innerWidth > 1225) {
     $(".apply-now").css("width", "300px");
     $(".join-info").css("width", "300px");
     $(".join-us").css("margin-left", "auto");
+    $(".join-title").css("margin-left", "auto");
   }
 
   if (window.innerWidth <= 1084) {
@@ -48,28 +45,25 @@ $(document).ready(function() {
 
   $( window ).resize(function() {
 
-    if (window.innerWidth <= 1225 && window.innerWidth > 990 || window.innerWidth <= 770) {
+    if (window.innerWidth <= 1225 && window.innerWidth > 990 || window.innerWidth <= 760) {
       $(".apply-now").css("width", "200px");
       $(".join-info").css("width", "200px");
       $(".join-us").css("margin-left", "auto");
+      $(".join-title").css("margin-left", "auto");
     }
 
-    if (window.innerWidth <= 990 && window.innerWidth > 860) {
+    if (window.innerWidth <= 990 && window.innerWidth > 760) {
       $(".apply-now").css("width", "200px");
       $(".join-info").css("width", "200px");
-      $(".join-us").css("margin-left", "0px");
-    }
-
-    if (window.innerWidth <= 860 && window.innerWidth > 770) {
-      $(".apply-now").css("width", "200px");
-      $(".join-info").css("width", "200px");
-      $(".join-us").css("margin-left", "-50px");
+      $(".join-us").css("margin-left", "-80px");
+      $(".join-title").css("margin-left", "80px");
     }
 
     if (window.innerWidth > 1225) {
       $(".apply-now").css("width", "300px");
       $(".join-info").css("width", "300px");
       $(".join-us").css("margin-left", "auto");
+      $(".join-title").css("margin-left", "auto");
     }
 
     if (window.innerWidth <= 1084) {
