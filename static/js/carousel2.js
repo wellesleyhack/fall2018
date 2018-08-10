@@ -1,7 +1,7 @@
 $(document).ready(function() {
   if (window.innerWidth <= 500) {
     $("#recipeCarousel").replaceWith(`<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-      <div class="carousel-inner w-100" role="listbox" style="margin-left: 30px; margin-top: 50px">
+      <div class="carousel-inner w-100" role="listbox" style="margin-top: 50px; display: flex; justify-content: center; align-items: center;">
           <div class="item row active">
 
               <div class=" float-left">
@@ -298,10 +298,10 @@ $(document).ready(function() {
   $( window ).resize(function() {
     if (window.innerWidth <= 500) {
       $("#recipeCarousel").replaceWith(`<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-        <div class="carousel-inner w-100" role="listbox" style="margin-left: 30px; margin-top: 50px">
+        <div class="carousel-inner w-100" role="listbox" style="margin-top: 50px; display: flex; justify-content: center; align-items: center;">
             <div class="item row active">
 
-                <div class=" float-left">
+                <div class="float-left">
                   <div class="card" style="width: 18rem; background-color: #DEE7EA">
                     <img style="display: block;
                     margin-left: auto;
