@@ -223,9 +223,9 @@ h4.sponsors {
 }
 
 .bronze__sponsors {
-  max-width: 200px;
-  max-height: 70px;
-  padding: 15px;
+  max-width: 160px;
+  max-height: 56px;
+  padding: 12px;
 }
 
 .past__sponsors {
@@ -316,7 +316,7 @@ h4.sponsors {
 }
 
 .hideme {
-  
+
 }
 
 .get__involved h4 {
