@@ -302,12 +302,11 @@ img {
     margin: 0 auto;
   }
 
-
   .title {
     font-size: 1.8em;
   }
 
-/*tessting*/
+/*testing*/
 #section-about{
   background-color: #DEE7EA;
   background-image: url("static/img/whack-logos/logo gray.png");
