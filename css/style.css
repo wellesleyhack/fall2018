@@ -166,12 +166,15 @@ footer{
   width: 300px;
   font-size: inherit;
   background-color: #f0c020;
+  align-self: center;
 }
 
 .join-info{
   width: 300px;
   margin: 10px;
   word-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .faq-questions{
