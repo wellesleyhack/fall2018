@@ -190,12 +190,15 @@ $(document).ready(function() {
                   margin-left: auto;
                   margin-right: auto;
                   margin-top: 50px;
-                  width: 50%;" class="img-circle" src="./static/img/profiles/logo yellow.png" alt="Ariele Xiao">
+                  width: 50%;" class="img-circle" src="./static/img/profiles/chuyue.jpg" alt="Chuyue (Ariele) Xiao">
                   <div class="card-body">
-                    <h5 class="card-title gold">Ariele Xiao</h5>
+                    <h5 class="card-title gold">Chuyue (Ariele) Xiao</h5>
                     <h6 class="card-subtitle mb-2 gold">Logistics Coordinator</h6>
-                    <h6 class="card-text">Major: Computer Science</h6>
+                    <h6 class="card-text">Major: Computer Science and Economics</h6>
                     <h6 class="card-text">Class of 2021</h6>
+                    <h6 class="card-text">
+                      Chuyue is an international student from Shanghai, where she believes is the best place in the world (Boston is #2 of course). She is a certified scuba diver and a world wanderer who loves food to death . When she is not debugging, she is very likely gallery or coffee shop hopping.
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -454,12 +457,15 @@ $(document).ready(function() {
                     margin-left: auto;
                     margin-right: auto;
                     margin-top: 50px;
-                    width: 50%;" class="img-circle" src="./static/img/profiles/logo yellow.png" alt="Ariele Xiao">
+                    width: 50%;" class="img-circle" src="./static/img/profiles/chuyue.jpg" alt="Chuyue (Ariele) Xiao">
                     <div class="card-body">
-                      <h5 class="card-title gold">Ariele Xiao</h5>
+                      <h5 class="card-title gold">Chuyue (Ariele) Xiao</h5>
                       <h6 class="card-subtitle mb-2 gold">Logistics Coordinator</h6>
-                      <h6 class="card-text">Major: Computer Science</h6>
+                      <h6 class="card-text">Major: Computer Science and Economics</h6>
                       <h6 class="card-text">Class of 2021</h6>
+                      <h6 class="card-text">
+                        Chuyue is an international student from Shanghai, where she believes is the best place in the world (Boston is #2 of course). She is a certified scuba diver and a world wanderer who loves food to death . When she is not debugging, she is very likely gallery or coffee shop hopping.
+                      </h6>
                     </div>
                   </div>
                 </div>
