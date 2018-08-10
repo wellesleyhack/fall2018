@@ -1,7 +1,7 @@
 $(document).ready(function() {
   if (window.innerWidth <= 960 && window.innerWidth > 500) {
     $("#recipeCarousel").replaceWith(`<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-      <div class="carousel-inner w-100" role="listbox" style="margin-left: 30px; margin-top: 50px">
+      <div class="carousel-inner w-100" role="listbox" style="margin-left: auto; margin-top: 50px">
           <div class="item row active">
 
               <div class="col-6 float-left">
@@ -293,7 +293,7 @@ $(document).ready(function() {
   $( window ).resize(function() {
     if (window.innerWidth <= 960 && window.innerWidth > 500) {
       $("#recipeCarousel").replaceWith(`<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-        <div class="carousel-inner w-100" role="listbox" style="margin-left: 30px; margin-top: 50px">
+        <div class="carousel-inner w-100" role="listbox" style="margin-left: auto; margin-top: 50px">
             <div class="item row active">
 
                 <div class="col-6 float-left">

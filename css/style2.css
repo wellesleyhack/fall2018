@@ -55,6 +55,8 @@
   z-index: 0;
   /* background-size: 100% 100%; */
   background-size: cover;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .purple{
   color: #982297;
