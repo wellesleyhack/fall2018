@@ -28,7 +28,7 @@ $(document).ready(function() {
   }
 
   if (window.innerWidth <= 770) {
-    $(".have-fun").css("width", "350px");
+    $(".have-fun").css("width", "300px");
     $(".join-us").css("margin-top", "0px");
     $(".faq-questions").css("display", "block");
     $(".big-logo").css("margin-top", "0px");
@@ -73,7 +73,7 @@ $(document).ready(function() {
     }
 
     if (window.innerWidth <= 770) {
-      $(".have-fun").css("width", "350px");
+      $(".have-fun").css("width", "300px");
       $(".join-us").css("margin-top", "0px");
       $(".faq-questions").css("display", "block");
       $(".big-logo").css("margin-top", "0px");
