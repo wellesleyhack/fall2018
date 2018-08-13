@@ -63,9 +63,9 @@ $(document).ready(function() {
                   <div class="card-body">
                     <h5 class="card-title gold">Remi Kobayashi</h5>
                     <h6 class="card-subtitle mb-2 gold">Designer</h6>
-                    <h6 class="card-text"></h6>
-                    <h6 class="card-text"></h6>
-                    <h6 class="card-text"></h6>
+                    <h6 class="card-text">Major: Psychology</h6>
+                    <h6 class="card-text">Class of 2019</h6>
+                    <h6 class="card-text">Raised in Japan, China, and the Netherlands, Remi feels most at home in an international environment. She found a love for ink drawing and design during a course in middle school, and has been stuck to fineliners and Photoshop since. When the Wellesley workload is not overwhelming her, you can find her drawing, bouldering, or watching horror films.</h6>
                   </div>
                 </div>
               </div>
@@ -145,8 +145,9 @@ $(document).ready(function() {
                   <div class="card-body">
                     <h5 class="card-title gold">Margaret Sun</h5>
                     <h6 class="card-subtitle mb-2 gold">Social Media Coordinator</h6>
-                    <h6 class="card-text">Major: Undeclared</h6>
+                    <h6 class="card-text">Major: Economics</h6>
                     <h6 class="card-text">Class of 2021</h6>
+                    <h6 class="card-text">Margaret was born and raised in the Netherlands to a Hungarian mother and Chinese father. When asked to share a fun fact, she’ll usually go with that she speaks five languages and sneezes twice when she eats dark chocolate. She loves photography, cooking, exploring Boston and admiring the Charles.</h6>
                   </div>
                 </div>
               </div>
@@ -328,12 +329,12 @@ $(document).ready(function() {
                     margin-top: 50px;
                     width: 50%;" class="img-circle" src="./static/img/profiles/remi.jpg" alt="Remi Kobayashi">
                     <div class="card-body">
-                      <h5 class="card-title gold">Remi Kobayashi</h5>
-                      <h6 class="card-subtitle mb-2 gold">Designer</h6>
-                      <h6 class="card-text"></h6>
-                      <h6 class="card-text"></h6>
-                      <h6 class="card-text"></h6>
-                    </div>
+											<h5 class="card-title gold">Remi Kobayashi</h5>
+											<h6 class="card-subtitle mb-2 gold">Designer</h6>
+											<h6 class="card-text">Major: Psychology</h6>
+											<h6 class="card-text">Class of 2019</h6>
+											<h6 class="card-text">Raised in Japan, China, and the Netherlands, Remi feels most at home in an international environment. She found a love for ink drawing and design during a course in middle school, and has been stuck to fineliners and Photoshop since. When the Wellesley workload is not overwhelming her, you can find her drawing, bouldering, or watching horror films.</h6>
+										</div>
                   </div>
                 </div>
                 <div class="col-4 float-left">
@@ -410,11 +411,12 @@ $(document).ready(function() {
                     margin-top: 50px;
                     width: 50%;" class="img-circle" src="./static/img/profiles/margaret.jpg" alt="Margaret Sun">
                     <div class="card-body">
-                      <h5 class="card-title gold">Margaret Sun</h5>
-                      <h6 class="card-subtitle mb-2 gold">Social Media Coordinator</h6>
-                      <h6 class="card-text">Major: Undeclared</h6>
-                      <h6 class="card-text">Class of 2021</h6>
-                    </div>
+											<h5 class="card-title gold">Margaret Sun</h5>
+											<h6 class="card-subtitle mb-2 gold">Social Media Coordinator</h6>
+											<h6 class="card-text">Major: Economics</h6>
+											<h6 class="card-text">Class of 2021</h6>
+											<h6 class="card-text">Margaret was born and raised in the Netherlands to a Hungarian mother and Chinese father. When asked to share a fun fact, she’ll usually go with that she speaks five languages and sneezes twice when she eats dark chocolate. She loves photography, cooking, exploring Boston and admiring the Charles.</h6>
+										</div>
                   </div>
                 </div>
             </div>
