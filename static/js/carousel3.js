@@ -75,13 +75,13 @@ $(document).ready(function() {
                   margin-left: auto;
                   margin-right: auto;
                   margin-top: 50px;
-                  width: 50%;" class="img-circle" src="./static/img/profiles/nicole.jpg" alt="Nicole Li">
+                  width: 50%;" class="img-circle" src="./static/img/profiles/allison.jpg" alt="Allison Turner">
                   <div class="card-body">
-                    <h5 class="card-title gold">Nicole Li</h5>
+                    <h5 class="card-title gold">Allison Turner</h5>
                     <h6 class="card-subtitle mb-2 gold">Web Developer</h6>
-                    <h6 class="card-text">Major: Undeclared</h6>
+                    <h6 class="card-text">Major: Computer Science and Mathematics</h6>
                     <h6 class="card-text">Class of 2021</h6>
-                    <h6 class="card-text">Nicole hails from California and writes impulsively. She can be described primarily as a mixture of carbon, hydrogen, nitrogen, and oxygen atoms. You can find her staring at a screen about 90% of the time.</h6>
+                    <h6 class="card-text">Allison is a New England native who loves dogs, coding, and memes. When she isn’t in class, she enjoys playing Dungeons and Dragons with her family, wasting time on Twitter, and reading.</h6>
                   </div>
                 </div>
               </div>
@@ -91,13 +91,13 @@ $(document).ready(function() {
                   margin-left: auto;
                   margin-right: auto;
                   margin-top: 50px;
-                  width: 50%;" class="img-circle" src="./static/img/profiles/allison.jpg" alt="Allison Turner">
+                  width: 50%;" class="img-circle" src="./static/img/profiles/nicole.jpg" alt="Nicole Li">
                   <div class="card-body">
-                    <h5 class="card-title gold">Allison Turner</h5>
+                    <h5 class="card-title gold">Nicole Li</h5>
                     <h6 class="card-subtitle mb-2 gold">Web Developer</h6>
-                    <h6 class="card-text">Major: Computer Science and Mathematics</h6>
+                    <h6 class="card-text">Major: Undeclared</h6>
                     <h6 class="card-text">Class of 2021</h6>
-                    <h6 class="card-text">Allison is a New England native who loves dogs, coding, and memes. When she isn’t in class, she enjoys playing Dungeons and Dragons with her family, wasting time on Twitter, and reading.</h6>
+                    <h6 class="card-text">Nicole hails from California and writes impulsively. She can be described primarily as a mixture of carbon, hydrogen, nitrogen, and oxygen atoms. You can find her staring at a screen about 90% of the time.</h6>
                   </div>
                 </div>
               </div>
@@ -227,13 +227,13 @@ $(document).ready(function() {
                   margin-left: auto;
                   margin-right: auto;
                   margin-top: 50px;
-                  width: 50%;" class="img-circle" src="./static/img/profiles/isabelle.jpg" alt="Isabelle Chun">
+                  width: 50%;" class="img-circle" src="./static/img/profiles/heidi.jpg" alt="Heidi Cho">
                   <div class="card-body">
-                    <h5 class="card-title gold">Isabelle Chun</h5>
+                    <h5 class="card-title gold">Heidi Cho</h5>
                     <h6 class="card-subtitle mb-2 gold">Treasurer</h6>
                     <h6 class="card-text">Major: Computer Science</h6>
                     <h6 class="card-text">Class of 2020</h6>
-                    <h6 class="card-text">Isabelle grew up in Palo Alto, CA and plays on the Wellesley golf team. She loves baking, walks around Lake Waban, visiting art museums, and coding.</h6>
+                    <h6 class="card-text">At Wellesley, Heidi is the co-Treasurer of the CS club, as well as the Vice President of Wellesley’s Korean Students Association. In her free time, she enjoys practicing card tricks, watching anime, and cooking with friends.</h6>
                   </div>
                 </div>
               </div>
@@ -243,13 +243,13 @@ $(document).ready(function() {
                   margin-left: auto;
                   margin-right: auto;
                   margin-top: 50px;
-                  width: 50%;" class="img-circle" src="./static/img/profiles/heidi.jpg" alt="Heidi Cho">
+                  width: 50%;" class="img-circle" src="./static/img/profiles/isabelle.jpg" alt="Isabelle Chun">
                   <div class="card-body">
-                    <h5 class="card-title gold">Heidi Cho</h5>
+                    <h5 class="card-title gold">Isabelle Chun</h5>
                     <h6 class="card-subtitle mb-2 gold">Treasurer</h6>
                     <h6 class="card-text">Major: Computer Science</h6>
                     <h6 class="card-text">Class of 2020</h6>
-                    <h6 class="card-text">At Wellesley, Heidi is the co-Treasurer of the CS club, as well as the Vice President of Wellesley’s Korean Students Association. In her free time, she enjoys practicing card tricks, watching anime, and cooking with friends.</h6>
+                    <h6 class="card-text">Isabelle grew up in Palo Alto, CA and plays on the Wellesley golf team. She loves baking, walks around Lake Waban, visiting art museums, and coding.</h6>
                   </div>
                 </div>
               </div>
@@ -338,37 +338,37 @@ $(document).ready(function() {
                   </div>
                 </div>
                 <div class="col-4 float-left">
-                  <div class="card" style="width: 18rem; background-color: #DEE7EA">
-                    <img style="display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 50px;
-                    width: 50%;" class="img-circle" src="./static/img/profiles/nicole.jpg" alt="Nicole Li">
-                    <div class="card-body">
-                      <h5 class="card-title gold">Nicole Li</h5>
-                      <h6 class="card-subtitle mb-2 gold">Web Developer</h6>
-                      <h6 class="card-text">Major: Undeclared</h6>
-                      <h6 class="card-text">Class of 2021</h6>
-                      <h6 class="card-text">Nicole hails from California and writes impulsively. She can be described primarily as a mixture of carbon, hydrogen, nitrogen, and oxygen atoms. You can find her staring at a screen about 90% of the time.</h6>
-                    </div>
-                  </div>
-                </div>
+									<div class="card" style="width: 18rem; background-color: #DEE7EA">
+										<img style="display: block;
+							      margin-left: auto;
+							      margin-right: auto;
+										margin-top: 50px;
+							      width: 50%;" class="img-circle" src="./static/img/profiles/allison.jpg" alt="Allison Turner">
+										<div class="card-body">
+											<h5 class="card-title gold">Allison Turner</h5>
+											<h6 class="card-subtitle mb-2 gold">Web Developer</h6>
+											<h6 class="card-text">Major: Computer Science and Mathematics</h6>
+											<h6 class="card-text">Class of 2021</h6>
+											<h6 class="card-text">Allison is a New England native who loves dogs, coding, and memes. When she isn’t in class, she enjoys playing Dungeons and Dragons with her family, wasting time on Twitter, and reading.</h6>
+										</div>
+									</div>
+								</div>
                 <div class="col-4 float-left">
-                  <div class="card" style="width: 18rem; background-color: #DEE7EA">
-                    <img style="display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 50px;
-                    width: 50%;" class="img-circle" src="./static/img/profiles/allison.jpg" alt="Allison Turner">
-                    <div class="card-body">
-                      <h5 class="card-title gold">Allison Turner</h5>
-                      <h6 class="card-subtitle mb-2 gold">Web Developer</h6>
-                      <h6 class="card-text">Major: Computer Science and Mathematics</h6>
-                      <h6 class="card-text">Class of 2021</h6>
-                      <h6 class="card-text">Allison is a New England native who loves dogs, coding, and memes. When she isn’t in class, she enjoys playing Dungeons and Dragons with her family, wasting time on Twitter, and reading.</h6>
-                    </div>
-                  </div>
-                </div>
+									<div class="card" style="width: 18rem; background-color: #DEE7EA">
+										<img style="display: block;
+							      margin-left: auto;
+							      margin-right: auto;
+										margin-top: 50px;
+							      width: 50%;" class="img-circle" src="./static/img/profiles/nicole.jpg" alt="Nicole Li">
+										<div class="card-body">
+											<h5 class="card-title gold">Nicole Li</h5>
+											<h6 class="card-subtitle mb-2 gold">Web Developer</h6>
+											<h6 class="card-text">Major: Undeclared</h6>
+											<h6 class="card-text">Class of 2021</h6>
+											<h6 class="card-text">Nicole hails from California and writes impulsively. She can be described primarily as a mixture of carbon, hydrogen, nitrogen, and oxygen atoms. You can find her staring at a screen about 90% of the time.</h6>
+										</div>
+									</div>
+								</div>
             </div>
             <div class="item row">
                 <div class="col-4 float-left">
@@ -490,37 +490,37 @@ $(document).ready(function() {
                   </div>
                 </div>
                 <div class="col-4 float-left">
-                  <div class="card" style="width: 18rem; background-color: #DEE7EA">
-                    <img style="display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 50px;
-                    width: 50%;" class="img-circle" src="./static/img/profiles/isabelle.jpg" alt="Isabelle Chun">
-                    <div class="card-body">
-                      <h5 class="card-title gold">Isabelle Chun</h5>
-                      <h6 class="card-subtitle mb-2 gold">Treasurer</h6>
-                      <h6 class="card-text">Major: Computer Science</h6>
-                      <h6 class="card-text">Class of 2020</h6>
-                      <h6 class="card-text">Isabelle grew up in Palo Alto, CA and plays on the Wellesley golf team. She loves baking, walks around Lake Waban, visiting art museums, and coding.</h6>
-                    </div>
-                  </div>
-                </div>
+									<div class="card" style="width: 18rem; background-color: #DEE7EA">
+										<img style="display: block;
+							      margin-left: auto;
+							      margin-right: auto;
+										margin-top: 50px;
+							      width: 50%;" class="img-circle" src="./static/img/profiles/heidi.jpg" alt="Heidi Cho">
+										<div class="card-body">
+											<h5 class="card-title gold">Heidi Cho</h5>
+											<h6 class="card-subtitle mb-2 gold">Treasurer</h6>
+											<h6 class="card-text">Major: Computer Science</h6>
+											<h6 class="card-text">Class of 2020</h6>
+											<h6 class="card-text">At Wellesley, Heidi is the co-Treasurer of the CS club, as well as the Vice President of Wellesley’s Korean Students Association. In her free time, she enjoys practicing card tricks, watching anime, and cooking with friends.</h6>
+										</div>
+									</div>
+								</div>
                 <div class="col-4 float-left">
-                  <div class="card" style="width: 18rem; background-color: #DEE7EA">
-                    <img style="display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 50px;
-                    width: 50%;" class="img-circle" src="./static/img/profiles/heidi.jpg" alt="Heidi Cho">
-                    <div class="card-body">
-                      <h5 class="card-title gold">Heidi Cho</h5>
-                      <h6 class="card-subtitle mb-2 gold">Treasurer</h6>
-                      <h6 class="card-text">Major: Computer Science</h6>
-                      <h6 class="card-text">Class of 2020</h6>
-                      <h6 class="card-text">At Wellesley, Heidi is the co-Treasurer of the CS club, as well as the Vice President of Wellesley’s Korean Students Association. In her free time, she enjoys practicing card tricks, watching anime, and cooking with friends.</h6>
-                    </div>
-                  </div>
-                </div>
+									<div class="card" style="width: 18rem; background-color: #DEE7EA">
+										<img style="display: block;
+							      margin-left: auto;
+							      margin-right: auto;
+										margin-top: 50px;
+							      width: 50%;" class="img-circle" src="./static/img/profiles/isabelle.jpg" alt="Isabelle Chun">
+										<div class="card-body">
+											<h5 class="card-title gold">Isabelle Chun</h5>
+											<h6 class="card-subtitle mb-2 gold">Treasurer</h6>
+											<h6 class="card-text">Major: Computer Science</h6>
+											<h6 class="card-text">Class of 2020</h6>
+											<h6 class="card-text">Isabelle grew up in Palo Alto, CA and plays on the Wellesley golf team. She loves baking, walks around Lake Waban, visiting art museums, and coding.</h6>
+										</div>
+									</div>
+								</div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
