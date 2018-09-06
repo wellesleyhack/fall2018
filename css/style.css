@@ -105,6 +105,19 @@ footer{
   background-color: #EFC247;
 }
 
+.nav-right .facebook {
+  padding-left: 1000px;
+  margin-right: -20px;
+}
+.nav-right .instagram {
+  padding-right: 5px;
+  margin-right: -20px;
+}
+.nav-right .twitter {
+  margin-right: -20px;
+}
+
+
 .day-toggle {
   width: 200px;
   margin-top: 30px;
