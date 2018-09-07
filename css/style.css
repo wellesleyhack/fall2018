@@ -99,14 +99,23 @@ button {
 
 footer{
   background-color: #EFC247;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .footer{
   background-color: #EFC247;
 }
 
+.nav-right{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  float: right;
+  height: 100px;
+  width: 200 px;
+}
+
 .nav-right .facebook {
-  padding-left: 1000px;
   margin-right: -20px;
 }
 .nav-right .instagram {
