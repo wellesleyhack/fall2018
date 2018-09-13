@@ -166,13 +166,21 @@
 }
 
 ul{
-  list-style: none;
+  list-style:none;
+  margin:0;
+  padding:0;
+  overflow:scroll
 }
 
 ul li:before {
-  content: "\2023";
+  /* content: "\2023"; */
   padding-right: 15px
 }
+
+ul li {
+  float: left;
+}
+
 @media (max-width:432px) {
   #section1-title{
     font-size: 3.125rem
