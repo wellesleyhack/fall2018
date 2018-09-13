@@ -94,7 +94,6 @@ button {
   margin-left: 445px;
   margin-top: -15px;
   background-color: transparent;
-
 }
 
 footer{
@@ -185,10 +184,8 @@ footer{
 }
 
 .apply-now{
-  width: 300px;
   font-size: inherit;
   background-color: #f0c020;
-  align-self: center;
 }
 
 .join-info{
@@ -197,6 +194,7 @@ footer{
   word-spacing: 1px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .faq-questions{
