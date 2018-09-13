@@ -32,11 +32,13 @@ $(document).ready(function() {
     $(".join-us").css("margin-top", "0px");
     $(".faq-questions").css("display", "block");
     $(".big-logo").css("margin-top", "0px");
+    $("#navbar").css("display", "none");
   } else {
     $(".have-fun").css("width", "600px");
     $(".join-us").css("margin-top", "-300px");
     $(".faq-questions").css("display", "flex");
     $(".big-logo").css("margin-top", "100px");
+    $("#navbar").css("display", "flex");
   }
 
   if (window.innerWidth <= 400) {
@@ -77,11 +79,13 @@ $(document).ready(function() {
       $(".join-us").css("margin-top", "0px");
       $(".faq-questions").css("display", "block");
       $(".big-logo").css("margin-top", "0px");
+      $("#navbar").css("display", "none");
     } else {
       $(".have-fun").css("width", "600px");
       $(".join-us").css("margin-top", "-300px");
       $(".faq-questions").css("display", "flex");
       $(".big-logo").css("margin-top", "100px");
+      $("#navbar").css("display", "flex");
     }
 
     if (window.innerWidth <= 400) {
