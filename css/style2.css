@@ -173,9 +173,15 @@ ul{
   overflow:scroll
 }
 
-ul li:before {
-  /* content: "\2023"; */
-  padding-right: 15px
+#section-faq ul li:before {
+  content: "\2022";
+  padding-right: 15px;
+  color: #EFC247;
+  font-size: 2rem;
+}
+
+#section-faq ul li p{
+  font-size: 1rem;
 }
 
 @media (max-width:432px) {
