@@ -6026,6 +6026,7 @@ a.nav-item:not(.button).is-tab.is-active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+          align-items: center;
 }
 
 .nav-center {
