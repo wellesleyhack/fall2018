@@ -178,10 +178,6 @@ ul li:before {
   padding-right: 15px
 }
 
-ul li {
-  float: left;
-}
-
 @media (max-width:432px) {
   #section1-title{
     font-size: 3.125rem
