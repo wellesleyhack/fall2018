@@ -38,7 +38,7 @@ $(document).ready(function() {
     $(".faq-questions ul li").css("width", "auto");
     $(".faq-questions ul li p").css("width", "auto");
   } else {
-    $(".have-fun").css("width", "600px");
+    $(".have-fun").css("width", "550px");
     $(".join-us").css("margin-top", "-300px");
     $(".faq-questions").css("display", "flex");
     $(".big-logo").css("margin-top", "100px");
@@ -89,7 +89,7 @@ $(document).ready(function() {
       $(".faq-questions ul li").css("width", "auto");
       $(".faq-questions ul li p").css("width", "auto");
     } else {
-      $(".have-fun").css("width", "600px");
+      $(".have-fun").css("width", "550px");
       $(".join-us").css("margin-top", "-300px");
       $(".faq-questions").css("display", "flex");
       $(".big-logo").css("margin-top", "100px");
