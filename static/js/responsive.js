@@ -8,13 +8,12 @@ $(document).ready(function() {
 
   if (window.innerWidth <= 1225) {
     $(".join-info").css("width", "200px");
+    $(".faq-questions ul li").css("width", "auto");
+    $(".faq-questions ul li p").css("width", "auto");
   } else {
     $(".join-info").css("width", "300px");
-  }
-
-  if (window.innerWidth > 1225) {
-    // $(".faq-questions ul li").css("width", "600px");
-    // $(".faq-questions ul li p").css("width", "500px");
+    $(".faq-questions ul li").css("width", "600px");
+    $(".faq-questions ul li p").css("width", "500px");
   }
 
   if (window.innerWidth <= 1084) {
@@ -34,8 +33,7 @@ $(document).ready(function() {
     $(".faq-questions").css("display", "block");
     $(".big-logo").css("margin-top", "0px");
     $("#navbar").css("display", "none");
-    // $(".faq-questions ul li").css("width", "auto");
-    // $(".faq-questions ul li p").css("width", "auto");
+
   } else {
     $(".join-us").css("margin-top", "-300px");
     $(".faq-questions").css("display", "flex");
@@ -66,12 +64,12 @@ $(document).ready(function() {
 
     if (window.innerWidth <= 1225) {
       $(".join-info").css("width", "200px");
-      // $(".faq-questions ul li").css("width", "600px");
-      // $(".faq-questions ul li p").css("width", "500px");
+      $(".faq-questions ul li").css("width", "auto");
+      $(".faq-questions ul li p").css("width", "auto");
     } else {
       $(".join-info").css("width", "300px");
-      // $(".faq-questions ul li").css("width", "600px");
-      // $(".faq-questions ul li p").css("width", "500px");
+      $(".faq-questions ul li").css("width", "600px");
+      $(".faq-questions ul li p").css("width", "500px");
     }
 
     if (window.innerWidth <= 1084) {
@@ -91,8 +89,7 @@ $(document).ready(function() {
       $(".faq-questions").css("display", "block");
       $(".big-logo").css("margin-top", "0px");
       $("#navbar").css("display", "none");
-      // $(".faq-questions ul li").css("width", "auto");
-      // $(".faq-questions ul li p").css("width", "auto");
+
     } else {
       $(".join-us").css("margin-top", "-300px");
       $(".faq-questions").css("display", "flex");
