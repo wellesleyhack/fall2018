@@ -2,28 +2,22 @@ $(document).ready(function() {
 
   if (window.innerWidth <= 1300) {
     $("#dynamic").css("width", "1000px");
-    // $(".join-info").css("width", "200px");
-    // $(".join-us").css("margin-left", "auto");
-    // $(".join-title").css("margin-left", "auto");
   } else {
     $("#dynamic").css("width", "auto");
   }
 
-  // if (window.innerWidth <= 990 && window.innerWidth >= 760) {
-  //   $(".join-info").css("width", "200px");
-  //   $(".join-us").css("margin-left", "-80px");
-  //   $(".join-title").css("margin-left", "80px");
-  // }
+  if (window.innerWidth <= 1225) {
+    $(".join-info").css("width", "200px");
+  }
 
   if (window.innerWidth > 1225) {
-    // $(".join-info").css("width", "300px");
-    // $(".join-us").css("margin-left", "auto");
-    // $(".join-title").css("margin-left", "auto");
+    $(".join-info").css("width", "300px");
     $(".faq-questions ul li").css("width", "600px");
     $(".faq-questions ul li p").css("width", "500px");
   }
 
   if (window.innerWidth <= 1084) {
+    $(".join-info").css("width", "300px");
     $(".join-box").css("flex-direction", "column");
     $(".at-whack").hide();
     $("#dynamic").css("padding-left", "0px");
@@ -65,28 +59,22 @@ $(document).ready(function() {
 
     if (window.innerWidth <= 1300) {
       $("#dynamic").css("width", "1000px");
-      // $(".join-info").css("width", "200px");
-      // $(".join-us").css("margin-left", "auto");
-      // $(".join-title").css("margin-left", "auto");
     } else {
       $("#dynamic").css("width", "auto");
     }
 
-    // if (window.innerWidth <= 990 && window.innerWidth >= 760) {
-    //   $(".join-info").css("width", "200px");
-    //   $(".join-us").css("margin-left", "-80px");
-    //   $(".join-title").css("margin-left", "80px");
-    // }
+    if (window.innerWidth <= 1225) {
+      $(".join-info").css("width", "200px");
+    }
 
     if (window.innerWidth > 1225) {
-      // $(".join-info").css("width", "300px");
-      // $(".join-us").css("margin-left", "auto");
-      // $(".join-title").css("margin-left", "auto");
+      $(".join-info").css("width", "300px");
       $(".faq-questions ul li").css("width", "600px");
       $(".faq-questions ul li p").css("width", "500px");
     }
 
     if (window.innerWidth <= 1084) {
+      $(".join-info").css("width", "300px");
       $(".join-box").css("flex-direction", "column");
       $(".at-whack").hide();
       $("#dynamic").css("padding-left", "0px");
