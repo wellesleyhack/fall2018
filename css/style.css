@@ -202,13 +202,13 @@ footer{
   justify-content: center;
 }
 
-.faq-questions ul li {
-  width: 600px;
+/* .faq-questions ul li {
+  width: auto;
 }
 
 .faq-questions ul li p {
-  width: 500px;
-}
+  width: auto;
+} */
 
 .splash-title{
   margin-top: -60px;
