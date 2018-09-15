@@ -33,8 +33,10 @@ $(document).ready(function() {
     $(".faq-questions").css("display", "block");
     $(".big-logo").css("margin-top", "0px");
     $("#navbar").css("display", "none");
-
+    $("#dynamic").css("width", "450px");
+    $(".have-fun").css("width", "400px");
   } else {
+    $(".have-fun").css("width", "550px");
     $(".join-us").css("margin-top", "-300px");
     $(".faq-questions").css("display", "flex");
     $(".big-logo").css("margin-top", "100px");
@@ -44,8 +46,6 @@ $(document).ready(function() {
   if (window.innerWidth <= 440) {
     $(".have-fun").css("width", "250px");
     $("#dynamic").css("width", "300px");
-  } else {
-    $(".have-fun").css("width", "550px");
   }
 
   if (window.innerWidth <= 330) {
@@ -89,8 +89,10 @@ $(document).ready(function() {
       $(".faq-questions").css("display", "block");
       $(".big-logo").css("margin-top", "0px");
       $("#navbar").css("display", "none");
-
+      $("#dynamic").css("width", "450px");
+      $(".have-fun").css("width", "400px");
     } else {
+      $(".have-fun").css("width", "550px");
       $(".join-us").css("margin-top", "-300px");
       $(".faq-questions").css("display", "flex");
       $(".big-logo").css("margin-top", "100px");
@@ -100,8 +102,6 @@ $(document).ready(function() {
     if (window.innerWidth <= 440) {
       $(".have-fun").css("width", "250px");
       $("#dynamic").css("width", "300px");
-    } else {
-      $(".have-fun").css("width", "550px");
     }
 
     if (window.innerWidth <= 330) {
