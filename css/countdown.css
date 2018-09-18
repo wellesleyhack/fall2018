@@ -10,7 +10,8 @@
 
 .countdown_container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
 }
 
 .countdown_container h2 {

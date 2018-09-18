@@ -24,7 +24,7 @@ $(document).ready(function() {
     $("#dynamic").css("padding-left", "0px");
     $("#dynamic").css("width", "550px");
   } else {
-    $("#head").css("display", "auto");
+    $("#head").css("display", "flex");
     $(".at-whack").show();
     $(".join-box").css("flex-direction", "row");
     $("#dynamic").css("padding-left", "200px");
@@ -82,7 +82,7 @@ $(document).ready(function() {
       $("#dynamic").css("padding-left", "0px");
       $("#dynamic").css("width", "550px");
     } else {
-      $("#head").css("display", "auto");
+      $("#head").css("display", "flex");
       $(".at-whack").show();
       $(".join-box").css("flex-direction", "row");
       $("#dynamic").css("padding-left", "200px");
