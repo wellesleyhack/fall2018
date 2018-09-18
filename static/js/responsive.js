@@ -19,6 +19,7 @@ $(document).ready(function() {
   if (window.innerWidth <= 1084) {
     $(".countdown_container").css("display", "block");
     $("#head").css("padding-right", "0px");
+    $("#head").css("padding-top", "20px");
     $(".join-info").css("width", "300px");
     $(".join-box").css("flex-direction", "column");
     $(".at-whack").hide();
@@ -27,6 +28,7 @@ $(document).ready(function() {
   } else {
     $(".countdown_container").css("display", "flex");
     $("#head").css("padding-right", "100px");
+    $("#head").css("padding-top", "0px");
     $(".at-whack").show();
     $(".join-box").css("flex-direction", "row");
     $("#dynamic").css("padding-left", "200px");
@@ -79,6 +81,7 @@ $(document).ready(function() {
     if (window.innerWidth <= 1084) {
       $(".countdown_container").css("display", "block");
       $("#head").css("padding-right", "0px");
+      $("#head").css("padding-top", "20px");
       $(".join-info").css("width", "300px");
       $(".join-box").css("flex-direction", "column");
       $(".at-whack").hide();
@@ -87,6 +90,7 @@ $(document).ready(function() {
     } else {
       $(".countdown_container").css("display", "flex");
       $("#head").css("padding-right", "100px");
+      $("#head").css("padding-top", "0px");
       $(".at-whack").show();
       $(".join-box").css("flex-direction", "row");
       $("#dynamic").css("padding-left", "200px");
