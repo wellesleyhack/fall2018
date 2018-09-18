@@ -17,14 +17,16 @@ $(document).ready(function() {
   }
 
   if (window.innerWidth <= 1084) {
-    $("#head").css("display", "none");
+    $(".countdown_container").css("display", "block");
+    $("#head").css("padding-right", "0px");
     $(".join-info").css("width", "300px");
     $(".join-box").css("flex-direction", "column");
     $(".at-whack").hide();
     $("#dynamic").css("padding-left", "0px");
     $("#dynamic").css("width", "550px");
   } else {
-    $("#head").css("display", "flex");
+    $(".countdown_container").css("display", "flex");
+    $("#head").css("padding-right", "100px");
     $(".at-whack").show();
     $(".join-box").css("flex-direction", "row");
     $("#dynamic").css("padding-left", "200px");
@@ -75,14 +77,16 @@ $(document).ready(function() {
     }
 
     if (window.innerWidth <= 1084) {
-      $("#head").css("display", "none");
+      $(".countdown_container").css("display", "block");
+      $("#head").css("padding-right", "0px");
       $(".join-info").css("width", "300px");
       $(".join-box").css("flex-direction", "column");
       $(".at-whack").hide();
       $("#dynamic").css("padding-left", "0px");
       $("#dynamic").css("width", "550px");
     } else {
-      $("#head").css("display", "flex");
+      $(".countdown_container").css("display", "flex");
+      $("#head").css("padding-right", "100px");
       $(".at-whack").show();
       $(".join-box").css("flex-direction", "row");
       $("#dynamic").css("padding-left", "200px");

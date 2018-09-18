@@ -14,7 +14,7 @@
   /* align-items: stretch; */
 }
 
-.countdown_container h2 {
+#head {
   padding-right: 100px;
   font-weight: bold;
   align-self: center;
