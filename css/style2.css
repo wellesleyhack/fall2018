@@ -240,3 +240,11 @@ ul.text-large p{
   font-size: 48px;
   color: white
 }
+
+.sponsor-logos {
+  display: flex;
+}
+
+.sponsor {
+  padding: 10px;
+}
