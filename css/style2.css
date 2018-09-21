@@ -242,9 +242,10 @@ ul.text-large p{
 }
 
 /* .sponsor-logos {
-  display: flex;
-}
+  display: inline;
+} */
 
 .sponsor {
-  padding: 10px;
-} */
+  display: inline;
+  padding: 20px;
+}
