@@ -41,12 +41,23 @@ $(document).ready(function() {
     $("#navbar").css("display", "none");
     $("#dynamic").css("width", "450px");
     $(".have-fun").css("width", "400px");
+    $(".platinum__sponsor").css("width", "100%");
+    $(".gold__sponsor").css("width", "75%");
+    $(".silver__sponsor").css("width", "65%");
+    $(".bronze__sponsor").css("width", "55%");
+    $(".aqua__sponsor").css("width", "45%");
+    $(".sponsor").css("padding", "0px");
   } else {
     $(".have-fun").css("width", "550px");
     $(".join-us").css("margin-top", "-300px");
     $(".faq-questions").css("display", "flex");
     $(".big-logo").css("margin-top", "100px");
     $("#navbar").css("display", "flex");
+    $(".platinum__sponsor").css("width", "65%");
+    $(".silver__sponsor").css("width", "45%");
+    $(".bronze__sponsor").css("width", "25%");
+    $(".aqua__sponsor").css("width", "15%");
+    $(".sponsor").css("padding", "20px");
   }
 
   if (window.innerWidth <= 440) {
@@ -103,12 +114,23 @@ $(document).ready(function() {
       $("#navbar").css("display", "none");
       $("#dynamic").css("width", "450px");
       $(".have-fun").css("width", "400px");
+      $(".platinum__sponsor").css("width", "100%");
+      $(".gold__sponsor").css("width", "75%");
+      $(".silver__sponsor").css("width", "65%");
+      $(".bronze__sponsor").css("width", "55%");
+      $(".aqua__sponsor").css("width", "45%");
+      $(".sponsor").css("padding", "0px");
     } else {
       $(".have-fun").css("width", "550px");
       $(".join-us").css("margin-top", "-300px");
       $(".faq-questions").css("display", "flex");
       $(".big-logo").css("margin-top", "100px");
       $("#navbar").css("display", "flex");
+      $(".platinum__sponsor").css("width", "65%");
+      $(".silver__sponsor").css("width", "45%");
+      $(".bronze__sponsor").css("width", "25%");
+      $(".aqua__sponsor").css("width", "15%");
+      $(".sponsor").css("padding", "20px");
     }
 
     if (window.innerWidth <= 440) {
