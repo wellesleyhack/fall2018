@@ -185,6 +185,10 @@ ul{
   font-size: 1rem;
 }
 
+#section-faq a {
+  color: #f0c020;
+}
+
 @media (max-width:432px) {
   #section1-title{
     font-size: 3.125rem
