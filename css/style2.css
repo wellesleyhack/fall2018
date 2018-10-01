@@ -257,3 +257,19 @@ ul.text-large p{
 .sponsor img {
   padding: 20px;
 }
+
+.made-by {
+  color: white;
+  word-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}

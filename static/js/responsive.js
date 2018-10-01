@@ -59,7 +59,7 @@ $(document).ready(function() {
     $(".aqua__sponsor").css("width", "15%");
     $(".sponsor").css("padding", "20px");
   }
-
+  
   if (window.innerWidth <= 440) {
     $(".have-fun").css("width", "250px");
     $("#dynamic").css("width", "300px");
