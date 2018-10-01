@@ -273,3 +273,7 @@ ul.text-large p{
   align-items: center;
   margin-bottom: 20px;
 }
+
+#navbar a {
+  color: #f0c020;
+}
