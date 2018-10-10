@@ -54,12 +54,12 @@ $(document).ready(function() {
     $(".big-logo").css("margin-top", "100px");
     $("#navbar").css("display", "flex");
     $(".platinum__sponsor").css("width", "65%");
-    $(".silver__sponsor").css("width", "45%");
-    $(".bronze__sponsor").css("width", "25%");
+    $(".silver__sponsor").css("width", "35%");
+    $(".bronze__sponsor").css("width", "20%");
     $(".aqua__sponsor").css("width", "15%");
     $(".sponsor").css("padding", "20px");
   }
-  
+
   if (window.innerWidth <= 440) {
     $(".have-fun").css("width", "250px");
     $("#dynamic").css("width", "300px");
@@ -127,8 +127,8 @@ $(document).ready(function() {
       $(".big-logo").css("margin-top", "100px");
       $("#navbar").css("display", "flex");
       $(".platinum__sponsor").css("width", "65%");
-      $(".silver__sponsor").css("width", "45%");
-      $(".bronze__sponsor").css("width", "25%");
+      $(".silver__sponsor").css("width", "35%");
+      $(".bronze__sponsor").css("width", "20%");
       $(".aqua__sponsor").css("width", "15%");
       $(".sponsor").css("padding", "20px");
     }
