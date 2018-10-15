@@ -163,6 +163,17 @@
   font-size: 1rem
 }
 
+.schedule-description {
+  font-size: 20px;
+  color: #efc247;
+}
+
+.schedule-subheader {
+  font-size: 20px;
+  color: #efc247;
+  word-spacing: 0px;
+}
+
 .column p{
   font-size: 14px;
   word-spacing: 0px;
