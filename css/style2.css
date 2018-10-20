@@ -289,3 +289,40 @@ ul.text-large p{
 #navbar a {
   color: #f0c020;
 }
+
+.keynote-element{
+  float:left;
+  display:inline;
+  width: 49%;
+  padding: 100px;
+  overflow: scroll;
+}
+.telisa-bio{
+  padding-top: 100px;
+  height: 300px;
+  width: 500px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #EFC247;
+}
+#keynote{
+  background-color: #2E2E38;
+}
+.telisa-bio::-webkit-scrollbar
+{ /* 1 */ }
+.telisa-bio::-webkit-scrollbar-button
+{ /* 2 */ }
+.telisa-bio::-webkit-scrollbar-track
+{ /* 3 */ }
+.telisa-bio::-webkit-scrollbar-track-piece
+{ /* 4 */ }
+.telisa-bio::-webkit-scrollbar-thumb
+{ /* 5 */ }
+.telisa-bio::-webkit-scrollbar-corner
+{ /* 6 */ }
+.telisa-bio::-webkit-resizer
+{ /* 7 */ }
+.keynote-picture{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+
