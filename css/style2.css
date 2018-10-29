@@ -293,14 +293,16 @@ ul.text-large p{
 .keynote-element{
   float:left;
   display:inline;
-  width: 49%;
-  padding: 100px;
+  width: 33%;
+  padding: 10px;
   overflow: scroll;
 }
 .telisa-bio{
-  padding-top: 100px;
+  padding-top: 10px;
+  margin-left: 10%;
+  margin-top: 20px;
   height: 300px;
-  width: 500px;
+  width: 50%;
   border-style: solid;
   border-width: 1px;
   border-color: #EFC247;
@@ -308,20 +310,7 @@ ul.text-large p{
 #keynote,#prizes{
   background-color: #2E2E38;
 }
-.telisa-bio::-webkit-scrollbar
-{ /* 1 */ }
-.telisa-bio::-webkit-scrollbar-button
-{ /* 2 */ }
-.telisa-bio::-webkit-scrollbar-track
-{ /* 3 */ }
-.telisa-bio::-webkit-scrollbar-track-piece
-{ /* 4 */ }
-.telisa-bio::-webkit-scrollbar-thumb
-{ /* 5 */ }
-.telisa-bio::-webkit-scrollbar-corner
-{ /* 6 */ }
-.telisa-bio::-webkit-resizer
-{ /* 7 */ }
+
 .keynote-picture{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
@@ -333,3 +322,7 @@ ul.text-large p{
 .prize-subsection p{
   font-size: 20px;
 }
+/*
+.keynote-box {
+  display: flex;
+} */
