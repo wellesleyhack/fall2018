@@ -305,7 +305,7 @@ ul.text-large p{
   border-width: 1px;
   border-color: #EFC247;
 }
-#keynote{
+#keynote,#prizes{
   background-color: #2E2E38;
 }
 .telisa-bio::-webkit-scrollbar
@@ -326,3 +326,10 @@ ul.text-large p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
+#prizes {
+  word-spacing: 0px;
+}
+
+.prize-subsection p{
+  font-size: 20px;
+}
