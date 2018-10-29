@@ -319,10 +319,6 @@ ul.text-large p{
   word-spacing: 0px;
 }
 
-.prize-subsection p{
-  font-size: 20px;
+#section-keynote,#section-prizes p{
+  word-spacing: 0px;
 }
-/*
-.keynote-box {
-  display: flex;
-} */
