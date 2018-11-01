@@ -61,8 +61,11 @@ $(document).ready(function() {
   }
 
   if (window.innerWidth <= 440) {
+    $(".day-toggle").css("font-size", "0rem");
     $(".have-fun").css("width", "250px");
     $("#dynamic").css("width", "300px");
+  } else {
+    $(".day-toggle").css("font-size", "1rem");
   }
 
   if (window.innerWidth <= 330) {
@@ -134,8 +137,11 @@ $(document).ready(function() {
     }
 
     if (window.innerWidth <= 440) {
+      $(".day-toggle").css("font-size", "0rem");
       $(".have-fun").css("width", "250px");
       $("#dynamic").css("width", "300px");
+    } else {
+      $(".day-toggle").css("font-size", "1rem");
     }
 
     if (window.innerWidth <= 330) {
