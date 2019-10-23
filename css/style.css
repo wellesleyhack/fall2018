@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%);
+  background: linear-gradient(0deg, rgb(35, 242, 206) 0%, rgb(49, 204, 177) 22%, rgb(54, 173, 153) 35%, rgb(2, 161, 94) 50%, rgb(0, 120, 69) 61%, rgb(0, 77, 45) 75%);
 	font-family: 'Open Sans Bold', sans-serif;
 	font-style: normal;
 	line-height: 1.5;
