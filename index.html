@@ -31,6 +31,7 @@
 
 	<!-- stylesheets -->
 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -57,7 +58,7 @@
 <body>
 		<!-- splash -->
 		<section class="hero is-fullheight gradient-background" id="section1">
-			<ul id="navbar" style="padding-top:10px;display:flex;align-items:center">
+			<ul id="navbar" style="padding-top:10px;display:flex;align-items:center; font-family: 'Source Sans Pro', sans-serif;">
 			  <li><a class="nav-item" href="#"><img class="logo" src="static/img/whack-logos/WHACK2020Logo.svg" alt="Logo"></a></li>
 			  <li><a class="nav-item" href="#section-about">About</a></li>
 			<li><a class="nav-item" href="#section-schedule">Schedule</a></li>
@@ -73,8 +74,14 @@
 			<div class="hero-body">
 				<div style="margin-top: 100px; margin-bottom: 100px;" class="container big-logo">
 					<img src="static/img/whack-logos/WHACKTitle_White.png" alt="WHACK" class="splash-title">
-					<h2 class="splash-subtitle">November 7-8, 2020 </h2>
+					<h2 class="splash-subtitle" style="font-family: GalanoGrotesque;">November 7-8, 2020 </h2>
 					<style>
+
+						@font-face {
+							font-family: GalanoGrotesque;
+							font-weight: bold;
+							src: url("static/css/Galano\ Grotesque\ DEMO\ Bold.otf") format("opentype");
+						}
 						.buttonApply {
 							background-color: #4CAF50; /* Green */
 							border-radius: 20px;
@@ -89,6 +96,7 @@
 							margin: 4px 2px;
 							cursor: pointer;
 							margin-left: 45%;
+							font-family: GalanoGrotesque;
 						}
 						.button4 {
 							background-color: transparent;
@@ -146,7 +154,7 @@
 					<div class="tile is-ancestor join-title">
 						<div class="tile is-parent">
 							<article class="tile is-child box">
-								<p class="title gold" style="text-align: center; padding-bottom: 0px; margin-bottom: 0px">Join us!</p>
+								<p class="title gold" style="text-align: center; padding-bottom: 0px; margin-bottom: 0px; font-family: GalanoGrotesque;">Join us!</p>
 							</article>
 						</div>
 					</div>
@@ -193,7 +201,7 @@
 				<div class="container">
 					<div class="schedule-day">
 						<article class="tile is-child box">
-							<p class="title white">Schedule (2020)</p>
+							<p class="title white" style="font-family: GalanoGrotesque;">Schedule (2020)</p>
 							<p class="schedule-subheader white">WHACK will be held at <a class="alumnae white" target="_blank" href="">virtually.</a></p>
 							<div id="toggles">
 								<button type="button" class="day-toggle button is-outlined" id="saturday-toggle" style="background-color:#23c7ff">Saturday</button>
@@ -451,7 +459,7 @@
 	<section class="hero" id="section-prizes">
 	 <div class="hero-body">
 		 <div class="container" style="text-align: center;">
-			 <p class="title yellow">Prize Categories</p>
+			 <p class="title yellow" style="font-family: GalanoGrotesque;">Prize Categories</p>
 			 <!-- 
 			 	<h3 class="white" style="width:auto;">WHACK</h3>
 					<p>Best Beginner </p>
@@ -481,7 +489,7 @@
 			<div class="hero-body" style="margin-bottom:-100px">
 				<div class="container" style="padding: 50px 0">
 					<article class="tile is-child box">
-						<p class="title gold">FAQ</p>
+						<p class="title gold" style="font-family: GalanoGrotesque;">FAQ</p>
 					</article>
 					<div class="faq-questions">
 						<article class="tile is-child is-6 box">
@@ -567,7 +575,7 @@ Non-Boston off-campus guests can be reimbursed up to $50 for your travel costs. 
 <section class="hero" id="section-team-bios">
 	<div class="hero-body">
 		<div class="container" style="text-align: center;">
-			<p class="title gold" style="width:auto;">Meet the team!</p>
+			<p class="title gold" style="width:auto;font-family: GalanoGrotesque;">Meet the team!</p>
 			<p class="text-medium black introducing" style="width:66%;margin-right:auto;margin-left:auto;word-spacing:-1px;margin-bottom:50px;">Introducing the 2020 WHACK organizing team. We’re all incredibly excited for you to join us and enjoy the amazing events we have lined up for you!</p>
 			<ul id="rig">
 			    <li>
@@ -695,7 +703,7 @@ Non-Boston off-campus guests can be reimbursed up to $50 for your travel costs. 
 			<div class="hero-body">
 				<div class="container">
 					<br>
-					<p class="title blue" id='section7-title'> Past Sponsors</p>
+					<p class="title blue" id='section7-title' style="font-family: GalanoGrotesque;"> Past Sponsors</p>
 					<p class="text-medium gold">Want to sponsor for our 2020 hackathon? Contact us at <a class="gold" href="mailto:sponsors@wellesleyhacks.org">sponsors@wellesleyhacks.org</a> to learn more.</p>
 					<div class="sponsor-logos"> <!--add new sponsors-->
 						<!-- <a target="_blank" href="https://www.fidelity.com/"><div><img src="static/img/sponsor-logos/PLATINUM-FidelityInvestments.png" alt="Fidelity" class="platinum__sponsor" style="width:65%"></div></a> -->
@@ -714,7 +722,7 @@ Non-Boston off-campus guests can be reimbursed up to $50 for your travel costs. 
 						
 					</div>
 					<br><br>
-					<p class="title blue" id='section7-title'>Partners</p>
+					<p class="title blue" id='section7-title' style="font-family: GalanoGrotesque;">Partners</p>
 					<p class="blue">We are a student-run event organized with the support of the Wellesley Computer Science Club.</p>
 					<div class="sponsor-logos">
 						<a target="_blank" href="http://www.facebook.com/Wellesley-CS-Club-856871510992038"><img src="static/img/partner-logos/cs-club.png" alt="Computer Science Club" class="partner" style="height:200px;padding:30px;"></a>
@@ -739,7 +747,7 @@ Non-Boston off-campus guests can be reimbursed up to $50 for your travel costs. 
 						<a target="_blank" class="social__icon" href="https://twitter.com/wellesleyhack"><img src="static/img/social-icons/twitter.png" alt="WHACK Twitter" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</div>
 					 <div>
-						 <div>MADE WITH LOVE BY THE 2020 WHACK COMMITTEE</div>
+						 <div style="font-family: GalanoGrotesque;">MADE WITH LOVE BY THE 2020 WHACK COMMITTEE</div>
 					 </div>
 		    </div>
 		  </div>
