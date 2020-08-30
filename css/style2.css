@@ -92,8 +92,12 @@
   background-color: #f0c020;
 }
 
-.yellow {
+.blue {
   color: #298bf6;
+}
+
+.yellow {
+  color: #fef61a;
 }
 
 .orange{
@@ -125,7 +129,7 @@
 }
 
 #section-faq {
-  background: linear-gradient(#2E2E38, #15CBCE);
+  background: linear-gradient(#2f4ee9, #23c7ff);
   /*background-image: url(".../static/img/graph.png");*/
   /*background-size: cover;*/
   /*background-repeat: no-repeat;*/
@@ -305,7 +309,7 @@ ul.text-large p{
   border-color: #EFC247;
 }
 #section-keynote,#section-prizes{
-  background-color: #2E2E38;
+  background-color: #2f4ee9;
 }
 
 .keynote-picture{
