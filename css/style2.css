@@ -52,7 +52,7 @@
 }
 
 .graph{
-  width = 100%
+  width: 100%
   z-index: 0;
   /* background-size: 100% 100%; */
   background-size: cover;
@@ -65,7 +65,7 @@
 }
 
 .gold{
-  color: #f0c020;
+  color: #298bf6;
   /*font-size: 2rem*/
 }
 
@@ -133,15 +133,11 @@
 }
 
 #section-schedule {
-  background: :#2E2E38;
+  background: #2E2E38;
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
 
-}
-
-#section7-title{
-  /* color: #f0c020 */
 }
 
 .text-large{
@@ -189,7 +185,7 @@ ul{
 #section-faq ul li:before {
   content: "\2022";
   padding-right: 15px;
-  color: #EFC247;
+  color: #fef61a;
   font-size: 2rem;
 }
 
