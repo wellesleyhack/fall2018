@@ -8,7 +8,7 @@
 #section1{
   /*background: linear-gradient(45deg,  #BC52C3,#F6935A);*/
   /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
-  background: linear-gradient(0deg, rgb(230, 252, 255) 0%, rgb(47, 78, 233) 22%, rgb(7, 0, 63) 75%);
+  background: linear-gradient(0deg, linear-gradient(0deg, rgb(47, 78, 233) 10%, rgb(7, 0, 63) 100%));
   background-repeat:no-repeat;
   background-position: 80% 100%;
   color: white;
