@@ -48,7 +48,7 @@
 }
 
 #section-schedule{
-  background-color: #2E2E38;
+  background-color: #2f4ee9;
 }
 
 .graph{
@@ -81,7 +81,7 @@
 }
 
 .white{
-  color: #DEE7EA;
+  color: white;
 }
 
 .alumnae{
@@ -161,12 +161,12 @@
 
 .schedule-description {
   font-size: 20px;
-  color: #efc247;
+  color: #fef61a;
 }
 
 .schedule-subheader {
   font-size: 20px;
-  color: #efc247;
+  color: #fef61a;
   word-spacing: 0px;
 }
 
