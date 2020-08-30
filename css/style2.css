@@ -8,10 +8,10 @@
 #section1{
   /*background: linear-gradient(45deg,  #BC52C3,#F6935A);*/
   /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
-  background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%);
+  /*background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%); */
   background-repeat:no-repeat;
   background-position: 80% 100%;
-  color: #f0c020;
+  color: white;
 }
 
 #section-about{
@@ -287,7 +287,7 @@ ul.text-large p{
 }
 
 #navbar a {
-  color: #f0c020;
+  color: white;
 }
 
 .keynote-element{
