@@ -144,7 +144,7 @@ footer{
 }
 
 #sunday-toggle{
-  background-color: rgb(35, 117, 124);
+  background-color: #07003f;
 }
 
 #friday-toggle{
@@ -359,7 +359,7 @@ p#section-about{
 
 
 #section-schedule{
-  background-color: #2E2E38;
+  background-color: #2f4ee9;
 }
 h1#section-schedule{
   font-family: 'Open Sans Bold', sans-serif;

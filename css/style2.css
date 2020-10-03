@@ -8,10 +8,10 @@
 #section1{
   /*background: linear-gradient(45deg,  #BC52C3,#F6935A);*/
   /*background:  url('../img/jeff-1.png'), linear-gradient(45deg,  #BC52C3,#F6935A);*/
-  background: linear-gradient(0deg, rgba(21,203,206,1) 0%, rgba(35,117,124,1) 22%, rgba(39,93,101,1) 35%, rgba(43,69,78,1) 50%, rgba(45,56,66,1) 61%, rgba(46,46,56,1) 75%);
+  background: linear-gradient(0deg, rgb(230, 252, 255) 0%, rgb(47, 78, 233) 22%, rgb(7, 0, 63) 75%);
   background-repeat:no-repeat;
   background-position: 80% 100%;
-  color: #f0c020;
+  color: #23c7ff;
 }
 
 #section-about{
@@ -21,6 +21,7 @@
   background-position: -200px 200px;
   background-size: 700px;
   padding-bottom: 50px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 }
 
 #section-team-bios{
@@ -48,11 +49,11 @@
 }
 
 #section-schedule{
-  background-color: #2E2E38;
+  background-color: #2f4ee9;
 }
 
 .graph{
-  width = 100%
+  width: 100%
   z-index: 0;
   /* background-size: 100% 100%; */
   background-size: cover;
@@ -65,7 +66,7 @@
 }
 
 .gold{
-  color: #f0c020;
+  color: #298bf6;
   /*font-size: 2rem*/
 }
 
@@ -81,7 +82,7 @@
 }
 
 .white{
-  color: #DEE7EA;
+  color: white;
 }
 
 .alumnae{
@@ -92,15 +93,19 @@
   background-color: #f0c020;
 }
 
+.blue {
+  color: #298bf6;
+}
+
 .yellow {
-  color: #EFC247;
+  color: #fef61a;
 }
 
 .orange{
-  color: #F97352;
+  color: #23c7ff;
 }
 .orange-background{
-  background-color: color: #F97352;
+  background-color: #F97352;
 }
 
 #section3-card{
@@ -125,7 +130,7 @@
 }
 
 #section-faq {
-  background: linear-gradient(#2E2E38, #15CBCE);
+  background: linear-gradient(#2f4ee9, #23c7ff);
   /*background-image: url(".../static/img/graph.png");*/
   /*background-size: cover;*/
   /*background-repeat: no-repeat;*/
@@ -133,15 +138,11 @@
 }
 
 #section-schedule {
-  background: :#2E2E38;
+  background: #2f4ee9;
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
 
-}
-
-#section7-title{
-  /* color: #f0c020 */
 }
 
 .text-large{
@@ -165,12 +166,12 @@
 
 .schedule-description {
   font-size: 20px;
-  color: #efc247;
+  color: #fef61a;
 }
 
 .schedule-subheader {
   font-size: 20px;
-  color: #efc247;
+  color: #fef61a;
   word-spacing: 0px;
 }
 
@@ -189,7 +190,7 @@ ul{
 #section-faq ul li:before {
   content: "\2022";
   padding-right: 15px;
-  color: #EFC247;
+  color: #fef61a;
   font-size: 2rem;
 }
 
@@ -287,7 +288,7 @@ ul.text-large p{
 }
 
 #navbar a {
-  color: #f0c020;
+  color: white;
 }
 
 .keynote-element{
@@ -309,7 +310,7 @@ ul.text-large p{
   border-color: #EFC247;
 }
 #section-keynote,#section-prizes{
-  background-color: #2E2E38;
+  background-color: #2f4ee9;
 }
 
 .keynote-picture{
