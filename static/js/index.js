@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#saturday').css("display", "block");
     $('#saturday-toggle').css("background-color", "rgba(21,203,206,1)");
     $('#sunday').css("display", "none");
-    $('#sunday-toggle').css("background-color", "rgba(35,117,124,1)");
+    $('#sunday-toggle').css("background-color", "#07003f");
     $('#friday').css("display", "none");
     $('#friday-toggle').css("background-color", "#F97352");
   });
@@ -23,6 +23,6 @@ $(document).ready(function() {
       $('#friday').css("display", "none");
       $('#friday-toggle').css("background-color", "#F97352");
       $('#saturday').css("display", "none");
-      $('#saturday-toggle').css("background-color", "rgba(35,117,124,1)");
+      $('#saturday-toggle').css("background-color", "#07003f");
   });
 });
