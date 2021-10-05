@@ -11,7 +11,7 @@
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(249,212,9) 22%, rgb(255, 169, 21) 75%);
   background-repeat:no-repeat;
   background-position: 80% 100%;
-  color: #23c7ff;
+  color: #d80e07;
 }
 
 #section-about{
@@ -94,15 +94,15 @@
 }
 
 .blue {
-  color: #298bf6;
+  color: #f47d10;
 }
 
 .yellow {
-  color: #fef61a;
+  color: #501d85;
 }
 
 .orange{
-  color: #23c7ff;
+  color: #d80e07;
 }
 .orange-background{
   background-color: #F97352;
@@ -130,7 +130,7 @@
 }
 
 #section-faq {
-  background: linear-gradient(#2f4ee9, #23c7ff);
+  background: linear-gradient(#ffa915, #d80e07);
   /*background-image: url(".../static/img/graph.png");*/
   /*background-size: cover;*/
   /*background-repeat: no-repeat;*/
@@ -138,7 +138,7 @@
 }
 
 #section-schedule {
-  background: #2f4ee9;
+  background: #ffa915;
   background-repeat:no-repeat;
   background-position: right center;
   color: white;
@@ -166,12 +166,12 @@
 
 .schedule-description {
   font-size: 20px;
-  color: #fef61a;
+  color: #501d85;
 }
 
 .schedule-subheader {
   font-size: 20px;
-  color: #fef61a;
+  color: #501d85;
   word-spacing: 0px;
 }
 
@@ -190,7 +190,7 @@ ul{
 #section-faq ul li:before {
   content: "\2022";
   padding-right: 15px;
-  color: #fef61a;
+  color: #501d85;
   font-size: 2rem;
 }
 
@@ -310,7 +310,7 @@ ul.text-large p{
   border-color: #EFC247;
 }
 #section-keynote,#section-prizes{
-  background-color: #2f4ee9;
+  background-color: #ffa915;
 }
 
 .keynote-picture{
