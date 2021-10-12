@@ -53,7 +53,7 @@
 }
 
 .graph{
-  width: 100%
+  width: 100%;
   z-index: 0;
   /* background-size: 100% 100%; */
   background-size: cover;
@@ -82,7 +82,17 @@
 }
 
 .white{
-  color: white;
+  /* color: white; */
+  color: #501d85;
+}
+
+/* p and li selector categories I added below */
+p {
+  color: #501d85;
+}
+
+li {
+  color: #501d85;
 }
 
 .alumnae{
@@ -175,6 +185,10 @@
   word-spacing: 0px;
 }
 
+hr {
+  background-color: #501d85;
+}
+
 .column p{
   font-size: 14px;
   word-spacing: 0px;
@@ -185,6 +199,15 @@ ul{
   margin:0;
   padding:0;
   /* overflow:scroll; */
+}
+
+.column {
+  color: #501d85;
+}
+
+.title-gold {
+  font-size: 40px;
+  color: #501d85;
 }
 
 #section-faq ul li:before {
