@@ -147,6 +147,10 @@ li {
   /*background-position: bottom;*/
 }
 
+.faq-questions {
+  font-weight: bold;
+}
+
 #section-schedule {
   background: #ffa915;
   background-repeat:no-repeat;
